@@ -1,100 +1,60 @@
-Johnny Coder
-============
-
+% Timo Körner
+----
+> **IT Fachmann**
+> \
+> \
+> Software Spezialist aus Hepberg.
 ----
 
->  In this style, the resume starts with a blockquote, where
->  you can briefly list your specialties, or include a salient
->  quote. Ending a line with a backslash forces a line break.
-
-----
-
-Education
----------
-
-2010-2014 (expected)
-:   **PhD, Computer Science**; Awesome University (MyTown)
-
-    *Thesis title: Deep Learning Approaches to the Self-Awesomeness
-     Estimation Problem*
-
-2007-2010
-:   **BSc, Computer Science and Electrical Engineering**; University of
-    HomeTown (HomeTown)
-
-    *Minor: Awesomeology*
-
-Experience
-----------
-
-**Your Most Recent Work Experience:**
-
-Short text containing the type of work done, results obtained,
-lessons learned and other remarks. Can also include lists and
-links:
-
-* First item
-
-* Item with [link](http://www.example.com). Links will work both in
-  the html and pdf versions.
-
-**That Other Job You Had**
-
-Also with a short description.
-
-Technical Experience
+Corporate Experience
 --------------------
 
-My Cool Side Project
-:   For items which don't have a clear time ordering, a definition
-    list can be used to have named items.
+2015-heute
+:   *Techn. Oberinspektor IUK -  [Autobahndirektion Nordbayern](http://www.abdnb.bayern.de/)*
+    (Nürnberg).
 
-    * These items can also contain lists, but you need to mind the
-      indentation levels in the markdown source.
-    * Second item.
+    Verantwortlich für ca. 100 Benutzer und Endgeräte / VMs. Einschließlich Exchange und MS Active Directory Betreuung. Migration des Datenservers von der alten auf die neue Umgebung.
 
-Open Source
-:   List open source contributions here, perhaps placing emphasis on
-    the project names, for example the **Linux Kernel**, where you
-    implemented multithreading over a long weekend, or **node.js**
-    (with [link](http://nodejs.org)) which was actually totally
-    your idea...
+2019
+:   *Principal Data Engineer for [Flixbus](https://flixbus.com)*
+    (Munich, Germany).
 
-Programming Languages
-:   **first-lang:** Here, we have an itemization, where we only want
-    to add descriptions to the first few items, but still want to
-    mention some others together at the end. A format that works well
-    here is a description list where the first few items have their
-    first word emphasized, and the last item contains the final few
-    emphasized terms. Notice the reasonably nice page break in the pdf
-    version, which wouldn't happen if we generated the pdf via html.
+    Data Engineering for AB-testing. Drove the choice and adoption of a
+    company-wide unified tracking tool for web and mobile (cross
+    department project). Plumbing and integration (AWS, terraform).
 
-:   **second-lang:** Description of your experience with second-lang,
-    perhaps again including a [link] [ref], this time placing the url
-    reference elsewhere in the document to reduce clutter (see source
-    file). 
+2005-2015
+:   *Freiberuflicher IT Spezialist*
+    (Hepberg).
 
-:   **obscure-but-impressive-lang:** We both know this one's pushing
-    it.
+   PHP, Mysql und Javascript Entwickler für unterschiedliche Kunden.
 
-:   Basic knowledge of **C**, **x86 assembly**, **forth**, **Common Lisp**
+Open Source Beiträge
+--------------------
+Verschiedenes
+:   Erfahrung mit Arch Linux, Bash, Makefile, Zsh.
+    Auf [github](https://github.com/tik9) und auf
+    [Stackoverflow](https://stackoverflow.com/users/1705829/timo) weitere Infos.
 
-[ref]: https://github.com/githubuser/superlongprojectname
 
-Extra Section, Call it Whatever You Want
-----------------------------------------
+Ausbildung
+----------
 
-* Human Languages:
+2015-2018
+:   *Studium Diplom - Verwaltungsinformatik [Studienwebsite](https://www.verwaltungsinformatiker.de/de/startseite.html)*
+    (Hof).
 
-     * English (native speaker)
-     * ???
-     * This is what a nested list looks like.
+    Vergleichbar mit einem Informatik Bachelor an einer Hochschule. Kurse fanden zum Teil mit Informatik Studenten der Hochschule Hof statt.
 
-* Random tidbit
+1999-2005
+:   *BWL - Studium* (Bamberg).
 
-* Other sort of impressive-sounding thing you did
+    Eine große bayrische Universität mit einem umfangreichen Studienangebot.
 
 ----
 
-> <email@example.com> • +00 (0)00 000 0000 • XX years old\
-> address - Mytown, Mycountry
+> <user153015@gmail.com> • +49 (0)1573 9598 220 • {{ MYAGE }} Jahre alt\
+> Bergstr. 15, 85120 Hepberg\
+> \
+> [pdf version](https:index.pdf) •
+> [html version](https://index.html)
