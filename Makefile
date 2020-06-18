@@ -1,30 +1,21 @@
-OUT_DIR=output
-IN_DIR=markdown
-STYLES_DIR=styles
-STYLE=chmduquesne
+out_vz=output
+in_vz=markdown
+#output='output/resume.html'
+#output='output/anschreiben.html'
+#input='input/resume.md'
+#input='input/anschreiben.md'
 
-html: init
-	for f in $(IN_DIR)/*.md; do \
+#pandoc --standalone --include-in-header style.css -H age.js --output $output --metadata pagetitle='TK' $input
+html:
+	for f in $(in_vz)/*.md; do \
 		FILE_NAME=`basename $$f | sed 's/.md//g'`; \
 		echo $$FILE_NAME.html; \
-		pandoc --standalone --include-in-header $(STYLES_DIR)/$(STYLE).css \
-			--from markdown --to html \
-			--output $(OUT_DIR)/$$FILE_NAME.html $$f \
+		#echo $$f \
+		pandoc --standalone --include-in-header style.css \
+		  -H age.js \
+			--output $(out_vz)/$$FILE_NAME.html $$f \
 			--metadata pagetitle=$$FILE_NAME;\
 	done
 
-init: dir version
-
-dir:
-	mkdir -p $(OUT_DIR)
-
-version:
-	PANDOC_VERSION=`pandoc --version | head -1 | cut -d' ' -f2 | cut -d'.' -f1`; \
-	if [ "$$PANDOC_VERSION" -eq "2" ]; then \
-		SMART=-smart; \
-	else \
-		SMART=--smart; \
-	fi \
-
 clean:
-	rm -f $(OUT_DIR)/*
+	rm -f $(out_vz)/*
