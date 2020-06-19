@@ -1,5 +1,2 @@
-*.log
-*.swo
-*.swp
-output/
+#output/
 .idea
