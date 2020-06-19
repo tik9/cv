@@ -1,8 +1,8 @@
 out_vz=output
-in_vz=markdown
-#output='output/resume.html'
+in_vz=input
+#output='output/cv.html'
 #output='output/anschreiben.html'
-#input='input/resume.md'
+#input='input/cv.md'
 #input='input/anschreiben.md'
 
 #pandoc --standalone --include-in-header style.css -H age.js --output $output --metadata pagetitle='TK' $input
