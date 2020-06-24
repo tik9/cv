@@ -18,8 +18,11 @@ window.onload = function(){
     an: 'Autobahndirektion Nordbayern',
     h_studium: 'Studium Diplom - Verwaltungsinformatik'}
 
-    Object.entries(vars).forEach(([key, value]) => {console.log('{ '+key +' }'+value)
+    gith:'https://github.com/tik9'
+
+    Object.entries(vars).forEach(([key, value]) => {
     document.body.innerHTML = document.body.innerHTML.replace('{{ '+ key +' }}', value)
-})
+}
+)
 }
 </script>

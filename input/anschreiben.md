@@ -6,8 +6,7 @@
 85049 Ingolstadt  
 &nbsp;
 &nbsp;
-
-19. Juni 2020  
+22. Juni 2020  
 &nbsp;
 
 **Bewerbung als Projektleiter IT**  
@@ -22,10 +21,8 @@ mit folgender Qualifikation möchte ich mich auf obige Stelle bewerben:
 - Erfahrung im Projektmanagement: Umstellung einer Dienststelle auf Windows 10
 - Freundliches Wesen im Umgang mit Kollegen und Firmen
 - Abgeschlossenes {{ h_studium }}
-- Langjährige Berufserfahrung: {{ job_sys }} und {{ job_freib }}
+- Langjährige Berufserfahrung: Aktuell {{ job_sys }} bei der {{ an}} und {{ job_freib }}
 &nbsp;
-
-Derzeit bin ich angestellt bei der {{ an }} im Bereich IUK - Systemadministration als {{ job_titel }}.  
 &nbsp;
 
 Ich möchte mich beruflich verändern und weg von der starrren Struktur im öffentlichen Dienst.  

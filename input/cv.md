@@ -25,15 +25,14 @@ Open Source Beiträge
 --------------------
 Verschiedenes
 :   Erfahrung mit Arch Linux, Bash, Makefile, Zsh.
-    Auf [github](https://github.com/tik9) und auf
-    [Stackoverflow](https://stackoverflow.com/users/1705829/timo) gibt es weitere Infos.
-
+    Siehe [github]({{ gith}} ) und
+    [Stackoverflow](https://stackoverflow.com/users/1705829/timo).
 
 Ausbildung
 ----------
 
 2015-2018
-:   *{{ h_studium }} ([zur Studienwebsite](https://www.verwaltungsinformatiker.de/de/startseite.html))*
+:   *{{ h_studium }} ([Studienwebsite](https://www.verwaltungsinformatiker.de))*
     (Hof).
 
     Vergleichbar mit einem Informatik Bachelor an einer Hochschule. Kurse fanden zum Teil mit Informatik Studenten der Hochschule Hof statt.
@@ -41,12 +40,12 @@ Ausbildung
 1999-2005
 :   *BWL - Studium* (Bamberg).
 
-    Eine große bayrische Universität mit einem umfangreichen Studien- und Sprachangebot, das ich nutzte.
+    Eine große bayrische Universität ([Studienwebsite](https://www.uni-bamberg.de)) mit einem umfangreichen Studien- und Sprachangebot, das ich nutzte.
 
 ----
 
 > <user153015@gmail.com> • +49 (0)1573 9598 220 • {{ alter }} Jahre alt\
 > {{ adresse }}\
 > \
-> [pdf version](https:index.pdf) •
-> [html version](https://index.html)
+> [pdf version]({{ gith }}/cv/out/cv.pdf) •
+> [html version]({{ gith }}/cv/out/cv.html)
