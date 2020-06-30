@@ -31,13 +31,13 @@ Verschiedenes
 Ausbildung
 ----------
 
-2015-2018
+2015 - 2018
 :   *{{ h_studium }} ([Studienwebsite](https://www.verwaltungsinformatiker.de))*
     (Hof).
 
     Vergleichbar mit einem Informatik Bachelor an einer Hochschule. Kurse fanden zum Teil mit Informatik Studenten der Hochschule Hof statt.
 
-1999-2005
+1999 - 2005
 :   *BWL - Studium* (Bamberg).
 
     Eine große bayrische Universität ([Studienwebsite](https://www.uni-bamberg.de)) mit einem umfangreichen Studien- und Sprachangebot, das ich nutzte.

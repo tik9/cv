@@ -4,9 +4,11 @@
 &nbsp;  
 **Epos Cat**  
 85049 Ingolstadt  
+bewerbung@epos-cat.de  
 &nbsp;
 &nbsp;
-22. Juni 2020  
+
+1. Juli 2020  
 &nbsp;
 
 **Bewerbung als Projektleiter IT**  
@@ -20,8 +22,9 @@ mit folgender Qualifikation möchte ich mich auf obige Stelle bewerben:
 - Aktive und eigenverantwortliche Arbeitsweise als Sachbereichsleiter IT in ungekündigter Stellung
 - Erfahrung im Projektmanagement: Umstellung einer Dienststelle auf Windows 10
 - Freundliches Wesen im Umgang mit Kollegen und Firmen
+- Proaktive Persönlichkeit
 - Abgeschlossenes {{ h_studium }}
-- Langjährige Berufserfahrung: Aktuell {{ job_sys }} bei der {{ an}} und {{ job_freib }}
+- Langjährige Berufserfahrung: Aktuell {{ job_sys }} bei der {{ an }} und {{ job_freib }}
 &nbsp;
 &nbsp;
 

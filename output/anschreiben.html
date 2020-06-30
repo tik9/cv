@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
-  <title>TK CV</title>
+  <title>TK Anschreiben</title>
   <style type="text/css">code{white-space: pre;}</style>
   <style type="text/css">
   /*
@@ -94,21 +94,24 @@
       var msProJahr = 31536000000
       var alter = Math.floor(alter / msProJahr);
   
-      const vars = {
-      alter: alter,
-      name: 'Timo Körner',
-      adresse: 'Bergstr. 15, 85120 Hepberg',
+      werte = {
+          alter: alter,
+          name: 'Timo Körner',
+          adresse: 'Bergstr. 15, 85120 Hepberg',
   
-      job_titel: 'Technischer Oberinspektor',
-      job_sys: 'Systemadministrator für Windows Server und Exchange',
-      job_freib:'Freiberuflicher IT Spezialist',
+          job_titel: 'Technischer Oberinspektor',
+          job_sys: 'Systemadministrator für Windows Server und Exchange',
+          job_freib:'Freiberuflicher IT Spezialist',
   
-      an: 'Autobahndirektion Nordbayern',
-      h_studium: 'Studium Diplom - Verwaltungsinformatik'}
+          an: 'Autobahndirektion Nordbayern',
+          h_studium: 'Studium Diplom - Verwaltungsinformatik',
   
-      Object.entries(vars).forEach(([key, value]) => {console.log('{ '+key +' }'+value)
-      document.body.innerHTML = document.body.innerHTML.replace('{{ '+ key +' }}', value)
-  })
+          gith:'https://github.com/tik9'
+      }
+  for (schluessel in werte){
+      document.body.innerHTML = document.body.innerHTML.replace('{{ '+ schluessel +' }}', werte[schluessel])
+  }
+  
   }
   </script>
 </head>
@@ -119,9 +122,10 @@
  <br />
 <strong>Epos Cat</strong><br />
 85049 Ingolstadt<br />
+bewerbung@epos-cat.de<br />
    </p>
-<ol start="19" style="list-style-type: decimal">
-<li>Juni 2020<br />
+<ol style="list-style-type: decimal">
+<li>Juli 2020<br />
  </li>
 </ol>
 <p><strong>Bewerbung als Projektleiter IT</strong><br />
@@ -133,11 +137,10 @@ mit folgender Qualifikation möchte ich mich auf obige Stelle bewerben:</p>
 <li>Aktive und eigenverantwortliche Arbeitsweise als Sachbereichsleiter IT in ungekündigter Stellung</li>
 <li>Erfahrung im Projektmanagement: Umstellung einer Dienststelle auf Windows 10</li>
 <li>Freundliches Wesen im Umgang mit Kollegen und Firmen</li>
+<li>Proaktive Persönlichkeit</li>
 <li>Abgeschlossenes {{ h_studium }}</li>
-<li>Langjährige Berufserfahrung: {{ job_sys }} und {{ job_freib }}  </li>
+<li>Langjährige Berufserfahrung: Aktuell {{ job_sys }} bei der {{ an }} und {{ job_freib }}    </li>
 </ul>
-<p>Derzeit bin ich angestellt bei der {{ an }} im Bereich IUK - Systemadministration als {{ job_titel }}.<br />
- </p>
 <p>Ich möchte mich beruflich verändern und weg von der starrren Struktur im öffentlichen Dienst.<br />
  </p>
 <p>Ich würde mich freuen, von Ihnen bald zu hören.<br />
