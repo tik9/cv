@@ -6,6 +6,7 @@ in_vz=input
 #input='input/anschreiben.md'
 
 #pandoc --standalone --include-in-header style.css -H js.js --output $output --metadata pagetitle='TK' $input
+
 html:
 	for f in $(in_vz)/*.md; do \
 		FILE_NAME=`basename $$f | sed 's/.md//g'`; \

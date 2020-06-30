@@ -6,23 +6,23 @@ window.onload = function(){
     var msProJahr = 31536000000
     var alter = Math.floor(alter / msProJahr);
 
-    const vars = {
-    alter: alter,
-    name: 'Timo Körner',
-    adresse: 'Bergstr. 15, 85120 Hepberg',
+    werte = {
+        alter: alter,
+        name: 'Timo Körner',
+        adresse: 'Bergstr. 15, 85120 Hepberg',
 
-    job_titel: 'Technischer Oberinspektor',
-    job_sys: 'Systemadministrator für Windows Server und Exchange',
-    job_freib:'Freiberuflicher IT Spezialist',
+        job_titel: 'Technischer Oberinspektor',
+        job_sys: 'Systemadministrator für Windows Server und Exchange',
+        job_freib:'Freiberuflicher IT Spezialist',
 
-    an: 'Autobahndirektion Nordbayern',
-    h_studium: 'Studium Diplom - Verwaltungsinformatik'}
+        an: 'Autobahndirektion Nordbayern',
+        h_studium: 'Studium Diplom - Verwaltungsinformatik',
 
-    gith:'https://github.com/tik9'
-
-    Object.entries(vars).forEach(([key, value]) => {
-    document.body.innerHTML = document.body.innerHTML.replace('{{ '+ key +' }}', value)
+        gith:'https://github.com/tik9'
+    }
+for (schluessel in werte){
+    document.body.innerHTML = document.body.innerHTML.replace('{{ '+ schluessel +' }}', werte[schluessel])
 }
-)
+
 }
 </script>

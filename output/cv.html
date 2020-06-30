@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
-  <title>TK CV</title>
+  <title>TK</title>
   <style type="text/css">code{white-space: pre;}</style>
   <style type="text/css">
   /*
@@ -94,21 +94,24 @@
       var msProJahr = 31536000000
       var alter = Math.floor(alter / msProJahr);
   
-      const vars = {
-      alter: alter,
-      name: 'Timo Körner',
-      adresse: 'Bergstr. 15, 85120 Hepberg',
+      werte = {
+          alter: alter,
+          name: 'Timo Körner',
+          adresse: 'Bergstr. 15, 85120 Hepberg',
   
-      job_titel: 'Technischer Oberinspektor',
-      job_sys: 'Systemadministrator für Windows Server und Exchange',
-      job_freib:'Freiberuflicher IT Spezialist',
+          job_titel: 'Technischer Oberinspektor',
+          job_sys: 'Systemadministrator für Windows Server und Exchange',
+          job_freib:'Freiberuflicher IT Spezialist',
   
-      an: 'Autobahndirektion Nordbayern',
-      h_studium: 'Studium Diplom - Verwaltungsinformatik'}
+          an: 'Autobahndirektion Nordbayern',
+          h_studium: 'Studium Diplom - Verwaltungsinformatik',
   
-      Object.entries(vars).forEach(([key, value]) => {console.log('{ '+key +' }'+value)
-      document.body.innerHTML = document.body.innerHTML.replace('{{ '+ key +' }}', value)
-  })
+          gith:'https://github.com/tik9'
+      }
+  for (schluessel in werte){
+      document.body.innerHTML = document.body.innerHTML.replace('{{ '+ schluessel +' }}', werte[schluessel])
+  }
+  
   }
   </script>
 </head>
@@ -127,7 +130,7 @@
 <dl>
 <dt>2015 - heute</dt>
 <dd><p><em>{{ job_titel }} - <a href="http://www.abdnb.bayern.de/">{{ an }}</a></em> (Nürnberg).</p>
-<p>{{ job_sys }}. Verantwortlich für ca. 100 Benutzer und Endgeräte / VMs. Einschließlich MS Active Directory Betreuung, Gruppenrichtlinienpflege und Softwareverteilung. Migration des Dateiservers von der alten auf die neue Umgebung.</p>
+<p>{{ job_sys }}. Verantwortlich für ca. 100 Benutzer und Endgeräte / VMs. Einschließlich MS Active Directory Betreuung, Gruppenrichtlinienpflege und Softwareverteilung. Migration des Dateiservers von der alten auf die neue Umgebung. Auflisten der Vererbungsunterbrechungen mit Powershell.</p>
 </dd>
 <dt>2005 - 2015</dt>
 <dd><em>{{ job_freib }}</em> (Hepberg).
@@ -137,18 +140,18 @@
 <h2 id="open-source-beiträge">Open Source Beiträge</h2>
 <dl>
 <dt>Verschiedenes</dt>
-<dd>Erfahrung mit Arch Linux, Bash, Makefile, Zsh. Auf <a href="https://github.com/tik9">github</a> und auf <a href="https://stackoverflow.com/users/1705829/timo">Stackoverflow</a> gibt es weitere Infos.
+<dd>Erfahrung mit Bash, Markdown und Zsh. Siehe <a href="https://github.com/tik9">github</a> und <a href="https://stackoverflow.com/users/1705829/timo">Stackoverflow</a>.
 </dd>
 </dl>
 <h2 id="ausbildung">Ausbildung</h2>
 <dl>
 <dt>2015-2018</dt>
-<dd><p><em>{{ h_studium }} (<a href="https://www.verwaltungsinformatiker.de/de/startseite.html">zur Studienwebsite</a>)</em> (Hof).</p>
+<dd><p><em>{{ h_studium }} (<a href="https://www.verwaltungsinformatiker.de">Studienwebsite</a>)</em> (Hof).</p>
 <p>Vergleichbar mit einem Informatik Bachelor an einer Hochschule. Kurse fanden zum Teil mit Informatik Studenten der Hochschule Hof statt.</p>
 </dd>
 <dt>1999-2005</dt>
 <dd><p><em>BWL - Studium</em> (Bamberg).</p>
-<p>Eine große bayrische Universität mit einem umfangreichen Studien- und Sprachangebot, das ich nutzte.</p>
+<p>Eine große bayrische Universität (<a href="https://www.uni-bamberg.de">Studienwebsite</a>) mit einem umfangreichen Studien- und Sprachangebot, das ich nutzte.</p>
 </dd>
 </dl>
 <hr />
@@ -156,7 +159,7 @@
 <p><a href="mailto:user153015@gmail.com">user153015@gmail.com</a> • +49 (0)1573 9598 220 • {{ alter }} Jahre alt<br />
 {{ adresse }}<br />
 <br />
-<a href="https:index.pdf">pdf version</a> • <a href="https://index.html">html version</a></p>
+<a href="https://tik9.github.io/cv/output/cv.pdf">pdf version</a> • <a href="https://tik9.github.io/cv/output/cv.html">html version</a></p>
 </blockquote>
 </body>
 </html>

@@ -13,7 +13,7 @@ Berufserfahrung
 :   *{{ job_titel }} -  [{{ an }}](http://www.abdnb.bayern.de/)*
     (Nürnberg).
 
-    {{ job_sys }}. Verantwortlich für ca. 100 Benutzer und Endgeräte / VMs. Einschließlich MS Active Directory Betreuung, Gruppenrichtlinienpflege und Softwareverteilung. Migration des Dateiservers von der alten auf die neue Umgebung.
+    {{ job_sys }}. Verantwortlich für ca. 100 Benutzer und Endgeräte / VMs. Einschließlich MS Active Directory Betreuung, Gruppenrichtlinienpflege und Softwareverteilung. Migration des Dateiservers von der alten auf die neue Umgebung. Auflisten der Vererbungsunterbrechungen mit Powershell.
 
 2005 - 2015
 :   *{{ job_freib }}*
@@ -24,8 +24,8 @@ Berufserfahrung
 Open Source Beiträge
 --------------------
 Verschiedenes
-:   Erfahrung mit Arch Linux, Bash, Makefile, Zsh.
-    Siehe [github]({{ gith}} ) und
+:   Erfahrung mit Bash, Markdown und Zsh.
+    Siehe [github](https://github.com/tik9) und
     [Stackoverflow](https://stackoverflow.com/users/1705829/timo).
 
 Ausbildung
@@ -47,5 +47,5 @@ Ausbildung
 > <user153015@gmail.com> • +49 (0)1573 9598 220 • {{ alter }} Jahre alt\
 > {{ adresse }}\
 > \
-> [pdf version]({{ gith }}/cv/out/cv.pdf) •
-> [html version]({{ gith }}/cv/out/cv.html)
+> [pdf version](https://tik9.github.io/cv/output/cv.pdf) •
+> [html version](https://tik9.github.io/cv/output/cv.html)
