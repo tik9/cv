@@ -11,28 +11,28 @@ Berufserfahrung
 
 2015 - heute
 :   *{{ job_titel }} -  [{{ an }}](http://www.abdnb.bayern.de/)*
-    (NÃ¼rnberg).
+    (Nürnberg).
 
-    {{ job_sys }}. Verantwortlich fÃ¼r ca. 100 Benutzer und EndgerÃ¤te / VMs. EinschlieÃŸlich MS Active Directory Betreuung, Gruppenrichtlinienpflege und Softwareverteilung. Migration des Dateiservers von der alten auf die neue Umgebung. Auflisten der Vererbungsunterbrechungen mit Powershell.
+    {{ job_sys }}. Verantwortlich für ca. 100 Benutzer und Endgeräte / VMs. Einschließlich MS Active Directory Betreuung, Gruppenrichtlinienpflege und Softwareverteilung. Migration des Dateiservers von der alten auf die neue Umgebung. Auflisten der Vererbungsunterbrechungen mit Powershell.
 
 2005 - 2015
 :   *{{ job_freib }}*
     (Hepberg).
 
-   PHP, Mysql und Javascript Entwickler fÃ¼r unterschiedliche Kunden.
+   PHP, Mysql und Javascript Entwickler.
 
-Open Source BeitrÃ¤ge
+Open Source Beiträge
 --------------------
 Verschiedenes
-:   Erfahrung mit Bash, Markdown und Zsh.
-    Siehe [github](https://github.com/tik9) und
+:   Erfahrung mit Bash, Git Markdown und Zsh Shell.
+    [github](https://github.com/tik9),
     [Stackoverflow](https://stackoverflow.com/users/1705829/timo).
 
 Ausbildung
 ----------
 
 2015 - 2018
-:   *{{ h_studium }} ([Studienwebsite](https://www.verwaltungsinformatiker.de))*
+:   *{{ h_studium }},[Studienwebsite](https://www.verwaltungsinformatiker.de)*
     (Hof).
 
     Vergleichbar mit einem Informatik Bachelor an einer Hochschule. Kurse fanden zum Teil mit Informatik Studenten der Hochschule Hof statt.
@@ -40,12 +40,12 @@ Ausbildung
 1999 - 2005
 :   *BWL - Studium* (Bamberg).
 
-    Eine groÃŸe bayrische UniversitÃ¤t ([Studienwebsite](https://www.uni-bamberg.de)) mit einem umfangreichen Studien- und Sprachangebot, das ich nutzte.
+    Eine große bayrische Universität ([Website](https://www.uni-bamberg.de)) mit einem umfangreichen Studien- und Sprachangebot, das ich nutzte.
 
 ----
 
-> <user153015@gmail.com> â€¢ +49 (0)1573 9598 220 â€¢ {{ alter }} Jahre alt\
+> • {{ alter }} Jahre alt\
 > {{ adresse }}\
 > \
-> [pdf version](https://tik9.github.io/cv/output/cv.pdf) â€¢
-> [html version](https://tik9.github.io/cv/output/cv.html)
+> [pdf Englisch](https://tik9.github.io/cv/output/cv_en.pdf) •
+> [html Englisch](https://tik9.github.io/cv/output/cv_en.html)
