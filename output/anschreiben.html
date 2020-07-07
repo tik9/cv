@@ -16,91 +16,36 @@
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
-      window.onload = function(){
-      var geburtstag = Date.parse("1978-10-02")
-      var alter = Date.now() - geburtstag
-      var msProJahr = 31536000000
-      var alter = Math.floor(alter / msProJahr);
-
-      werte = {
-          alter: {
-          en: alter,
-          },
-
-          name: {
-          en: 'Timo Körner'},
-
-          adresse:{
-          en: 'Bergstr. 15, 85120 Hepberg'},
-
-          job_titel: {
-          de: 'Technischer Oberinspektor',
-          'en' : 'IT expert',
-          },
-
-          job_sys: {
-          de:'Systemadministrator Windows Server und Exchange',
-          en: 'Administrator Windows'
-          },
-
-          job_freib:{
-          de: 'Freiberuflicher IT Spezialist',
-              en: 'Freelancer'
-          },
-
-          an: {
-          de: 'Autobahndirektion Nordbayern',
-          en: 'Railroad public services'
-          },
-
-          h_studium: {
-          de: 'Studium Diplom - Verwaltungsinformatik',
-          en: 'Bachelor IT'
-          }
-      }
-
-
-  for (schluessel in werte) {
-  		if (werte[schluessel]['de']){
-  			sprache='de'
-          
-  		}
-  		else
-  		{
-  		sprache='en'
-  		}
-  		document.body.innerHTML = document.body.innerHTML.replace('{{ ' + schluessel + ' }}', werte[schluessel][sprache])
-  //        console.log(schluessel + ' ' + werte[schluessel]['en']);
-          console.log(schluessel + ' ' + werte[schluessel][sprache]);
-
-          // console.log(schluessel);
-         
-  }
-  }
+  <script src="../js.js"></script>
 </head>
 <body>
-<p><strong>{{ name }}</strong><br />
+<p> <br />
+<strong>{{ name }}</strong><br />
 {{ adresse }}<br />
+ <br />
  </p>
 <p><strong>Technische Hochschule Ingolstadt</strong><br />
 Esplanade 10<br />
-85049 Ingolstadt</p>
-<ol start="7" type="1">
-<li>Juli 2020<br />
- </li>
-</ol>
-<p><strong>Bewerbung als Laboringenieur (m/w/d) zur Betreuung der dezentralen IV-Systeme der Fakultät Informatik</strong><br />
+85049 Ingolstadt<br />
+ <br />
+ </p>
+<p>                               7. Juli 2020<br />
+ <br />
+ </p>
+<p><strong>Bewerbung als Laboringenieur zur Betreuung der dezentralen IV-Systeme</strong><br />
  </p>
 <p>Sehr geehrte Damen und Herren,</p>
 <p> <br />
-mit folgender Qualifikation möchte ich mich auf obige Stelle bewerben:</p>
+mit folgender Qualifikation möchte ich mich auf obige Stelle bewerben:<br />
+ </p>
 <ul>
 <li><p>Aktive und eigenverantwortliche Arbeitsweise als Sachbereichsleiter IT in ungekündigter Stellung</p></li>
 <li><p>Erfahrung in der IT-Systembetreuung und Systemadministration von PCs, Servern und LANs: Umstellung einer Dienststelle auf Windows 10</p></li>
 <li><p>Freundliches Wesen im Umgang mit Kollegen und Firmen</p></li>
 <li><p>Abgeschlossenes {{ h_studium }}</p></li>
-<li><p>Kenntnisse im Umgang mit Windows, Linux und macOS: Aktuell {{ job_sys }} bei der {{ an }} und {{ job_freib }}    </p></li>
+<li><p>Kenntnisse im Umgang mit Windows, Linux und macOS: Aktuell {{ job_sys }} bei der {{ an }} und {{ job_freib }}</p></li>
 </ul>
+<p> </p>
 <p>Ich möchte mich beruflich verändern, und nicht Teil der neu gegründeten Autobahn GmbH mit der starren Zentralisierung werden.<br />
  </p>
 <p>Ich würde mich freuen, von Ihnen bald zu hören.<br />
