@@ -1,147 +1,107 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
-  <title>TK Anschreiben</title>
-  <style type="text/css">code{white-space: pre;}</style>
-  <style type="text/css">
-  /*
-   * CSS for making a resume with pandoc. Inspired by moderncv.
-   */
-  
-  /* Whole document */
-  body {
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      max-width: 800px;
-      margin: auto;
-      background: #FFFFFF;
-      padding: 10px 10px 10px 10px;
-  }
-  
-  /* Title of the resume */
-  h1 {
-      font-size: 55px;
-      color: #757575;
-      text-align:center;
-      margin-bottom:15px;
-  }
-  
-  /* Titles of categories */
-  h2 {
-      /* This is called "sectioncolor" in the ConTeXt stylesheet. */
-      color: #397249;
-  }
-  /* There is a bar just before each category */
-  h2:before {
-      content: "";
-      display: inline-block;
-      margin-right:1%;
-      width: 16%;
-      height: 10px;
-      /* This is called "rulecolor" in the ConTeXt stylesheet. */
-      background-color: #9CB770;
-  }
-  
-  /* Definitions */
-  dt {
-      float: left;
-      clear: left;
-      width: 17%;
-      font-weight: bold;
-  }
-  dd {
-      margin-left: 17%;
-      margin-bottom:7px;
-  }
-  p {
-      margin-top:0;
-      margin-bottom:7px;
-  }
-  
-  /* Blockquotes */
-  blockquote {
-      text-align: center
-  }
-  
-  /* Links */
-  a {
-      text-decoration: none;
-      color: #397249;
-  }
-  a:hover, a:active {
-      background-color: #397249;
-      color: #FFFFFF;
-      text-decoration: none;
-      text-shadow: 1px 1px 1px #333;
-  }
-  
-  /* Horizontal separators */
-  hr {
-      color: #A6A6A6;
-  }
-  
-  table {
-      width: 100%;
-  }
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Anschreiben</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
   </style>
-  <script>
-  
-  window.onload = function(){
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+      window.onload = function(){
       var geburtstag = Date.parse("1978-10-02")
       var alter = Date.now() - geburtstag
       var msProJahr = 31536000000
       var alter = Math.floor(alter / msProJahr);
-  
+
       werte = {
-          alter: alter,
-          name: 'Timo Körner',
-          adresse: 'Bergstr. 15, 85120 Hepberg',
-  
-          job_titel: 'Technischer Oberinspektor',
-          job_sys: 'Systemadministrator für Windows Server und Exchange',
-          job_freib:'Freiberuflicher IT Spezialist',
-  
-          an: 'Autobahndirektion Nordbayern',
-          h_studium: 'Studium Diplom - Verwaltungsinformatik',
-  
-          gith:'https://github.com/tik9'
+          alter: {
+          en: alter,
+          },
+
+          name: {
+          en: 'Timo Körner'},
+
+          adresse:{
+          en: 'Bergstr. 15, 85120 Hepberg'},
+
+          job_titel: {
+          de: 'Technischer Oberinspektor',
+          'en' : 'IT expert',
+          },
+
+          job_sys: {
+          de:'Systemadministrator Windows Server und Exchange',
+          en: 'Administrator Windows'
+          },
+
+          job_freib:{
+          de: 'Freiberuflicher IT Spezialist',
+              en: 'Freelancer'
+          },
+
+          an: {
+          de: 'Autobahndirektion Nordbayern',
+          en: 'Railroad public services'
+          },
+
+          h_studium: {
+          de: 'Studium Diplom - Verwaltungsinformatik',
+          en: 'Bachelor IT'
+          }
       }
-  for (schluessel in werte){
-      document.body.innerHTML = document.body.innerHTML.replace('{{ '+ schluessel +' }}', werte[schluessel])
+
+
+  for (schluessel in werte) {
+  		if (werte[schluessel]['de']){
+  			sprache='de'
+          
+  		}
+  		else
+  		{
+  		sprache='en'
+  		}
+  		document.body.innerHTML = document.body.innerHTML.replace('{{ ' + schluessel + ' }}', werte[schluessel][sprache])
+  //        console.log(schluessel + ' ' + werte[schluessel]['en']);
+          console.log(schluessel + ' ' + werte[schluessel][sprache]);
+
+          // console.log(schluessel);
+         
   }
-  
   }
-  </script>
 </head>
 <body>
 <p><strong>{{ name }}</strong><br />
 {{ adresse }}<br />
- <br />
- <br />
-<strong>Epos Cat</strong><br />
-85049 Ingolstadt<br />
-bewerbung@epos-cat.de<br />
-   </p>
-<ol style="list-style-type: decimal">
+ </p>
+<p><strong>Technische Hochschule Ingolstadt</strong><br />
+Esplanade 10<br />
+85049 Ingolstadt</p>
+<ol start="7" type="1">
 <li>Juli 2020<br />
  </li>
 </ol>
-<p><strong>Bewerbung als Projektleiter IT</strong><br />
+<p><strong>Bewerbung als Laboringenieur (m/w/d) zur Betreuung der dezentralen IV-Systeme der Fakultät Informatik</strong><br />
  </p>
 <p>Sehr geehrte Damen und Herren,</p>
 <p> <br />
 mit folgender Qualifikation möchte ich mich auf obige Stelle bewerben:</p>
 <ul>
-<li>Aktive und eigenverantwortliche Arbeitsweise als Sachbereichsleiter IT in ungekündigter Stellung</li>
-<li>Erfahrung im Projektmanagement: Umstellung einer Dienststelle auf Windows 10</li>
-<li>Freundliches Wesen im Umgang mit Kollegen und Firmen</li>
-<li>Proaktive Persönlichkeit</li>
-<li>Abgeschlossenes {{ h_studium }}</li>
-<li>Langjährige Berufserfahrung: Aktuell {{ job_sys }} bei der {{ an }} und {{ job_freib }}    </li>
+<li><p>Aktive und eigenverantwortliche Arbeitsweise als Sachbereichsleiter IT in ungekündigter Stellung</p></li>
+<li><p>Erfahrung in der IT-Systembetreuung und Systemadministration von PCs, Servern und LANs: Umstellung einer Dienststelle auf Windows 10</p></li>
+<li><p>Freundliches Wesen im Umgang mit Kollegen und Firmen</p></li>
+<li><p>Abgeschlossenes {{ h_studium }}</p></li>
+<li><p>Kenntnisse im Umgang mit Windows, Linux und macOS: Aktuell {{ job_sys }} bei der {{ an }} und {{ job_freib }}    </p></li>
 </ul>
-<p>Ich möchte mich beruflich verändern und weg von der starrren Struktur im öffentlichen Dienst.<br />
+<p>Ich möchte mich beruflich verändern, und nicht Teil der neu gegründeten Autobahn GmbH mit der starren Zentralisierung werden.<br />
  </p>
 <p>Ich würde mich freuen, von Ihnen bald zu hören.<br />
  </p>

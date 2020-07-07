@@ -1,5 +1,3 @@
-<script>
-
     window.onload = function(){
     var geburtstag = Date.parse("1978-10-02")
     var alter = Date.now() - geburtstag
@@ -12,7 +10,7 @@
         },
 
         name: {
-        en: 'Timo Körner'},
+        en: 'Timo KÃ¶rner'},
 
         adresse:{
         en: 'Bergstr. 15, 85120 Hepberg'},
@@ -23,19 +21,19 @@
         },
 
         job_sys: {
-        de:'Systemadministrator für Windows Server und Exchange',
-        en: Administrator Windows
+        de:'Systemadministrator Windows Server und Exchange',
+        en: 'Administrator Windows'
         },
 
         job_freib:{
         de: 'Freiberuflicher IT Spezialist',
-            en: Freelancer
+            en: 'Freelancer'
         },
 
         an: {
         de: 'Autobahndirektion Nordbayern',
-        en: 'Railway public services'
-        }
+        en: 'Railroad public services'
+        },
 
         h_studium: {
         de: 'Studium Diplom - Verwaltungsinformatik',
@@ -61,4 +59,3 @@ for (schluessel in werte) {
        
 }
 }
-</script>
