@@ -25,7 +25,7 @@ Esplanade 10
 Sehr geehrte Damen und Herren,
 
 &nbsp;   
-mit folgender Qualifikation möchte ich mich auf obige Stelle bewerben:  
+mit folgender Qualifikation möchte ich mich auf die interessante obige Stelle bewerben:  
 &nbsp;
 
 - Aktive und eigenverantwortliche Arbeitsweise als Sachbereichsleiter IT in ungekündigter Stellung

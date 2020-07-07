@@ -26,8 +26,8 @@
         },
 
         job_freib:{
-        de: 'Freiberuflicher IT Spezialist',
-            en: 'Freelancer'
+        de: 'Freelancer'
+        
         },
 
         an: {
@@ -51,7 +51,7 @@ for (schluessel in werte) {
 		{
 			sprache='en'
 		}
-		sprache='en'
+		//sprache='en'
 		
 		document.body.innerHTML = document.body.innerHTML.replace('{{ ' + schluessel + ' }}', werte[schluessel][sprache])
 //        console.log(schluessel + ' ' + werte[schluessel]['en']);
