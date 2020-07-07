@@ -49,8 +49,10 @@ for (schluessel in werte) {
 		}
 		else
 		{
-		sprache='en'
+			sprache='en'
 		}
+		sprache='en'
+		
 		document.body.innerHTML = document.body.innerHTML.replace('{{ ' + schluessel + ' }}', werte[schluessel][sprache])
 //        console.log(schluessel + ' ' + werte[schluessel]['en']);
         console.log(schluessel + ' ' + werte[schluessel][sprache]);

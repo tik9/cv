@@ -1,4 +1,9 @@
-% {{ name }}
+---
+header-includes: <script src="../js.js"></script> <link rel="stylesheet" href="../style.css">
+---
+
+
+{{ name }}
 ----
 
  IT Consultant
@@ -11,7 +16,7 @@ Working Experience
 
 2015 - today
 :   *{{ job_titel }} -  [{{ an }}](http://www.abdnb.bayern.de/)*
-    (Nürnberg, Germany).
+    (Nuernberg, Germany).
 
     {{ job_sys }}.
     Responsible for 100 Users and Clients including VMs. Active Directory and group policy support, software deployment. Exchange Server Administration, Setting of File Server Permissions.
@@ -45,7 +50,7 @@ Education
 
 ----
 
-> • {{ alter }} years old\
+> {{ alter }} years old\
 > {{ adresse }}\
 > \
 > [pdf german](https://tik9.github.io/cv/output/cv.pdf)

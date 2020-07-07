@@ -1,3 +1,8 @@
+---
+header-includes: <script src="../js.js"></script> <link rel="stylesheet" href="../style.css">
+---
+
+
 % {{ name }}
 ----
 
