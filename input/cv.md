@@ -1,5 +1,14 @@
 ---
 header-includes: <script src="../js.js"></script> <link rel="stylesheet" href="../style.css">
+
+author:
+- Timo
+
+title:
+- CV Timo Körner
+
+date:
+- Juli 2020
 ---
 
 
