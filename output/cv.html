@@ -1,125 +1,27 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
-  <title>TK</title>
-  <style type="text/css">code{white-space: pre;}</style>
-  <style type="text/css">
-  /*
-   * CSS for making a resume with pandoc. Inspired by moderncv.
-   */
-  
-  /* Whole document */
-  body {
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      max-width: 800px;
-      margin: auto;
-      background: #FFFFFF;
-      padding: 10px 10px 10px 10px;
-  }
-  
-  /* Title of the resume */
-  h1 {
-      font-size: 55px;
-      color: #757575;
-      text-align:center;
-      margin-bottom:15px;
-  }
-  
-  /* Titles of categories */
-  h2 {
-      /* This is called "sectioncolor" in the ConTeXt stylesheet. */
-      color: #397249;
-  }
-  /* There is a bar just before each category */
-  h2:before {
-      content: "";
-      display: inline-block;
-      margin-right:1%;
-      width: 16%;
-      height: 10px;
-      /* This is called "rulecolor" in the ConTeXt stylesheet. */
-      background-color: #9CB770;
-  }
-  
-  /* Definitions */
-  dt {
-      float: left;
-      clear: left;
-      width: 17%;
-      font-weight: bold;
-  }
-  dd {
-      margin-left: 17%;
-      margin-bottom:7px;
-  }
-  p {
-      margin-top:0;
-      margin-bottom:7px;
-  }
-  
-  /* Blockquotes */
-  blockquote {
-      text-align: center
-  }
-  
-  /* Links */
-  a {
-      text-decoration: none;
-      color: #397249;
-  }
-  a:hover, a:active {
-      background-color: #397249;
-      color: #FFFFFF;
-      text-decoration: none;
-      text-shadow: 1px 1px 1px #333;
-  }
-  
-  /* Horizontal separators */
-  hr {
-      color: #A6A6A6;
-  }
-  
-  table {
-      width: 100%;
-  }
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>cv</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
-  <script>
-  
-  window.onload = function(){
-      var geburtstag = Date.parse("1978-10-02")
-      var alter = Date.now() - geburtstag
-      var msProJahr = 31536000000
-      var alter = Math.floor(alter / msProJahr);
-  
-      werte = {
-          alter: alter,
-          name: 'Timo Körner',
-          adresse: 'Bergstr. 15, 85120 Hepberg',
-  
-          job_titel: 'Technischer Oberinspektor',
-          job_sys: 'Systemadministrator für Windows Server und Exchange',
-          job_freib:'Freiberuflicher IT Spezialist',
-  
-          an: 'Autobahndirektion Nordbayern',
-          h_studium: 'Studium Diplom - Verwaltungsinformatik',
-  
-          gith:'https://github.com/tik9'
-      }
-  for (schluessel in werte){
-      document.body.innerHTML = document.body.innerHTML.replace('{{ '+ schluessel +' }}', werte[schluessel])
-  }
-  
-  }
-  </script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <script src="../js.js"></script>
+  <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-<div id="header">
-<h1 class="title">{{ name }}</h1>
-</div>
-<hr />
+<h1 id="name">{{ name }}</h1>
 <dl>
 <dt>IT Fachmann</dt>
 <dd>Software Spezialist aus Hepberg.
@@ -130,36 +32,39 @@
 <dl>
 <dt>2015 - heute</dt>
 <dd><p><em>{{ job_titel }} - <a href="http://www.abdnb.bayern.de/">{{ an }}</a></em> (Nürnberg).</p>
-<p>{{ job_sys }}. Verantwortlich für ca. 100 Benutzer und Endgeräte / VMs. Einschließlich MS Active Directory Betreuung, Gruppenrichtlinienpflege und Softwareverteilung. Migration des Dateiservers von der alten auf die neue Umgebung. Auflisten der Vererbungsunterbrechungen mit Powershell.</p>
+<p>{{ job_sys }}. Verantwortlich für ca. 100 Benutzer / VMs. Einschließlich MS Active Directory Betreuung, Gruppenrichtlinienpflege und Softwareverteilung. Migration des Dateiservers von der alten auf die neue Umgebung. Auflisten der Vererbungsunterbrechungen mit Powershell.</p>
 </dd>
 <dt>2005 - 2015</dt>
 <dd><em>{{ job_freib }}</em> (Hepberg).
 </dd>
 </dl>
-<p>PHP, Mysql und Javascript Entwickler für unterschiedliche Kunden.</p>
-<h2 id="open-source-beiträge">Open Source Beiträge</h2>
+<p>PHP, Mysql und Javascript Entwickler.</p>
+<h2 id="open-source">Open Source</h2>
 <dl>
 <dt>Verschiedenes</dt>
-<dd>Erfahrung mit Bash, Markdown und Zsh. Siehe <a href="https://github.com/tik9">github</a> und <a href="https://stackoverflow.com/users/1705829/timo">Stackoverflow</a>.
+<dd>Erfahrung mit Bash, Git, Markdown, Powershell und Zsh Shell.<br />
+<a href="https://github.com/tik9">github</a><br />
+<a href="https://stackoverflow.com/users/1705829/timo">Stackoverflow</a>
 </dd>
 </dl>
 <h2 id="ausbildung">Ausbildung</h2>
 <dl>
-<dt>2015-2018</dt>
-<dd><p><em>{{ h_studium }} (<a href="https://www.verwaltungsinformatiker.de">Studienwebsite</a>)</em> (Hof).</p>
+<dt>2015 - 2018</dt>
+<dd><p><em>{{ h_studium }}, <a href="https://www.verwaltungsinformatiker.de">Studienwebsite</a></em> (Hof).</p>
 <p>Vergleichbar mit einem Informatik Bachelor an einer Hochschule. Kurse fanden zum Teil mit Informatik Studenten der Hochschule Hof statt.</p>
 </dd>
-<dt>1999-2005</dt>
+<dt>1999 - 2005</dt>
 <dd><p><em>BWL - Studium</em> (Bamberg).</p>
-<p>Eine große bayrische Universität (<a href="https://www.uni-bamberg.de">Studienwebsite</a>) mit einem umfangreichen Studien- und Sprachangebot, das ich nutzte.</p>
+<p>Eine bayrische Universität (<a href="https://www.uni-bamberg.de">Website</a>) mit einem umfangreichen Studien- und Sprachangebot, das ich nutzte.</p>
 </dd>
 </dl>
 <hr />
 <blockquote>
-<p><a href="mailto:user153015@gmail.com">user153015@gmail.com</a> • +49 (0)1573 9598 220 • {{ alter }} Jahre alt<br />
-{{ adresse }}<br />
+<p>{{ alter }} Jahre alt<br />
 <br />
-<a href="https://tik9.github.io/cv/output/cv.pdf">pdf version</a> • <a href="https://tik9.github.io/cv/output/cv.html">html version</a></p>
+<a href="https://tik9.github.io/cv/output/cv.pdf">pdf</a><br />
+<a href="https://tik9.github.io/cv/output/cv_en.pdf">pdf Englisch</a><br />
+<a href="https://tik9.github.io/cv/output/cv_en.html">html Englisch</a></p>
 </blockquote>
 </body>
 </html>

@@ -1,22 +1,13 @@
 
 ---
 header-includes: <script src="../js.js"></script> <link rel="stylesheet" href="../style.css">
-
-author:
-- Timo
-
-title:
-- CV Timo Körner
-
-date:
-- Juli 2020
 ---
 
 
-% {{ name }}
-----
+# {{ name }}
 
- IT Fachmann
+
+IT Fachmann
 :   Software Spezialist aus Hepberg.
 
 ---------------------------------
@@ -39,7 +30,7 @@ Berufserfahrung
 Open Source
 --------------------
 Verschiedenes
-:   Erfahrung mit Bash, Git Markdown und Zsh Shell.  
+:   Erfahrung mit Bash, Git, Markdown, Powershell und Zsh Shell.  
     [github](https://github.com/tik9)  
     [Stackoverflow](https://stackoverflow.com/users/1705829/timo)
 
@@ -47,7 +38,7 @@ Ausbildung
 ----------
 
 2015 - 2018
-:   *{{ h_studium }},[Studienwebsite](https://www.verwaltungsinformatiker.de)*
+:   *{{ h_studium }}, [Studienwebsite](https://www.verwaltungsinformatiker.de)*
     (Hof).
 
     Vergleichbar mit einem Informatik Bachelor an einer Hochschule. Kurse fanden zum Teil mit Informatik Studenten der Hochschule Hof statt.
@@ -60,6 +51,7 @@ Ausbildung
 ----
 
 > {{ alter }} Jahre alt\
-> {{ adresse }}\
 > \
+> [pdf](https://tik9.github.io/cv/output/cv.pdf)  
 > [pdf Englisch](https://tik9.github.io/cv/output/cv_en.pdf)   
+> [html Englisch](https://tik9.github.io/cv/output/cv_en.html)
