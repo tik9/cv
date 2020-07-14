@@ -1,15 +1,13 @@
 
 ---
-header-includes: <script src="../js.js"></script> <link rel="stylesheet" href="../style.css">
+header-includes: <script src="../js.js" id= sprache data-name="en"></script> <link rel="stylesheet" href="../style.css">
 
+title: Timo Körner CV
 ---
 
 
-# {{ name }}
-
-
  IT Consultant
-:   Software Specialist from Germany.
+:   {{ job_frei }}
 
 ---------------------------------
 
@@ -18,21 +16,20 @@ Working Experience
 
 2015 - today
 :   *{{ job_titel }} -  [{{ an }}](http://www.abdnb.bayern.de/)*
-    (Nuernberg, Germany).
+    (Nuernberg, Germany)
 
     {{ job_sys }}.
     Responsible for 100 Users and Clients including VMs. Active Directory and group policy support, software deployment. Exchange Server Administration, Setting of File Server Permissions.
 
 2005 - 2015
-:   *{{ job_freib }}*
-    (Germany).
-
-   PHP, Mysql and Javascript development.
+:   *{{ job_frei }}*
+    (Germany)  
+    {{ erfahrung }}
 
 Open Source Commitment
 --------------------
 Experiences
-:   Bash, Git, Markdown, Powershell, Sed and Zsh Shell  
+:     
     [github](https://github.com/tik9)  
     [Stackoverflow](https://stackoverflow.com/users/1705829/timo)
 

@@ -1,12 +1,127 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Test</title>
-	<script src=js.js></script>
+    <title>TK</title>
+	
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <!-- <script src="https://cdn.tiny.cloud/1/eh0ungvfukjyyzr0gpetf8v1wi1hoswfonuueub06klirvs3/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script> -->
+
+<script src="tinymce.min.js"></script>
+
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> -->
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> -->
+<!-- <script src=js.js id=sprache data-name=en></script> -->
+
+<script>
+//api tiny cloud
+//eh0ungvfukjyyzr0gpetf8v1wi1hoswfonuueub06klirvs3
+  tinymce.init({
+        selector: 'textarea',
+		 readonly : 1,
+		  height : "280"
+      });
+</script>
+
 </head>
 <body>
-Test
-{{ name }}
+
+<div class="jumbotron text-center">
+  <h1>Timo Körner</h1>
+  <p>Windows Admin</p>
+
+</div>
+  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>About</h3>
+      <p>I am a Freelancer</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Interests</h3>
+      <p>Bash, Git and Javascript</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Links</h3> 
+<ul>	  
+      <li><a href='{{ gh }}' >github</a></li>
+<li><a href='{{ stack }}' >Stackoverflow</a></li>
+<li><a href=output/cv_en.html>CV</a></li>
+</ul>   
+   </div>
+  </div>
+
+<h4>Blog</h4>  
+  <h6>July 2020 </h6>
+<h5>Copy folders and files from one server to another with <code>Robocopy</code> and <code>Powershell</code></h5>
+
+<code>kopie.cmd</code>:
+
+<textarea class="code">
+<pre>
+SET vQuelle="\\sv-n2v\cifs_data$\data"
+SET vZiel="D:\DATA\"
+SET vDateien="*.*"
+SET vLogfile="D:\ADMIN\log\Logfile-%DATE%.txt"
+SET vKopierparameter=/E /MIR /COPY:DATSO /R:0 /W:0 /NP /NFL /LOG:%vLogFile% /mt:16
+
+ROBOCOPY %vQuelle% %vZiel% %vDateien% %vKopierparameter% 
+ATTRIB -r -h -s %vZiel%
+</pre>
+</textarea>
+
+<p>The next steps:</p>
+<ol>
+<li>Close the source</li>
+<li>Backup pointing to the destination</li>
+<li>Links to the destination via group policies or dfs</li>
+</ol>
+
+<p><code>Troubleshooting Powershell</code> to gain more priviledges:</p>
+<textarea>
+<pre>
+PS C:\> Get-Privileges
+PS C:\> Enable-Privilege
+PS C:\> Get-Privileges
+</pre>
+</textarea>
+
+<p>Use <a href=https://github.com/raandree/NTFSSecurity>NTFSAccess Plugin </a> for Powershell to remove unwanted groups like <code>administrators</code>:</p>
+
+<textarea>
+<pre>
+$alle_objekte = Get-ChildItem2 $alle_objekte -Recurse -Directory
+foreach ($Ordner in $alle_objekte) {
+    $hash = @{
+        'Ordner' = $Ordner.FullName
+    }
+    $Rechte_objekt = $Ordner.GetAccessControl().access
+     if ($Rechte_objekt.isinherited -contains $false) {
+        # $Rechte_objekt = $Rechte_objekt.Where( { $_.isinherited -eq $false })
+
+        foreach ($acl in $Rechte_objekt) {
+
+            $gruppe = $acl.IdentityReference
+            if ($blacklist -contains $gruppe) {
+
+                $hash.Gruppe = $gruppe
+                $Report.Add([pscustomobject]$hash) | Out-Null
+                
+                Get-NTFSAccess -Path $Ordner.FullName -Account $gruppe
+                #  | Remove-NTFSAccess -PassThru
+
+            }
+        }   
+     }
+}
+</pre>
+</textarea>
+</div>
+
 </body>
 </html>

@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>cv</title>
+  <title>Timo Körner Lebenslauf</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -17,11 +17,14 @@
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
-  <script src="../js.js"></script>
+  <script> obj1 = "value"</script>
+  <script id= sprache data-name="de" src="../js.js"></script>
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-<h1 id="name">{{ name }}</h1>
+<header id="title-block-header">
+<h1 class="title">Timo Körner Lebenslauf</h1>
+</header>
 <dl>
 <dt>IT Fachmann</dt>
 <dd>Software Spezialist aus Hepberg.
@@ -31,19 +34,18 @@
 <h2 id="berufserfahrung">Berufserfahrung</h2>
 <dl>
 <dt>2015 - heute</dt>
-<dd><p><em>{{ job_titel }} - <a href="http://www.abdnb.bayern.de/">{{ an }}</a></em> (Nürnberg).</p>
+<dd><p><em>{{ job_titel }} - <a href="http://www.abdnb.bayern.de/">{{ an }}</a></em> (Nürnberg)</p>
 <p>{{ job_sys }}. Verantwortlich für ca. 100 Benutzer / VMs. Einschließlich MS Active Directory Betreuung, Gruppenrichtlinienpflege und Softwareverteilung. Migration des Dateiservers von der alten auf die neue Umgebung. Auflisten der Vererbungsunterbrechungen mit Powershell.</p>
 </dd>
 <dt>2005 - 2015</dt>
-<dd><em>{{ job_freib }}</em> (Hepberg).
+<dd><em>{{ job_freib }}</em> (Hepberg)<br />
+{{ erfahrung }}
 </dd>
 </dl>
-<p>PHP, Mysql und Javascript Entwickler.</p>
 <h2 id="open-source">Open Source</h2>
 <dl>
 <dt>Verschiedenes</dt>
-<dd>Erfahrung mit Bash, Git, Markdown, Powershell und Zsh Shell.<br />
-<a href="https://github.com/tik9">github</a><br />
+<dd><a href="%7B%7B%20gh%20%7D%7D">github</a><br />
 <a href="https://stackoverflow.com/users/1705829/timo">Stackoverflow</a>
 </dd>
 </dl>

@@ -1,14 +1,12 @@
 
 ---
-header-includes: <script src="../js.js"></script> <link rel="stylesheet" href="../style.css">
+header-includes: <script> obj1 = "value"</script><script id= sprache data-name="de" src="../js.js"></script> <link rel="stylesheet" href="../style.css">
+title: Timo Körner Lebenslauf
 ---
 
 
-# {{ name }}
-
-
 IT Fachmann
-:   Software Spezialist aus Hepberg.
+:   {{ job_sys }}
 
 ---------------------------------
 
@@ -17,20 +15,19 @@ Berufserfahrung
 
 2015 - heute
 :   *{{ job_titel }} -  [{{ an }}](http://www.abdnb.bayern.de/)*
-    (Nürnberg).
+    (Nürnberg)
 
     {{ job_sys }}. Verantwortlich für ca. 100 Benutzer / VMs. Einschließlich MS Active Directory Betreuung, Gruppenrichtlinienpflege und Softwareverteilung. Migration des Dateiservers von der alten auf die neue Umgebung. Auflisten der Vererbungsunterbrechungen mit Powershell.
 
 2005 - 2015
-:   *{{ job_freib }}*
-    (Hepberg).
-
-   PHP, Mysql und Javascript Entwickler.
+:   *{{ job_frei }}*
+    (Hepberg)  
+     {{ erfahrung }}
 
 Open Source
 --------------------
 Verschiedenes
-:   Erfahrung mit Bash, Git, Markdown, Powershell und Zsh Shell.  
+:     
     [github](https://github.com/tik9)  
     [Stackoverflow](https://stackoverflow.com/users/1705829/timo)
 
@@ -52,6 +49,7 @@ Ausbildung
 
 > {{ alter }} Jahre alt\
 > \
-> [pdf](https://tik9.github.io/cv/output/cv.pdf)  
-> [pdf Englisch](https://tik9.github.io/cv/output/cv_en.pdf)   
-> [html Englisch](https://tik9.github.io/cv/output/cv_en.html)
+[Blog](../index.html)
+> [pdf](cv.pdf)  
+> [pdf Englisch](cv_en.pdf)   
+> [html Englisch](cv_en.html)

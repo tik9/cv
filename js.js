@@ -5,29 +5,12 @@
     var alter = Math.floor(alter / msProJahr);
 
     werte = {
-        alter: {
-        en: alter,
-        },
-
-        name: {
-        en: 'Timo Körner'},
 
         adresse:{
         en: 'Bergstr. 15, 85120 Hepberg'},
-
-        job_titel: {
-        de: 'Technischer Oberinspektor',
-        'en' : 'IT expert',
-        },
-
-        job_sys: {
-        de:'Systemadministrator Windows Server und Exchange',
-        en: 'Administrator Windows'
-        },
-
-        job_freib:{
-        en: 'Freelancer'
-        
+		
+        alter: {
+        en: alter,
         },
 
         an: {
@@ -35,25 +18,59 @@
         en: 'Railroad public services'
         },
 
+		erfahrung: {
+		en: 'Bash, Git, Mysql, Powershell, Python, Sed, Zsh'	
+		},
+		
         h_studium: {
         de: 'Studium Diplom - Verwaltungsinformatik',
         en: 'Bachelor IT'
-        }
+        },
+		
+        job_titel: {
+        de: 'Technischer Oberinspektor',
+        'en' : 'IT expert',
+        },
+
+        job_sys: {
+        en: 'Administrator Windows'
+        },
+
+        job_frei:{
+        en: 'Freelancer'
+        
+        },
+
+        name: {
+        en: 'Timo Körner'},
     }
 
 
-for (schluessel in werte) {
-		if (werte[schluessel]['de']){
-			sprache='de'
-        
-		}
-		else
-		{
-			sprache='en'
-		}
-	//	sprache='en'
+	links={
+		gh: 'https://github.com/tik9',
+		stack: 'https://stackoverflow.com/users/1705829/timo',
+	}
+	for (link in links) {
+		document.body.innerHTML = document.body.innerHTML.replace('{{ '+link + ' }}', links[link])
+	
+	}
 		
-		document.body.innerHTML = document.body.innerHTML.replace('{{ ' + schluessel + ' }}', werte[schluessel][sprache])
-       
-}
+	
+	//document.body.innerHTML = document.body.innerHTML.replace('{{ ' + schluessel + ' }}', werte[schluessel][sprache])
+	
+	for (schluessel in werte) {
+			if (werte[schluessel]['de']){
+				sprache=document.getElementById('sprache').getAttribute('data-name')
+			
+			}
+			else
+			{
+				sprache='en'
+			}
+		//	sprache='en'
+			//console.log(obj1 + ' -- ' + )
+			
+			document.body.innerHTML = document.body.innerHTML.replace('{{ ' + schluessel + ' }}', werte[schluessel][sprache])
+		   
+	}
 }
