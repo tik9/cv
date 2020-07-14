@@ -1,6 +1,6 @@
 
 ---
-header-includes: <script> obj1 = "value"</script><script id= sprache data-name="de" src="../js.js"></script> <link rel="stylesheet" href="../style.css">
+header-includes: <script> obj1 = "value"</script><script id= spr data-name="de" src="../js.js"></script> <link rel="stylesheet" href="../style.css">
 title: Timo Körner Lebenslauf
 ---
 
@@ -17,7 +17,7 @@ Berufserfahrung
 :   *{{ job_titel }} -  [{{ an }}](http://www.abdnb.bayern.de/)*
     (Nürnberg)
 
-    {{ job_sys }}. Verantwortlich für ca. 100 Benutzer / VMs. Einschließlich MS Active Directory Betreuung, Gruppenrichtlinienpflege und Softwareverteilung. Migration des Dateiservers von der alten auf die neue Umgebung. Auflisten der Vererbungsunterbrechungen mit Powershell.
+    Verantwortlich für ca. 100 Benutzer / VMs. Einschließlich MS Active Directory Betreuung, Gruppenrichtlinienpflege und Softwareverteilung. Migration des Dateiservers von der alten auf die neue Umgebung. Auflisten der Vererbungsunterbrechungen mit Powershell.
 
 2005 - 2015
 :   *{{ job_frei }}*
@@ -49,7 +49,7 @@ Ausbildung
 
 > {{ alter }} Jahre alt\
 > \
-[Blog](../index.html)
+[Blog](../index.html)  
 > [pdf](cv.pdf)  
 > [pdf Englisch](cv_en.pdf)   
 > [html Englisch](cv_en.html)

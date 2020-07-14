@@ -26,7 +26,12 @@
 		  height : "280"
       });
 </script>
-
+<style>
+.space {
+  padding-top: 40px;
+  padding-bottom: 30px
+}
+</style>
 </head>
 <body>
 
@@ -49,16 +54,16 @@
     <div class="col-sm-4">
       <h3>Links</h3> 
 <ul>	  
-      <li><a href='{{ gh }}' >github</a></li>
-<li><a href='{{ stack }}' >Stackoverflow</a></li>
+      <li><a href='https://github.com/tik9' >github</a></li>
+<li><a href='https://stackoverflow.com/users/1705829/timo' >Stackoverflow</a></li>
 <li><a href=output/cv_en.html>CV</a></li>
 </ul>   
    </div>
   </div>
 
 <h4>Blog</h4>  
-  <h6>July 2020 </h6>
-<h5>Copy folders and files from one server to another with <code>Robocopy</code> and <code>Powershell</code></h5>
+  <h5>July 2020 </h6>
+<h6 class=space>Copy folders and files from one server to another with <code>Robocopy</code> and <code>Powershell</code></h5>
 
 <code>kopie.cmd</code>:
 
@@ -75,14 +80,14 @@ ATTRIB -r -h -s %vZiel%
 </pre>
 </textarea>
 
-<p>The next steps:</p>
+<div class=space>The next steps:</div>
 <ol>
 <li>Close the source</li>
 <li>Backup pointing to the destination</li>
 <li>Links to the destination via group policies or dfs</li>
 </ol>
 
-<p><code>Troubleshooting Powershell</code> to gain more priviledges:</p>
+<div class=space><code>Troubleshooting Powershell</code> to gain more priviledges:</div>
 <textarea>
 <pre>
 PS C:\> Get-Privileges
@@ -91,7 +96,7 @@ PS C:\> Get-Privileges
 </pre>
 </textarea>
 
-<p>Use <a href=https://github.com/raandree/NTFSSecurity>NTFSAccess Plugin </a> for Powershell to remove unwanted groups like <code>administrators</code>:</p>
+<div class=space>Use <a href=https://github.com/raandree/NTFSSecurity>NTFSAccess Plugin </a> for Powershell to remove unwanted groups like <code>administrators</code>:</div>
 
 <textarea>
 <pre>
@@ -121,6 +126,7 @@ foreach ($Ordner in $alle_objekte) {
 }
 </pre>
 </textarea>
+<div class=space></div>
 </div>
 
 </body>

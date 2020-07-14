@@ -1,6 +1,6 @@
 
 ---
-header-includes: <script src="../js.js" id= sprache data-name="en"></script> <link rel="stylesheet" href="../style.css">
+header-includes: <script src="../js.js" id= spr data-name="en"></script> <link rel="stylesheet" href="../style.css">
 
 title: Timo Körner CV
 ---
@@ -51,6 +51,6 @@ Education
 
 > {{ alter }} years old\
 > \
-> [pdf](https://tik9.github.io/cv/output/cv_en.pdf)  
-[pdf german](https://tik9.github.io/cv/output/cv.pdf)  
-> [html german](https://tik9.github.io/cv/output/cv.html)
+> [pdf](cv_en.pdf)  
+[pdf german](cv.pdf)  
+> [html german](cv.html)

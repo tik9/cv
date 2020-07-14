@@ -51,7 +51,7 @@
 		stack: 'https://stackoverflow.com/users/1705829/timo',
 	}
 	for (link in links) {
-		document.body.innerHTML = document.body.innerHTML.replace('{{ '+link + ' }}', links[link])
+		document.body.innerHTML = document.body.innerHTML.replace('[[ '+link + ' ]]', links[link])
 	
 	}
 		
@@ -60,7 +60,7 @@
 	
 	for (schluessel in werte) {
 			if (werte[schluessel]['de']){
-				sprache=document.getElementById('sprache').getAttribute('data-name')
+				sprache=document.getElementById('spr').getAttribute('data-name')
 			
 			}
 			else
