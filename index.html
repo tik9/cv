@@ -6,19 +6,21 @@
     <title>TK</title>
 	
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css">
+	  
   <!-- <script src="https://cdn.tiny.cloud/1/eh0ungvfukjyyzr0gpetf8v1wi1hoswfonuueub06klirvs3/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script> -->
 
 <script src="tinymce.min.js"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> -->
   <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> -->
-<!-- <script src=js.js id=sprache data-name=en></script> -->
-
-<!-- <link rel="stylesheet" href="highlight\src\styles\default.css"> -->
-<!-- <script src="highlight\src\highlight.js" async></script> -->
-
+  
 <script>
 //api tiny cloud
 //eh0ungvfukjyyzr0gpetf8v1wi1hoswfonuueub06klirvs3
@@ -27,7 +29,7 @@
 		 readonly : 1,
 		  height : "280"
       })
-	 // hljs.initHighlightingOnLoad()
+	  hljs.initHighlightingOnLoad()
 
 </script>
 <style>
@@ -74,6 +76,7 @@
 
 <textarea class="code">
 <pre>
+<code class=html>
 SET vQuelle="\\sv-n2v\cifs_data$\data"
 SET vZiel="D:\DATA\"
 SET vDateien="*.*"
@@ -82,22 +85,25 @@ SET vKopierparameter=/E /MIR /COPY:DATSO /R:0 /W:0 /NP /NFL /LOG:%vLogFile% /mt:
 
 ROBOCOPY %vQuelle% %vZiel% %vDateien% %vKopierparameter% 
 ATTRIB -r -h -s %vZiel%
+</code>
 </pre>
 </textarea>
 
 <div class=space>The next steps:</div>
 <ol>
-<li>Close the source</li>
-<li>Backup pointing to the destination</li>
-<li>Links to the destination via group policies or dfs</li>
+<li>Close the source, which means delete all <code>NTFS</code> user rights except admin</li>
+<li>Prepare the Backup of the destination and stop backuping the source</li>
+<li>Make links to the (new) destination share via group policies or dfs</li>
 </ol>
 
 <div class=space><code>Troubleshooting Powershell</code> to gain more priviledges:</div>
 <textarea>
 <pre>
+<code class=powershell>
 PS C:\> Get-Privileges
 PS C:\> Enable-Privilege
 PS C:\> Get-Privileges
+</code>
 </pre>
 </textarea>
 
@@ -105,6 +111,7 @@ PS C:\> Get-Privileges
 
 <textarea>
 <pre>
+<code class=powershell>
 $alle_objekte = Get-ChildItem2 $alle_objekte -Recurse -Directory
 foreach ($Ordner in $alle_objekte) {
     $hash = @{
@@ -112,10 +119,9 @@ foreach ($Ordner in $alle_objekte) {
     }
     $Rechte_objekt = $Ordner.GetAccessControl().access
      if ($Rechte_objekt.isinherited -contains $false) {
-        # $Rechte_objekt = $Rechte_objekt.Where( { $_.isinherited -eq $false })
+        $Rechte_objekt = $Rechte_objekt.Where( { $_.isinherited -eq $false })
 
         foreach ($acl in $Rechte_objekt) {
-
             $gruppe = $acl.IdentityReference
             if ($blacklist -contains $gruppe) {
 
@@ -124,34 +130,36 @@ foreach ($Ordner in $alle_objekte) {
                 
                 Get-NTFSAccess -Path $Ordner.FullName -Account $gruppe
                 #  | Remove-NTFSAccess -PassThru
-
             }
         }   
      }
 }
+</code>
 </pre>
 </textarea>
 
 <div class=space></div>
 <div id="disqus_thread"></div>
-<script>
 
+<script>
 /**
- https://disqus.com/admin/universalcode/#configuration-variables*/
-/*
+ https://disqus.com/admin/universalcode/#configuration-variables
+
 var disqus_config = function () {
 this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
 this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
+}
 */
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://tik-2.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
+(function() { 
+	var d = document, s = d.createElement('script')
+	s.src = 'https://tik-2.disqus.com/embed.js'
+	s.setAttribute('data-timestamp', +new Date())
+	(d.head || d.body).appendChild(s)
+}
+)()
 </script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+<!-- <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript> -->
                             
 <div class=space></div>
 </div>

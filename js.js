@@ -68,7 +68,7 @@
 				sprache='en'
 			}
 		//	sprache='en'
-			//console.log(obj1 + ' -- ' + )
+			console.log(werte[schluessel][sprache] )
 			
 			document.body.innerHTML = document.body.innerHTML.replace('{{ ' + schluessel + ' }}', werte[schluessel][sprache])
 		   
