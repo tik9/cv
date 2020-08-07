@@ -1,8 +1,29 @@
     window.onload = function(){
-    var geburtstag = Date.parse("1978-10-02")
-    var alter = Date.now() - geburtstag
-    var msProJahr = 31536000000
-    var alter = Math.floor(alter / msProJahr);
+	
+heute = new Date()
+dd = heute.getDate()
+
+mm = heute.getMonth()+1
+yyyy = heute.getFullYear()
+
+if(dd<10) 
+{
+    dd='0'+dd;
+} 
+
+if(mm<10) 
+{
+    mm='0'+mm;
+} 
+
+heute = dd+'.'+mm+'.'+yyyy
+console.log('heute ' +heute);
+	
+	heute_ms=Date.now()	
+    geburtstag = Date.parse("1978-10-02")
+    alter = heute_ms - geburtstag
+    msProJahr = 31536000000
+    alter = Math.floor(alter / msProJahr);
 
     werte = {
 
@@ -27,7 +48,16 @@
         en: 'Bachelor IT'
         },
 		
-        job_titel: {
+		heute: {
+			en: heute
+		},
+		
+		job_titel:{
+			de: 'IT Mitarbeiter',
+			en: 'IT expert'
+		},
+		
+        toi: {
         de: 'Technischer Oberinspektor',
         'en' : 'IT expert',
         },

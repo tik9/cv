@@ -47,9 +47,11 @@ Ausbildung
 
 ----
 
-> {{ alter }} Jahre alt\
-> \
-[Blog](../index.html)  
+> Hepberg, {{ heute }}  
+  
+> {{ alter }} Jahre alt
+  
+> [Blog](../index.html)  
 > [pdf](cv.pdf)  
 > [pdf Englisch](cv_en.pdf)   
 > [html Englisch](cv_en.html)
