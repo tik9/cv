@@ -36,12 +36,12 @@ Ausbildung
 
 2015 - 2018
 :   *{{ h_studium }}, [Studienwebsite](https://www.verwaltungsinformatiker.de)*
-    (Hof).
+    (Hof)
 
     Vergleichbar mit einem Informatik Bachelor an einer Hochschule. Kurse fanden zum Teil mit Informatik Studenten der Hochschule Hof statt.
 
 1999 - 2005
-:   * {{ b_studium }} * (Bamberg).
+:   *{{ b_studium }}* (Bamberg)
 
     Eine bayrische Universität ([Website](https://www.uni-bamberg.de)) mit einem umfangreichen Studien- und Sprachangebot, das ich nutzte.
 
@@ -49,7 +49,7 @@ Ausbildung
 
 > Hepberg, {{ heute }}  
   
-> {{ alter }} Jahre alt
+> {{ ich_alter }} Jahre alt
   
 > [Blog](../index.html)  
 > [pdf](cv.pdf)  

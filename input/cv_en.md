@@ -19,7 +19,7 @@ Working Experience
     (Nuernberg, Germany)
 
     {{ job_sys }}.
-    Responsible for 100 Users and Clients including VMs. Active Directory and group policy support, software deployment. Exchange Server Administration, Setting of File Server Permissions.
+    Responsible for 100 Users and Clients including VMs. Active Directory and group policy support, software deployment. Exchange Server Administration, Setting of NTFS Permissions, Powershell.
 
 2005 - 2015
 :   *Freelancer*
@@ -49,7 +49,7 @@ Education
 
 ----
 > {{ heute }}  
-> {{ alter }} years old\
+> {{ ich_alter }} years old\
 > [pdf](cv_en.pdf)  
 > [pdf german](cv.pdf)  
 > [html german](cv.html)
