@@ -22,7 +22,7 @@ Working Experience
     Responsible for 100 Users and Clients including VMs. Active Directory and group policy support, software deployment. Exchange Server Administration, Setting of File Server Permissions.
 
 2005 - 2015
-:   *{{ job_frei }}*
+:   *Freelancer*
     (Germany)  
     {{ erfahrung }}
 
@@ -38,19 +38,18 @@ Education
 
 2015 - 2018
 :   *{{ h_studium }} ([Website](https://www.verwaltungsinformatiker.de))*
-    (Hof, Bavaria, Germany).
+    (Hof, Germany)
 
-    Bachelor in IT with focus on the public sector including an introduction to public law. The studies include some month of working in an organisation (comparable to a dual degree).
+    Bachelor in IT with focus on the public sector including public law. The studies include some month of working in an organisation (comparable to a dual degree).
 
 1999 - 2005
-:   *Management - Studies* (Bamberg, Bavaria, Germany).
+:   *{{ b_studium }} [Website](https://www.uni-bamberg.de)* (Bamberg, Germany)
 
-    [Website](https://www.uni-bamberg.de)
+    
 
 ----
-
+> {{ heute }}  
 > {{ alter }} years old\
-> \
 > [pdf](cv_en.pdf)  
-[pdf german](cv.pdf)  
+> [pdf german](cv.pdf)  
 > [html german](cv.html)

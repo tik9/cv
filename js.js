@@ -39,8 +39,14 @@ console.log('heute ' +heute);
         en: 'Railroad public services'
         },
 
+		b_studium: {
+		
+		de: 'BWL - Studium',
+		en: 'Management - Studies'
+		},
+		
 		erfahrung: {
-		en: 'Bash, Git, Mysql, Powershell, Python, Sed, Zsh'	
+		en: 'Git, Javascript, Mysql, Powershell, Python, Zsh'	
 		},
 		
         h_studium: {
@@ -52,9 +58,26 @@ console.log('heute ' +heute);
 			en: heute
 		},
 		
+	    job_frei:{
+        en: 'Freelancer'
+        
+        },
+		
+		job_sys: {
+        en: 'Administrator Windows'
+        },
+
 		job_titel:{
 			de: 'IT Mitarbeiter',
 			en: 'IT expert'
+		},
+		
+        name: {
+        en: 'Timo Körner'},
+
+		ppm: {
+			de: 'Polizeipräsidium Mittelfranken',
+			en: ' Police Department Nürnberg'
 		},
 		
         toi: {
@@ -62,17 +85,6 @@ console.log('heute ' +heute);
         'en' : 'IT expert',
         },
 
-        job_sys: {
-        en: 'Administrator Windows'
-        },
-
-        job_frei:{
-        en: 'Freelancer'
-        
-        },
-
-        name: {
-        en: 'Timo Körner'},
     }
 
 
@@ -82,7 +94,6 @@ console.log('heute ' +heute);
 	}
 	for (link in links) {
 		document.body.innerHTML = document.body.innerHTML.replace('[[ '+link + ' ]]', links[link])
-	
 	}
 		
 	
