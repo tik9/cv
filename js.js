@@ -151,19 +151,22 @@ templates = document.getElementsByClassName("tem")
  // templates.forEach(function (template, ind,obj) {
  Array.prototype.forEach.call(templates, function (template) {
 	for (var schluessel in werte) {
-		if (werte[schluessel]['de']){
-			sprache=document.getElementById('spr').getAttribute('data-name')
+		de=werte[schluessel]['de']
+		spr=werte[schluessel][sprache]
+		if ( de == template.innerHTML || werte[schluessel]['en'] == template.innerHTML){
+			if (de){
+				sprache=document.getElementById('spr').getAttribute('data-name')
+			}
+			else
+			{
+				sprache='en'
+			}
+		console.log(schluessel + ' - ' + werte[schluessel][sprache] + ' - ' + template.innerHTML)
+			
+		template.innerHTML = template.innerHTML.replace('{{ ' + schluessel + ' }}',
+				werte[schluessel][sprache])
+			)
 		}
-		else
-		{
-			sprache='en'
-		}
-	console.log(schluessel + ' ' + werte[schluessel][sprache] + ' ' + template.innerHTML)
-		
-	template.innerHTML = template.innerHTML.replace(
-			new RegExp('{{ ' + schluessel + ' }}', 'g'),
-			(werte[schluessel][sprache])
-		)
 	}
 })
 
