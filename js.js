@@ -30,7 +30,7 @@ elems=['dh','dh2','email','job']
 for (schluessel in ags) {
 	for (subschl in ags[schluessel]) {
 
-	 console.log(ags[schluessel][subschl])
+	 // console.log(ags[schluessel][subschl])
 	document.body.innerHTML = document.body.innerHTML.replace('{{ '+ subschl + ' }}', ags[schluessel][subschl])
 
 	}
@@ -62,6 +62,7 @@ alter = heute_ms - geburtstag
 msProJahr = 31536000000
 alter = Math.floor(alter / msProJahr)
 
+werte= {}
 werte = {
 
 	an: {
@@ -79,9 +80,22 @@ werte = {
 	en: 'Git, Javascript, Mysql, Powershell, Python, Zsh'	
 	},
 	
+	erfahrung_allg: {
+	de: 'Unterstützung der Anwender bei Windows und MS Office Problemen'	
+	},
+	
+	erfahrung_win: {
+	de: 'Verantwortlich im Team für ca. 100 Benutzer. Einschließlich Softwareverteilung, Umstellung von Windows 7 auf Windows 10 und Installation',
+	en: 'Responsible for 100 Users and Clients including VMs. Active Directory and group policy support, software deployment'	
+	},
+	
 	h_studium: {
 	de: 'Studium Diplom - Verwaltungsinformatik',
 	en: 'Bachelor IT'
+	},
+	h_studium_ausf: {
+	de: 'Vergleichbar mit einem Informatik Bachelor an einer Hochschule',
+	en: 'Bachelor in IT with focus on the public sector including public law'
 	},
 	
 	heute: {
@@ -95,6 +109,7 @@ werte = {
 	ich_alter: {
 	en: alter,
 	},
+	
 	ich_name: {
 	en: 'Timo Körner'},
 
@@ -129,26 +144,27 @@ links={
 	gh: 'https://github.com/tik9',
 	stack: 'https://stackoverflow.com/users/1705829/timo',
 }
-for (link in links) {
-	document.body.innerHTML = document.body.innerHTML.replace('[[ '+link + ' ]]', links[link])
-}
+
 	
-
-//document.body.innerHTML = document.body.innerHTML.replace('{{ ' + schluessel + ' }}', werte[schluessel][sprache])
-
-for (schluessel in werte) {
+templates = document.getElementsByClassName("tem")
+ 
+ // templates.forEach(function (template, ind,obj) {
+ Array.prototype.forEach.call(templates, function (template) {
+	for (var schluessel in werte) {
 		if (werte[schluessel]['de']){
 			sprache=document.getElementById('spr').getAttribute('data-name')
-		
 		}
 		else
 		{
 			sprache='en'
 		}
-	//	sprache='en'
-		console.log(werte[schluessel][sprache] )
+	console.log(schluessel + ' ' + werte[schluessel][sprache] + ' ' + template.innerHTML)
 		
-		document.body.innerHTML = document.body.innerHTML.replace('{{ ' + schluessel + ' }}', werte[schluessel][sprache])
-	   
-}
+	template.innerHTML = template.innerHTML.replace(
+			new RegExp('{{ ' + schluessel + ' }}', 'g'),
+			(werte[schluessel][sprache])
+		)
+	}
+})
+
 }

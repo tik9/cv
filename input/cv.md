@@ -2,11 +2,13 @@
 ---
 header-includes: <script> obj1 = "value"</script><script id= spr data-name="de" src="../js.js"></script> <link rel="stylesheet" href="../style.css">
 title: Timo Körner Lebenslauf
+
+vinf: https://www.verwaltungsinformatiker.de
 ---
 
 
 IT Fachmann
-:   {{ job_sys }}
+:   <span class=tem>{{ job_sys }}</span>
 
 ---------------------------------
 
@@ -14,15 +16,15 @@ Berufserfahrung
 --------------------
 
 2015 - heute
-:   *{{ job_titel }} -  [{{ an }}](http://www.abdnb.bayern.de/) und Polizeipräsidium Mittelfranken *
+:   *<span class=tem>{{ job_titel }} -  [{{ an }}](http://www.abdnb.bayern.de/) und {{ ppm }}*
     (Nürnberg)
 
-    Verantwortlich für ca. 100 Benutzer / VMs. Einschließlich MS Active Directory Betreuung, Gruppenrichtlinienpflege und Softwareverteilung. Migration des Dateiservers von der alten auf die neue Umgebung. Auflisten der Vererbungsunterbrechungen mit Powershell.
+    {{ erfahrung_win }}</span>. Migration des Dateiservers von der alten auf die neue Umgebung. Auflisten der Vererbungsunterbrechungen von Ordnern.
 
 2005 - 2015
-:   *{{ job_frei }}*
+:   *<span class=tem>{{ job_frei }}*
     (Hepberg)  
-     {{ erfahrung }}
+     {{ erfahrung_allg }}</span>
 
 Open Source
 --------------------
@@ -35,23 +37,18 @@ Ausbildung
 ----------
 
 2015 - 2018
-:   *{{ h_studium }}, [Studienwebsite](https://www.verwaltungsinformatiker.de)*
+:   *<span class=tem>{{ h_studium }}</span>, [Studienwebsite](https://www.verwaltungsinformatiker.de)*
     (Hof)
 
-    Vergleichbar mit einem Informatik Bachelor an einer Hochschule. Kurse fanden zum Teil mit Informatik Studenten der Hochschule Hof statt.
+    <span class=tem>{{ h_studium_ausf }}</span>. Kurse fanden zum Teil mit Informatik Studenten der Hochschule Hof statt.
 
 1999 - 2005
-:   *{{ b_studium }}* (Bamberg)
+:   *<span class=tem>{{ b_studium }}</span>* (Bamberg)
 
     Eine bayrische Universität ([Website](https://www.uni-bamberg.de)) mit einem umfangreichen Studien- und Sprachangebot, das ich nutzte.
 
 ----
 
-> Hepberg, {{ heute }}  
+> Hepberg, <span class=tem>{{ heute }}  
   
-> {{ ich_alter }} Jahre alt
-  
-> [Blog](../index.html)  
-> [pdf](cv.pdf)  
-> [pdf Englisch](cv_en.pdf)   
-> [html Englisch](cv_en.html)
+> {{ ich_name }}, {{ ich_alter }}</span> Jahre alt

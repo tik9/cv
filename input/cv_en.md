@@ -19,7 +19,7 @@ Working Experience
     (Nuernberg, Germany)
 
     {{ job_sys }}.
-    Responsible for 100 Users and Clients including VMs. Active Directory and group policy support, software deployment. Exchange Server Administration, Setting of NTFS Permissions, Powershell.
+    {{ erfahrung_win }}. Exchange Server Administration, Setting of NTFS Permissions, Powershell.
 
 2005 - 2015
 :   *Freelancer*
@@ -40,7 +40,7 @@ Education
 :   *{{ h_studium }} ([Website](https://www.verwaltungsinformatiker.de))*
     (Hof, Germany)
 
-    Bachelor in IT with focus on the public sector including public law. The studies include some month of working in an organisation (comparable to a dual degree).
+    {{ h_studium_ausf }}. The studies include some month of working in an organisation (comparable to a dual degree).
 
 1999 - 2005
 :   *{{ b_studium }} [Website](https://www.uni-bamberg.de)* (Bamberg, Germany)
