@@ -25,8 +25,6 @@ job:'IT - Professional - Mobile Devices für Eichstätt'
 }
 
 
-elems=['dh','dh2','email','job']
-
 for (schluessel in ags) {
 	for (subschl in ags[schluessel]) {
 
@@ -56,15 +54,13 @@ heute_de = dd + '.' + mm + '.' + yyyy
 heute_en = dd + '/' + mm + '/' + yyyy
 // console.log('heute ' + heute)
 	
-heute_ms=Date.now()	
+heute_ms = Date.now()	
 geburtstag = Date.parse("1978-10-02")
 alter = heute_ms - geburtstag
 msProJahr = 31536000000
 alter = Math.floor(alter / msProJahr)
 
-werte= {}
 werte = {
-
 	an: {
 	de: 'Autobahndirektion Nordbayern',
 	en: 'Railroad public services'
@@ -147,27 +143,31 @@ links={
 
 	
 templates = document.getElementsByClassName("tem")
+
  
  // templates.forEach(function (template, ind,obj) {
  Array.prototype.forEach.call(templates, function (template) {
-	for (var schluessel in werte) {
-		de=werte[schluessel]['de']
-		spr=werte[schluessel][sprache]
-		if ( de == template.innerHTML || werte[schluessel]['en'] == template.innerHTML){
-			if (de){
-				sprache=document.getElementById('spr').getAttribute('data-name')
-			}
-			else
-			{
-				sprache='en'
-			}
-		console.log(schluessel + ' - ' + werte[schluessel][sprache] + ' - ' + template.innerHTML)
-			
-		template.innerHTML = template.innerHTML.replace('{{ ' + schluessel + ' }}',
-				werte[schluessel][sprache])
-			)
-		}
+		
+	//~ debugger
+	
+	innen=template.innerHTML
+	
+	template_ohne=innen.slice(3,-3)
+	wert=werte[template_ohne]
+	
+	de= wert['de']
+	console.log('vor if de '+de)
+	if (de){
+		sprache= document.getElementById('spr').getAttribute('data-name')
+		spr= wert[sprache]
 	}
+	else {
+		en=wert['en']
+		spr=en
+	}
+	console.log(innen + ' -> '+spr)
+	//~ innen = innen.replace(innen, spr)
+	template.innerHTML=innen.replace(innen,spr)
 })
 
 }

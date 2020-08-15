@@ -8,13 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css">
 	  
   <!-- <script src="https://cdn.tiny.cloud/1/eh0ungvfukjyyzr0gpetf8v1wi1hoswfonuueub06klirvs3/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script> -->
   <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+<!--
+<script src=js.js></script>
+-->
+
 <script>
 //api tiny cloud
 //eh0ungvfukjyyzr0gpetf8v1wi1hoswfonuueub06klirvs3
@@ -23,7 +24,6 @@
 		 readonly : 1,
 		  height : "280"
       })
-	  hljs.initHighlightingOnLoad()
 
 </script>
 <style>
@@ -36,8 +36,15 @@
 <body>
 
 <div class="jumbotron text-center">
-  <h1>Timo Körner</h1>
-  <p>Windows Admin</p>
+<!--
+  <h1><span class=tem>{{ ich_name }}</span></h1>
+-->
+<!--
+  <p><span class=tem>{{ job_sys }}</span></p>
+-->
+
+<h1><span class=tem>Timo Körner</span></h1>
+  <p><span class=tem>Administrator Windows</span></p>
 
 </div>
   
@@ -73,12 +80,11 @@
 <code class=html>
 SET vQuelle="\\sv-n2v\cifs_data$\data"
 SET vZiel="D:\DATA\"
-SET vDateien="*.*"
 SET vLogfile="D:\ADMIN\log\Logfile-%DATE%.txt"
 SET vKopierparameter=/E /MIR /COPY:DATSO /R:0 /W:0 /NP /NFL /LOG:%vLogFile% /mt:16
 
-ROBOCOPY %vQuelle% %vZiel% %vDateien% %vKopierparameter% 
-ATTRIB -r -h -s %vZiel%
+ROBOCOPY %vQuelle% %vZiel% %vKopierparameter% 
+
 </code>
 </pre>
 </textarea>
@@ -90,16 +96,6 @@ ATTRIB -r -h -s %vZiel%
 <li>Make links to the (new) destination share via group policies or dfs</li>
 </ol>
 
-<div class=space><code>Troubleshooting Powershell</code> to gain more priviledges:</div>
-<textarea>
-<pre>
-<code class=powershell>
-PS C:\> Get-Privileges
-PS C:\> Enable-Privilege
-PS C:\> Get-Privileges
-</code>
-</pre>
-</textarea>
 
 <div class=space>Use <a href=https://github.com/raandree/NTFSSecurity>NTFSAccess Plugin </a> for Powershell to remove unwanted groups like <code>administrators</code>:</div>
 

@@ -7,7 +7,7 @@ title: Timo Körner CV
 
 
  IT Consultant
-:   {{ job_frei }}
+:   <span class=tem>{{ job_frei }}</span>
 
 ---------------------------------
 
@@ -15,16 +15,16 @@ Working Experience
 --------------------
 
 2015 - today
-:   *{{ job_titel }} -  [{{ an }}](http://www.abdnb.bayern.de/)*
+:   *<span class=tem>{{ job_titel }}</span> -  [<span class=tem>{{ an }}</span>](http://www.abdnb.bayern.de/)*
     (Nuernberg, Germany)
 
-    {{ job_sys }}.
-    {{ erfahrung_win }}. Exchange Server Administration, Setting of NTFS Permissions, Powershell.
+    <span class=tem>{{ job_sys }}</span>.
+    <span class=tem>{{ erfahrung_win }}</span>. Exchange Server Administration, Setting of NTFS Permissions, Powershell.
 
 2005 - 2015
 :   *Freelancer*
     (Germany)  
-    {{ erfahrung }}
+    <span class=tem>{{ erfahrung }}</span>
 
 Open Source Commitment
 --------------------
@@ -37,19 +37,18 @@ Education
 ----------
 
 2015 - 2018
-:   *{{ h_studium }} ([Website](https://www.verwaltungsinformatiker.de))*
+:   *<span class=tem>{{ h_studium }}</span>, [Website](https://www.verwaltungsinformatiker.de)*
     (Hof, Germany)
 
-    {{ h_studium_ausf }}. The studies include some month of working in an organisation (comparable to a dual degree).
+    <span class=tem>{{ h_studium_ausf }}</span>. The studies include some month of working in an organisation (comparable to a dual degree).
 
 1999 - 2005
-:   *{{ b_studium }} [Website](https://www.uni-bamberg.de)* (Bamberg, Germany)
+:   *<span class=tem>{{ b_studium }}</span> [Website](https://www.uni-bamberg.de)* (Bamberg, Germany)
 
     
 
 ----
-> {{ heute }}  
-> {{ ich_alter }} years old\
+> <span class=tem>{{ ich_alter }}</span> years old\
 > [pdf](cv_en.pdf)  
 > [pdf german](cv.pdf)  
 > [html german](cv.html)
