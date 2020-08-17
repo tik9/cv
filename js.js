@@ -1,12 +1,16 @@
 window.onload = function(){
 
 ags={
-	neu:{
-		dh:'Regierung von Oberbayern',
+	in_be:{
+		dh:'Stadt Ingolstadt',
+		dh2: 'Personalamt',
+		email:'bewerbung@ingolstadt.de',
+		job: 'Sachbearbeiter Digitalisierung IT-Beschaffungen in Teilzeit',
+	},
+	ctt:{	dh:'Regierung von Oberbayern',
 		dh2: 'LRA Eichstätt',
 		email:'',
 		job: 'Mitarbeiter für das Kontaktpersonenmanagement',
-		asp:''
 	},
 	
 	lfar:{
@@ -14,7 +18,7 @@ ags={
 	dh2:'Dienststelle Ingolstadt/Manching',
 	email: 'Bewerbungen@lfar.bayern.de',
 	job: 'Sachbearbeiter für das Sachgebiet Zentralstelle Ausländerextremismus (Kennziffer: 11-2020-18)',
-	asp:'Herr Popp'
+
 },
 pol:{
 dh:'Präsidium der Bayerischen Bereitschaftspolizei',
