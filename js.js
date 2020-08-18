@@ -1,43 +1,35 @@
+
 window.onload = function(){
 
-ags={
-	in_be:{
-		dh:'Stadt Ingolstadt',
-		dh2: 'Personalamt',
-		email:'bewerbung@ingolstadt.de',
-		job: 'Sachbearbeiter Digitalisierung IT-Beschaffungen in Teilzeit',
-	},
-	ctt:{	dh:'Regierung von Oberbayern',
-		dh2: 'LRA Eichstätt',
-		email:'',
-		job: 'Mitarbeiter für das Kontaktpersonenmanagement',
-	},
-	
-	lfar:{
-	dh:'Bayerisches Landesamt für Asyl und Rückführungen',
-	dh2:'Dienststelle Ingolstadt/Manching',
-	email: 'Bewerbungen@lfar.bayern.de',
-	job: 'Sachbearbeiter für das Sachgebiet Zentralstelle Ausländerextremismus (Kennziffer: 11-2020-18)',
+// import { ags } from 'ags.js'
+// var ags = require('./ags');
+// console.log(ags)
 
-},
-pol:{
-dh:'Präsidium der Bayerischen Bereitschaftspolizei',
-dh2:'Eichstätt',
-job:'IT - Professional - Mobile Devices für Eichstätt'
-},
-
-}
+// var mydata = JSON.parse(data);
+// console.log(ags[0].name + ags[0].age)
 
 
-for (schluessel in ags) {
-	for (subschl in ags[schluessel]) {
+// for (schluessel in ags) {
+	// for (subschl in ags[schluessel]) {
 
 	 // console.log(ags[schluessel][subschl])
-	document.body.innerHTML = document.body.innerHTML.replace('{{ '+ subschl + ' }}', ags[schluessel][subschl])
+	// document.body.innerHTML = document.body.innerHTML.replace('{{ '+ subschl + ' }}', ags[schluessel][subschl])
+	// console.log(ags[schluessel][subschl])
+	// }
+	// break
+// }
 
-	}
-	break
-}
+templates = document.getElementsByClassName("tem_dh")
+// console.log(templates)
+
+Array.prototype.forEach.call(templates, function (template) {
+  	innen=template.innerHTML
+	template_ohne=innen.slice(3,-3)
+	wert=ags[0][template_ohne]
+	console.log(innen+wert)
+	template.innerHTML = innen.replace(innen, wert)
+})
+
 
 heute = new Date()
 
@@ -148,7 +140,6 @@ links={
 	
 templates = document.getElementsByClassName("tem")
 
- 
  // templates.forEach(function (template, ind,obj) {
  Array.prototype.forEach.call(templates, function (template) {
 		
@@ -159,9 +150,9 @@ templates = document.getElementsByClassName("tem")
 	template_ohne=innen.slice(3,-3)
 	wert=werte[template_ohne]
 	
-	de= wert['de']
-	console.log('vor if de '+de)
-	if (de){
+	// de= wert['de']
+	// console.log('vor if de '+de)
+	if (wert['de']){
 		sprache= document.getElementById('spr').getAttribute('data-name')
 		spr= wert[sprache]
 	}
@@ -171,7 +162,7 @@ templates = document.getElementsByClassName("tem")
 	}
 	console.log(innen + ' -> '+spr)
 	//~ innen = innen.replace(innen, spr)
-	template.innerHTML=innen.replace(innen,spr)
+	template.innerHTML = innen.replace(innen, spr)
 })
 
 }
