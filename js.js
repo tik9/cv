@@ -52,7 +52,8 @@ werte = {
 	},
 	
 	erfahrung_acc:{
-	de: 'Erweiterung einer Access und Excel VBA App zur Prüfung und Berechnung von Bodenwerten'
+	de: 'Erweiterung einer MS Access und Excel VBA App zur Prüfung und Berechnung von Bodenwerten',
+	en:'MS Access and Excel VBA App for calculating and visualization of surface track values.'
 	},
 	
 	erfahrung_prog: {
@@ -60,12 +61,13 @@ werte = {
 	},
 	
 	erfahrung_win: {
-	de: 'Unterstützung der Anwender bei Windows und MS Office Problemen'	
+	de: 'Unterstützung der Anwender bei Windows und MS Office Problemen',
+	en:'Client support with MS Windows and MS Office Problems.'
 	},
 	
 	erfahrung_win2: {
-	de: 'Verantwortlich im Team für ca. 100 Benutzer. Einschließlich Softwareverteilung, Umstellung von Windows 7 auf Windows 10 und Installation',
-	en: 'Responsible for 100 Users and Clients including VMs. Active Directory and group policy support, software deployment'	
+	de: 'Verantwortlich im Team für ca. 100 Benutzer. Einschließlich Softwareverteilung, Umstellung von Windows 7 auf Windows 10 und Installation.',
+	en: 'Responsible for 100 Users and Clients including VMs. Active Directory and group policy support, software deployment.'	
 	},
 	
 	h_studium: {
@@ -74,7 +76,7 @@ werte = {
 	},
 	h_studium_ausf: {
 	de: 'Vergleichbar mit einem Informatik Bachelor an einer Hochschule',
-	en: 'Bachelor in IT with focus on the public sector including public law'
+	en: 'Bachelor in IT with focus on the public sector including public law.'
 	},
 	
 	heute: {
