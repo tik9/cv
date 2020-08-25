@@ -1,5 +1,19 @@
 
 ags=[
+{
+	dh:'Neue Presse Multimedia',
+	dh2:'Standort Ingolstadt',
+	job:'Senior Web-Entwickler',
+	mail:'bewerbung-nps@pnp.de'
+},
+
+{
+		dh:'Stadt Ingolstadt',
+		dh2: 'Personalamt',
+		job:'IT-Benutzerbetreuer',
+	mail:'bewerbung@ingolstadt.de'
+},
+
 	{	dh:'Hays',
 		dh2: 'Personalabteilung',
 		email:'positionen@hays.de',

@@ -1,26 +1,10 @@
 
 window.onload = function(){
 
-// import { ags } from 'ags.js'
-// var ags = require('./ags');
-// console.log(ags)
-
-// var mydata = JSON.parse(data);
-// console.log(ags[0].name + ags[0].age)
-
-
-// for (schluessel in ags) {
-	// for (subschl in ags[schluessel]) {
-
-	 // console.log(ags[schluessel][subschl])
-	// document.body.innerHTML = document.body.innerHTML.replace('{{ '+ subschl + ' }}', ags[schluessel][subschl])
-	// console.log(ags[schluessel][subschl])
-	// }
-	// break
-// }
-
 templates = document.getElementsByClassName("tem_dh")
 // console.log(templates)
+
+ // templates.forEach(function (template, ind,obj) {
 
 Array.prototype.forEach.call(templates, function (template) {
   	innen=template.innerHTML
@@ -48,7 +32,6 @@ if(mm < 10) {
 
 heute_de = dd + '.' + mm + '.' + yyyy
 heute_en = dd + '/' + mm + '/' + yyyy
-// console.log('heute ' + heute)
 	
 heute_ms = Date.now()	
 geburtstag = Date.parse("1978-10-02")
@@ -68,15 +51,19 @@ werte = {
 	en: 'Management - Studies'
 	},
 	
-	erfahrung: {
+	erfahrung_acc:{
+	de: 'Erweiterung einer Access und Excel VBA App zur Prüfung und Berechnung von Bodenwerten'
+	},
+	
+	erfahrung_prog: {
 	en: 'Git, Javascript, Mysql, Powershell, Python, Zsh'	
 	},
 	
-	erfahrung_allg: {
+	erfahrung_win: {
 	de: 'Unterstützung der Anwender bei Windows und MS Office Problemen'	
 	},
 	
-	erfahrung_win: {
+	erfahrung_win2: {
 	de: 'Verantwortlich im Team für ca. 100 Benutzer. Einschließlich Softwareverteilung, Umstellung von Windows 7 auf Windows 10 und Installation',
 	en: 'Responsible for 100 Users and Clients including VMs. Active Directory and group policy support, software deployment'	
 	},
@@ -140,7 +127,6 @@ links={
 	
 templates = document.getElementsByClassName("tem")
 
- // templates.forEach(function (template, ind,obj) {
  Array.prototype.forEach.call(templates, function (template) {
 		
 	//~ debugger

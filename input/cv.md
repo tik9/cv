@@ -16,15 +16,15 @@ Berufserfahrung
 --------------------
 
 2015 - heute
-:   *<span class=tem>{{ job_titel }}</span> -  [<span class=tem>{{ an }}</span>](http://www.abdnb.bayern.de/) und <span class=tem>{{ ppm }}</span>*
+:   *<span class=tem>{{ job_titel }}</span> - <span class=tem>{{ an }}</span> und <span class=tem>{{ ppm }}</span>*
     (Nürnberg)
 
-    <span class=tem>{{ erfahrung_win }}</span>. Migration des Dateiservers von der alten auf die neue Umgebung. Auflisten der Vererbungsunterbrechungen von Ordnern.
+    <span class=tem>{{ erfahrung_win2 }}</span>. <span class=tem>{{ erfahrung_acc }}</span> 
 
 2005 - 2015
 :   *<span class=tem>{{ job_frei }}</span>*
     (Hepberg)  
-     <span class=tem>{{ erfahrung_allg }}</span>
+     <span class=tem>{{ erfahrung_win }}</span>
 
 Open Source
 --------------------
