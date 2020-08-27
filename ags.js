@@ -1,17 +1,31 @@
 
 ags=[
 {
-	dh:'Neue Presse Multimedia',
-	dh2:'Standort Ingolstadt',
-	job:'Senior Web-Entwickler',
-	mail:'bewerbung-nps@pnp.de'
+	dh:'puro Personaldienstleistung',
+	dh2:'',
+	job:'IT Onsite Support (gn) - A-2528-P-EV-MC',
+	mail:'enrico.vetter@puro-personal.de'
+	
 },
-
 {
 		dh:'Stadt Ingolstadt',
 		dh2: 'Personalamt',
 		job:'IT-Benutzerbetreuer',
 	mail:'bewerbung@ingolstadt.de'
+},
+
+{
+	dh:'TKI Automotive',
+	dh2:'Standort Ingolstadt',
+	job:'Fachinformatiker im Bereich Softwaretest - Referenznummer: 462',
+	mail:''
+},
+
+{	
+	dh:'Neue Presse Multimedia',
+	dh2:'Standort Ingolstadt',
+	job:'Senior Web-Entwickler',
+	mail:'bewerbung-nps@pnp.de'
 },
 
 	{	dh:'Hays',

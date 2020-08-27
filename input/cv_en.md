@@ -39,7 +39,7 @@ Education
 :   *<span class=tem>{{ h_studium }}</span>, [Website](https://www.verwaltungsinformatiker.de)*
     (Hof, Germany)
 
-    <span class=tem>{{ h_studium_ausf }}</span>. The studies include some month of working in an organisation (comparable to a dual degree).
+    <span class=tem>{{ h_studium_ausf }}</span>. The studies include working in different IT departments in an organisation (comparable to a dual degree).
 
 1999 - 2005
 :   *<span class=tem>{{ b_studium }}</span> [Website](https://www.uni-bamberg.de)* (Bamberg, Germany)
