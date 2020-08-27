@@ -10,20 +10,12 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 	  
   <!-- <script src="https://cdn.tiny.cloud/1/eh0ungvfukjyyzr0gpetf8v1wi1hoswfonuueub06klirvs3/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script> -->
-  <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 
 <script src="ags.js"></script>
 
 <script src=js.js></script>
 
 <script>
-//api tiny cloud
-//eh0ungvfukjyyzr0gpetf8v1wi1hoswfonuueub06klirvs3
-  tinymce.init({
-        selector: 'textarea',
-		 readonly : 1,
-		  height : "280"
-      })
 
 </script>
 <style>
@@ -77,11 +69,16 @@ N.B. You do not need to know the password. You must have write access to the xls
 </ol>
 
 <h4>Contact</h4>
-<form action="https://formspree.io/user153015@gmail.com">
-    <input type="text" name="name">
-    <input type="email" name="_replyto">
-	<input type="text" name="_subject">
-    <input type="submit" value="Send">
+<form action=https://formspree.io/user153015@gmail.com method=post>
+    <ul>
+	<li>Name <input type="text" name="name"></li>
+    <li>Email <input type="email" name="_replyto"></li>
+	</ul>
+	Message <br>
+	<textarea name="_message" rows="4" cols="50">
+	</textarea>
+	<input type="hidden" name="_subject" value= 'email from Kontaktform'>
+	<input type="submit" value="Send">
 </form>
 
 </body>
