@@ -1,12 +1,29 @@
 
 ags=[
 {
+	dh:' Compugroup Medical',
+	dh2:'Personalabteilung',
+	job:'IT Servicetechniker Außendienst - req4720, Ingolstadt',
+	mail:'career@cgm.com'
+	
+},
+
+{
+	dh:'Shaar Consulting',
+	dh2:'Ingolstadt',
+	job:'IT Fachinformatiker (gn)',
+	mail:''
+	
+},
+
+{
 	dh:'puro Personaldienstleistung',
 	dh2:'',
 	job:'IT Onsite Support (gn) - A-2528-P-EV-MC',
 	mail:'enrico.vetter@puro-personal.de'
 	
 },
+
 {
 		dh:'Stadt Ingolstadt',
 		dh2: 'Personalamt',

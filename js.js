@@ -10,8 +10,13 @@ Array.prototype.forEach.call(templates, function (template) {
   	innen=template.innerHTML
 	template_ohne=innen.slice(3,-3)
 	wert=ags[0][template_ohne]
-	console.log(innen+wert)
-	template.innerHTML = innen.replace(innen, wert)
+	if (wert){
+		console.log(innen+wert)
+		template.innerHTML = innen.replace(innen, wert)
+	}
+	else {
+		template.innerHTML=''
+	}
 })
 
 
@@ -85,7 +90,7 @@ werte = {
 	},
 	
 	ich_adresse:{
-	en: 'Bergstr. 15, 85120 Hepberg'},
+	en: 'Bergstr. 15, 85120 Hepberg, Tel.: 01573 9598 220'},
 	
 	ich_alter: {
 	en: alter,
