@@ -9,15 +9,32 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 	  
-  <!-- <script src="https://cdn.tiny.cloud/1/eh0ungvfukjyyzr0gpetf8v1wi1hoswfonuueub06klirvs3/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script> -->
-
 <script src="ags.js"></script>
 
 <script src=js.js></script>
 
-<script>
+<script src="https://platform.linkedin.com/in.js">
+
+ api_key: 78gmeq7lkg6n7t
+  onLoad: onLinkedInLoad
+  authorize: true
+  
+  function onLinkedInLoad() {
+     IN.Event.on(IN, "auth", onLinkedInAuth)
+}
+
+function onLinkedInAuth() {
+ IN.API.Profile('https://www.linkedin.com/in/timo-körner-65ab601b1').result(displayProfiles)
+}
+
+function displayProfiles(profiles) {
+     member = profiles.values[0];
+     document.getElementById("profiles").innerHTML = 
+          "<p id=\"" + member.id + "\">" +  member.firstName + " " + member.lastName + "</p>"
+}
 
 </script>
+
 <style>
 .space {
   padding-top: 40px;
@@ -43,13 +60,14 @@
     </div>
     <div class="col-sm-4">
       <h3>Interests</h3>
-      <p>Bash, Git and Javascript</p>
+      <p>Git, Powershell and Javascript</p>
     </div>
     <div class="col-sm-4">
       <h3>Links</h3> 
 <ul>	  
-      <li><a href='https://github.com/tik9' >github</a></li>
-	  <li><a href='https://tik9.github.io/cv' >Homepage</a></li>
+<li><a href='https://github.com/tik9' >github</a></li>
+<li><a href='https://tik9.github.io/cv' >Home</a></li>
+<li><a href='linkedin.com/in/timo-körner-65ab601b1' >LinkedIn</a></li>
 <li><a href='https://stackoverflow.com/users/1705829/timo' >Stackoverflow</a></li>
 <li><a href=output/cv_en.html>CV</a></li>
 <li><a href=https://raw.githubusercontent.com/tik9/cv/master/README.md>Just a horse</a>
@@ -58,27 +76,37 @@
   </div>
 
 <h4>Blog</h4>  
-  <h5>August 2020 </h6>
-<h6 class=space>Remove a password from an <code>Excel VBA Code</code> as seen <a href=https://stackoverflow.com/a/63581446/1705829>here</a></h5>
-N.B. You do not need to know the password. You must have write access to the xls.
-<ol>
-<li>Open the <code>xls</code> file with Notepad</li>
-<li>Search for 'DPB=' and replace it with 'DPx='</li>
-<li>Save the file, Open the file, open the VB Editor, open modules will not work <code>(error 40230)</code> properly</li>
-<li>Save the file as <code>xlsm</code></li>
-</ol>
+  <h5>September 2020 </h6>
 
-<h4>Contact</h4>
-<form action=https://formspree.io/user153015@gmail.com method=post>
-    <ul>
-	<li>Name <input type="text" name="name"></li>
-    <li>Email <input type="email" name="_replyto"></li>
-	</ul>
-	Message <br>
-	<textarea name="_message" rows="4" cols="50">
-	</textarea>
-	<input type="hidden" name="_subject" value= 'email from Kontaktform'>
-	<input type="submit" value="Send">
+<h6>Contact form on a static site without <code>php</code></h6>
+<ul>
+<li><code>formspree.io</code> will be used</li>
+<li>Example form tag: <code><form action='https://formspree.io/your-email-address' method='post'></code></li>
+</ul>
+
+<div id="profiles"></div>
+
+<h4 class='space'>Contact</h4>
+<form action='https://formspree.io/user153015@gmail.com' method='post'>
+    
+	 <div class="form-group">
+    <label for="nam">Name</label>
+    <input type="text" class="form-control" id="name" placeholder="Enter your Name">
+  </div>
+  
+      <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+
+	  <div class="form-group">
+    <label for="Textarea1">Message</label>
+    <textarea class="form-control" id="extarea1" rows="3"></textarea>
+  </div>
+	<input type="hidden" name="_subject" value= 'email von Kontaktformular'>
+  <button type="submit" class="btn btn-primary">Submit</button>
+
 </form>
 
 </body>
