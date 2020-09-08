@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>TK</title>
+    <title>Timo Körner</title>
 	
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -11,47 +11,10 @@
 	  
 <script src="ags.js"></script>
 
-<script src=js.js></script>
-
-<script src="https://platform.linkedin.com/in.js">
-
- api_key: 78gmeq7lkg6n7t
-  onLoad: onLinkedInLoad
-  authorize: true
-  
-  function onLinkedInLoad() {
-     IN.Event.on(IN, "auth", onLinkedInAuth)
-}
-
-function onLinkedInAuth() {
- IN.API.Profile('https://www.linkedin.com/in/timo-körner-65ab601b1').result(displayProfiles)
-}
-
-function displayProfiles(profiles) {
-     member = profiles.values[0]
-     console.log('Mitglied: ' + member)
-     document.getElementById("profil").innerHTML = 
-          "<p id=\"" + member.id + "\">" +  member.firstName + " " + member.lastName + "</p>"
-}
-</script>
+<script src=index_js.js></script>
 
 <script>
 	
-window.onload = function(){
-arr = {
-	Home: '', 
-	Github: 'https://github.com/tik9',
-	LinkedIn: 'https://linkedin.com/in/timo-körner-65ab601b1',
-	Stackoverflow: 'https://stackoverflow.com/users/1705829/timo',
-	Cv: 'output/cv_en.html'
-	}
-	
-for (key in arr) {
-  document.getElementById("links").innerHTML +='<li><a href='+ arr[key] +'>'+ key+ '</a></li>'
-
-}
-
-}
 //~ console.log('h w')
 
 </script>
@@ -66,9 +29,9 @@ for (key in arr) {
 
 <div class="jumbotron text-center">
 
-  <h1><span class=tem>{{ ich_name }}</span></h1>
+  <h1>Timo Körner</h1>
 
-  <p><span class=tem>{{ job_sys }}</span></p>
+  <p>IT Admin</p>
 
 </div>
   
@@ -80,17 +43,15 @@ for (key in arr) {
     </div>
     <div class="col-sm-4">
       <h3>Interests</h3>
-      <p>Git, Powershell and Javascript</p>
+      <p>Developing in Javascript</p>
     </div>
     <div class="col-sm-4">
       <h3>Links</h3> 
-
 <ul>
-<div id=links>
-</div>
+<div id=links></div>
 </ul>
-   </div>
-  </div>
+</div>
+</div>
 
 <h4>Blog</h4>  
   <h5>September 2020 </h6>
@@ -100,8 +61,6 @@ for (key in arr) {
 <li><code>formspree.io</code> will be used</li>
 <li>Example form tag: <code>&lt;form action='https://formspree.io/your-email-address' method='post'&gt;</code></li>
 </ul>
-
-<div id="profil"></div>
 
 <h4 class='space'>Contact</h4>
 <form action='https://formspree.io/user153015@gmail.com' method='post'>

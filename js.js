@@ -1,15 +1,16 @@
-console.log('anf ')
+window.onload = function(){
 
-//~ window.onload = function(){
+datei = location.href.split("/").slice(-1)[0]
+sprache =datei.slice(3,-5)
 
-console.log('mitte ')
+console.log(sprache)
 
-templates = document.getElementsByClassName("tem_dh")
-//~ console.log('aus js' + templates)
+templates = document.getElementsByClassName("tem")
+templates_dh = document.getElementsByClassName("tem_dh")
 
  // templates.forEach(function (template, ind,obj) {
 
-Array.prototype.forEach.call(templates, function (template) {
+Array.prototype.forEach.call(templates_dh, function (template) {
   	innen=template.innerHTML
 	template_ohne=innen.slice(3,-3)
 	wert=ags[0][template_ohne]
@@ -59,22 +60,27 @@ werte = {
 	},
 	
 	erfahrung_acc:{
-	de: 'Erweiterung einer MS Access und Excel VBA App zur Prüfung und Berechnung von Bodenwerten',
-	en:'MS Access and Excel VBA App for calculating and visualization of surface track values.'
+	de: 'Erweiterung einer MS Access und Excel VBA Anwendung zur Prüfung und Berechnung von Bodenwerten',
+	en:'MS Access and Excel VBA App for calculation and visualization.'
 	},
 	
 	erfahrung_prog: {
-	en: 'Git, Javascript, Mysql, Powershell, Python, Zsh'	
+	en: 'Javascript Template system for cover letters and CV'	,
+	de:'Javascript und Html Templating für Bewerbungsanschreiben und Lebenslauf'
+	},
+	
+	erfahrung_ps:{
+	de:'Erstellen von Powershell-Skripte für Routine-Aufgaben'
 	},
 	
 	erfahrung_win: {
-	de: 'Unterstützung der Anwender bei Windows und MS Office Problemen',
+	de: 'Unterstützung der Anwender bei Standard- und Fachanwendungen',
 	en:'Client support with MS Windows and MS Office Problems.'
 	},
 	
 	erfahrung_win2: {
-	de: 'Verantwortlich im Team für ca. 100 Benutzer. Tätigkeiten: Softwareverteilung, Umstellung von Windows 7 auf Windows 10.',
-	en: 'Responsible for 100 Users and Clients including VMs. Active Directory and group policy support, software deployment.'	
+	de: 'Benutzerbetreuung im Team für 100 Benutzer. Tätigkeiten: Softwareverteilung, Umstellung von Windows 7 auf Windows 10.',
+	en: 'User Support for 100 Users and Clients including VMs. Active Directory and group policy support, software deployment.'	
 	},
 	
 	h_studium: {
@@ -99,7 +105,8 @@ werte = {
 	},
 	
 	ich_name: {
-	en: 'Timo Körner'},
+	en: 'Timo Körner',
+	},
 
 	job_frei:{
 	en: 'Freelancer'
@@ -119,28 +126,19 @@ werte = {
 		de: 'Polizeipräsidium Mittelfranken',
 		en: ' Police Department Nürnberg'
 	},
-	
-	toi: {
-	de: 'Technischer Oberinspektor',
-	'en' : 'IT expert',
-	},
 
 }
 
-
-links={
-	gh: 'https://github.com/tik9',
-	stack: 'https://stackoverflow.com/users/1705829/timo',
-}
-
+for (t in templates){
+	 // debugger	
+ // console.log('ende ' + t)
 	
-templates = document.getElementsByClassName("tem")
+}
 
  Array.prototype.forEach.call(templates, function (template) {
+ // console.log('ende2 ' + t)
 
 //~ for (template in templates){		
-	//~ debugger
-console.log('ende ' + template)
 	
 	innen=template.innerHTML
 	
@@ -149,16 +147,13 @@ console.log('ende ' + template)
 	
 	// de= wert['de']
 	if (wert['de']){
-		sprache= document.getElementById('spr').getAttribute('data-name')
 		spr= wert[sprache]
 	}
 	else {
-		en=wert['en']
-		spr=en
+		spr=wert['en']
 	}
-	console.log(innen + ' -> '+spr)
+	// console.log(innen + ' -> '+spr)
 
 	template.innerHTML = innen.replace(innen, spr)
 })
-//~ }
-//~ }
+ }

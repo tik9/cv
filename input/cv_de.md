@@ -1,9 +1,7 @@
 
 ---
-header-includes: <script> obj1 = "value"</script><script id= spr data-name="de" src="../js.js"></script> <link rel="stylesheet" href="../style.css">
+header-includes: <script> obj1 = "value"</script><script id= spr data-name=de src="../js.js"></script> <link rel="stylesheet" href="../style.css">
 title: Timo Körner Lebenslauf
-
-vinf: https://www.verwaltungsinformatiker.de
 ---
 
 
@@ -15,8 +13,8 @@ IT Fachmann
 Berufserfahrung
 --------------------
 
-2015 - heute
-:   *<span class=tem>{{ job_titel }}</span> - <span class=tem>{{ an }}</span> und <span class=tem>{{ ppm }}</span>*
+2015 - 2020
+:   *<span class=tem>{{ job_titel }}</span> - <span class=tem>{{ an }}</span>*
     (Nürnberg)
 
     <span class=tem>{{ erfahrung_win2 }}</span> <span class=tem>{{ erfahrung_acc }}</span> 

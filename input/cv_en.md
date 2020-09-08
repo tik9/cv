@@ -14,7 +14,7 @@ title: Timo Körner CV
 Working Experience
 --------------------
 
-2015 - today
+2015 - 2020
 :   *<span class=tem>{{ job_titel }}</span> - <span class=tem>{{ an }}</span>*
     (Nuernberg, Germany)
 
@@ -48,6 +48,5 @@ Education
 
 ----
 > <span class=tem>{{ ich_alter }}</span> years old\
-> [pdf](cv_en.pdf)  
-> [pdf german](cv.pdf)  
-> [html german](cv.html)
+> [pdf](cv_en.pdf)    
+> [html german](cv_de.html)
