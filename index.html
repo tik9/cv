@@ -28,13 +28,33 @@ function onLinkedInAuth() {
 }
 
 function displayProfiles(profiles) {
-     member = profiles.values[0];
-     document.getElementById("profiles").innerHTML = 
+     member = profiles.values[0]
+     console.log('Mitglied: ' + member)
+     document.getElementById("profil").innerHTML = 
           "<p id=\"" + member.id + "\">" +  member.firstName + " " + member.lastName + "</p>"
 }
-
 </script>
 
+<script>
+	
+window.onload = function(){
+arr = {
+	Home: '', 
+	Github: 'https://github.com/tik9',
+	LinkedIn: 'https://linkedin.com/in/timo-körner-65ab601b1',
+	Stackoverflow: 'https://stackoverflow.com/users/1705829/timo',
+	Cv: 'output/cv_en.html'
+	}
+	
+for (key in arr) {
+  document.getElementById("links").innerHTML +='<li><a href='+ arr[key] +'>'+ key+ '</a></li>'
+
+}
+
+}
+//~ console.log('h w')
+
+</script>
 <style>
 .space {
   padding-top: 40px;
@@ -64,14 +84,11 @@ function displayProfiles(profiles) {
     </div>
     <div class="col-sm-4">
       <h3>Links</h3> 
-<ul>	  
-<li><a href='https://github.com/tik9' >github</a></li>
-<li><a href='https://tik9.github.io/cv' >Home</a></li>
-<li><a href='linkedin.com/in/timo-körner-65ab601b1' >LinkedIn</a></li>
-<li><a href='https://stackoverflow.com/users/1705829/timo' >Stackoverflow</a></li>
-<li><a href=output/cv_en.html>CV</a></li>
-<li><a href=https://raw.githubusercontent.com/tik9/cv/master/README.md>Just a horse</a>
-</ul>   
+
+<ul>
+<div id=links>
+</div>
+</ul>
    </div>
   </div>
 
@@ -81,10 +98,10 @@ function displayProfiles(profiles) {
 <h6>Contact form on a static site without <code>php</code></h6>
 <ul>
 <li><code>formspree.io</code> will be used</li>
-<li>Example form tag: <code><form action='https://formspree.io/your-email-address' method='post'></code></li>
+<li>Example form tag: <code>&lt;form action='https://formspree.io/your-email-address' method='post'&gt;</code></li>
 </ul>
 
-<div id="profiles"></div>
+<div id="profil"></div>
 
 <h4 class='space'>Contact</h4>
 <form action='https://formspree.io/user153015@gmail.com' method='post'>

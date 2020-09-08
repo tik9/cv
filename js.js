@@ -1,8 +1,11 @@
+console.log('anf ')
 
-window.onload = function(){
+//~ window.onload = function(){
+
+console.log('mitte ')
 
 templates = document.getElementsByClassName("tem_dh")
-// console.log(templates)
+//~ console.log('aus js' + templates)
 
  // templates.forEach(function (template, ind,obj) {
 
@@ -11,14 +14,13 @@ Array.prototype.forEach.call(templates, function (template) {
 	template_ohne=innen.slice(3,-3)
 	wert=ags[0][template_ohne]
 	if (wert){
-		console.log(innen+wert)
+		//~ console.log(innen + wert)
 		template.innerHTML = innen.replace(innen, wert)
 	}
 	else {
 		template.innerHTML=''
 	}
 })
-
 
 heute = new Date()
 
@@ -135,8 +137,10 @@ links={
 templates = document.getElementsByClassName("tem")
 
  Array.prototype.forEach.call(templates, function (template) {
-		
+
+//~ for (template in templates){		
 	//~ debugger
+console.log('ende ' + template)
 	
 	innen=template.innerHTML
 	
@@ -144,7 +148,6 @@ templates = document.getElementsByClassName("tem")
 	wert=werte[template_ohne]
 	
 	// de= wert['de']
-	// console.log('vor if de '+de)
 	if (wert['de']){
 		sprache= document.getElementById('spr').getAttribute('data-name')
 		spr= wert[sprache]
@@ -154,8 +157,8 @@ templates = document.getElementsByClassName("tem")
 		spr=en
 	}
 	console.log(innen + ' -> '+spr)
-	//~ innen = innen.replace(innen, spr)
+
 	template.innerHTML = innen.replace(innen, spr)
 })
-
-}
+//~ }
+//~ }
