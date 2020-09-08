@@ -1,6 +1,13 @@
 
 ags=[
 {
+	dh:'Volkswagen Group Services GmbH',
+	dh2:'Personalabteilung',
+	job:'Device Management in Teilzeit, Ingolstadt, A-2020-7932',
+	mail:''
+	
+},
+{
 	dh:' Compugroup Medical',
 	dh2:'Personalabteilung',
 	job:'IT Servicetechniker Außendienst - req4720, Ingolstadt',

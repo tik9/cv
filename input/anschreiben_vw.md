@@ -8,7 +8,7 @@ header-includes: <script src="../js.js" id=spr data-name=de></script><script src
 &nbsp;  
 &nbsp;
 
-**<span class=tem_dh>{{ dh }}</span>**  
+<span class=tem_dh>{{ dh }}</span>  
 <span class=tem_dh>{{ dh2 }}</span>  
 <span class=tem_dh>{{ mail }}</span>  
 &nbsp;  
@@ -28,27 +28,22 @@ mit folgender Qualifikation möchte ich mich auf die interessante obige Stelle b
 &nbsp;
 
 - Abgeschlossenes <span class=tem>{{ h_studium }}</span>
-- Interesse an Standardisierung und Digitalisierung
-- Mehrere Jahre Berufserfahrung in der IT
-- Bereitschaft, eine Zusatzqualifikation im Bereich IT Security (z.B. BSI Grundschutz) zu erwerben
-- Zuverlässige sowie gewissenhafte Arbeit bei systematischer und kundenorientierter Vorgehensweise
-- Belastbar
-- Sehr gute Deutschkenntnisse
-
+- Bereitschaft, mich in Mobile Iron, Intune und Jamf einzuarbeiten
+- Erfahrung in der Systemadministration mit Baramundi und der Konfiguration von Apple IOS über Baramundi
+- Gute Englischkenntnisse
+- Strukturierte und selbstständige Arbeitsweise, aktiver [Entwickler](https://stackoverflow.com/users/1705829/timo?tab=activity)
 &nbsp;
 
-Ich möchte mich beruflich verändern, und nicht Teil der neu gegründeten Autobahn GmbH mit der starren Zentralisierung werden.
+Ich möchte mich beruflich verändern, und nicht Teil der neu gegründeten Autobahn GmbH mit der Zentralisierung werden.
 &nbsp;
 
 Ich bin derzeit in der <span class=tem>{{ an }}</span> als <span class=tem>{{ job_titel }}</span> eingesetzt.
 &nbsp;
 
-Ich suche eine Tätigkeit in Teilzeit mit 30 Wochenstunden und bin ab 1.10. verfügbar.  
+Ich suche eine Tätigkeit in Teilzeit mit 30 Wochenstunden.  
 
-Ich stelle mir bei 30 Wochenstunden 32.000 brutto jährlich vor.  
+Ich bin verfügbar ab Donnerstag, 1.10..  
 
-
-Ich würde mich freuen, von Ihnen bald zu hören.  
 &nbsp;
 
 Mit freundlichen Grüßen  

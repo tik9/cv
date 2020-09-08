@@ -71,7 +71,7 @@ werte = {
 	},
 	
 	erfahrung_win2: {
-	de: 'Verantwortlich im Team für ca. 100 Benutzer. Einschließlich Softwareverteilung, Umstellung von Windows 7 auf Windows 10 und Installation.',
+	de: 'Verantwortlich im Team für ca. 100 Benutzer. Tätigkeiten: Softwareverteilung, Umstellung von Windows 7 auf Windows 10.',
 	en: 'Responsible for 100 Users and Clients including VMs. Active Directory and group policy support, software deployment.'	
 	},
 	
