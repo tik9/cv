@@ -9,8 +9,8 @@ header-includes: <script src="../js.js" id=spr data-name=de></script><script src
 &nbsp;
 
 <span class=tem_dh>{{ dh }}</span>  
-<span class=tem_dh>{{ dh2 }}</span>  
-<span class=tem_dh>{{ mail }}</span>  
+Personalabteilung  
+<span class=tem_dh>{{ ma }}</span>  
 &nbsp;  
 &nbsp;
 
@@ -18,7 +18,7 @@ header-includes: <script src="../js.js" id=spr data-name=de></script><script src
 &nbsp;  
 &nbsp;
 
-**Bewerbung als <span class=tem_dh>{{ job }}</span>**    
+**<span class=tem_dh>{{ jo }}</span>**    
 &nbsp;  
 
 Sehr geehrte Damen und Herren,
@@ -28,7 +28,7 @@ mit folgender Qualifikation möchte ich mich auf die interessante obige Stelle b
 &nbsp;
 
 - Abgeschlossenes <span class=tem>{{ h_studium }}</span>
-- 
+- Mehrjährige IT-Berufserfahrung in der Softwareentwicklung, (Windows-)Administration und Hardware - Inventarisierung
 - Bereitschaft, mich in (..) einzuarbeiten
 - Strukturierte und selbstständige Arbeitsweise, aktiver [Entwickler](https://stackoverflow.com/users/1705829/timo?tab=activity)
 &nbsp;
@@ -36,7 +36,7 @@ mit folgender Qualifikation möchte ich mich auf die interessante obige Stelle b
 Ich möchte mich beruflich verändern, und nicht Teil der neu gegründeten Autobahn GmbH mit der starren Zentralisierung werden.
 &nbsp;
 
-Ich bin derzeit in der <span class=tem>{{ an }}</span> als <span class=tem>{{ job_titel }}</span> eingesetzt.
+Ich bin bis Ende des Monats in der <span class=tem>{{ an }}</span> als <span class=tem>{{ job_titel }}</span> eingesetzt.
 &nbsp;
 
 Ich suche eine Tätigkeit in Teilzeit zwischen 30 und 35 Wochenstunden.  

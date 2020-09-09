@@ -9,7 +9,7 @@ header-includes: <script src="../js.js" id=spr data-name=de></script><script src
 &nbsp;
 
 <span class=tem_dh>{{ dh }}</span>  
-<span class=tem_dh>{{ dh2 }}</span>  
+Personalabteilung  
 <span class=tem_dh>{{ mail }}</span>  
 &nbsp;  
 &nbsp;
@@ -18,7 +18,7 @@ header-includes: <script src="../js.js" id=spr data-name=de></script><script src
 &nbsp;  
 &nbsp;
 
-**<span class=tem_dh>{{ job }}</span>**    
+**<span class=tem_dh>{{ jo }}</span>**    
 &nbsp;  
 
 Sehr geehrte Damen und Herren,
@@ -28,21 +28,21 @@ mit folgender Qualifikation möchte ich mich auf die interessante obige Stelle b
 &nbsp;
 
 - Abgeschlossenes <span class=tem>{{ h_studium }}</span>
-- Bereitschaft, mich in Mobile Iron, Intune und Jamf einzuarbeiten
-- Erfahrung in der Systemadministration mit Baramundi und der Konfiguration von Apple IOS über Baramundi
-- Gute Englischkenntnisse
+- Mehrjährige IT-Berufserfahrung in der Entwicklung, Administration und Hardware - Inventarisierung
+- Anwendungsbezogene Expertise in den Bereichen IT-Hardware, Serverlandschaften, Virtualisierung, SQL-Datenbanken, MS Office etc.
+- Sehr gute Deutsch- und Englischkenntnisse
+- Bereitschaft, mich in Strukturen und Abhängigkeiten integrierter ERP-Systeme einzuarbeiten
 - Strukturierte und selbstständige Arbeitsweise, aktiver [Entwickler](https://stackoverflow.com/users/1705829/timo?tab=activity)
+- Fähigkeit, IT Prozesse zu optimieren
 &nbsp;
 
-Ich möchte mich beruflich verändern, und nicht Teil der neu gegründeten Autobahn GmbH mit der Zentralisierung werden.
+Ich möchte mich beruflich verändern, und nicht Teil der neu gegründeten Autobahn GmbH mit der starren Zentralisierung werden.
 &nbsp;
 
-Ich bin derzeit in der <span class=tem>{{ an }}</span> als <span class=tem>{{ job_titel }}</span> eingesetzt.
+Ich bin bis Ende des Monats in der <span class=tem>{{ an }}</span> als <span class=tem>{{ job_titel }}</span> eingesetzt.
 &nbsp;
 
-Ich suche eine Tätigkeit in Teilzeit mit 30 Wochenstunden.  
-
-Ich bin verfügbar ab Donnerstag, 1.10..  
+Ich bin verfügbar ab dem 1.10., meine Gehaltsvorstellung beträgt 60.000 brutto jährlich.  
 
 &nbsp;
 

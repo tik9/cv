@@ -1,9 +1,19 @@
 
 ags=[
 {
+jo:'-ID DE50332536-03',
+dh:'Dektra Incos'
+}
+{
+	jo:'IT-Prozessmanager Verwaltungsdigitalisierung',
+	dh:'Stadt Ingolstadt',
+	mail:'bewerbung@ingolstadt.de'
+		
+},
+{
 	dh:'Volkswagen Group Services GmbH',
 	dh2:'Personalabteilung',
-	job:'Device Management in Teilzeit, Ingolstadt, A-2020-7932',
+	jo:'Device Management in Teilzeit, Ingolstadt, A-2020-7932',
 	mail:''
 	
 },
