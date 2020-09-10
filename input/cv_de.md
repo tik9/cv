@@ -19,10 +19,10 @@ Berufserfahrung
 
     <span class=tem>{{ erfahrung_win2 }}</span> <span class=tem>{{ erfahrung_acc }}</span> 
 
-2005 - 2015
+2005 - heute
 :   *<span class=tem>{{ job_frei }}</span>*
     (Hepberg)  
-     <span class=tem>{{ erfahrung_win }}</span>
+     <span class=tem>{{ erfahrung_git }}</span>. <span class=tem>{{ erfahrung_lin }}</span>
 
 Open Source
 --------------------
@@ -47,6 +47,6 @@ Ausbildung
 
 ----
 
-> Hepberg, <span class=tem>{{ heute }}</span>  
+> <span class=tem>{{ heute }}</span>  
   
-> <span class=tem>{{ ich_name }}</span>, <span class=tem>{{ ich_alter }}</span> Jahre alt
+> <span class=tem>{{ ich_name }}</span>, <span class=tem>{{ ich_adresse }}</span>, <span class=tem>{{ ich_alter }}</span> Jahre alt

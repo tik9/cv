@@ -28,9 +28,12 @@ mit folgender Qualifikation möchte ich mich auf die interessante obige Stelle b
 &nbsp;
 
 - Abgeschlossenes <span class=tem>{{ h_studium }}</span>
-- Mehrjährige IT-Berufserfahrung in der Softwareentwicklung, (Windows-)Administration und Hardware - Inventarisierung
+- Mehrjährige IT-Berufserfahrung in der Softwareentwicklung
+
 - Bereitschaft, mich in (..) einzuarbeiten
+
 - Strukturierte und selbstständige Arbeitsweise, aktiver [Entwickler](https://stackoverflow.com/users/1705829/timo?tab=activity)
+- Gute Englischkenntnisse
 &nbsp;
 
 Ich möchte mich beruflich verändern, und nicht Teil der neu gegründeten Autobahn GmbH mit der starren Zentralisierung werden.

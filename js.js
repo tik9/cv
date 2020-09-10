@@ -61,6 +61,14 @@ werte = {
 	en: 'Management - Studies'
 	},
 	
+	erfahrung_lin: {
+	de: 'Individualisierung der Zsh Shell mit Aliasen und Funktionen auf Basis von "Oh-my-Zsh"'
+	},
+	
+	erfahrung_git: {
+	de:'Einsatz von Git auf verschiedenen Systemen, u. a. Linux und Android'
+	},
+	
 	erfahrung_acc:{
 	de: 'Erweiterung einer MS Access und Excel VBA Anwendung zur Prüfung und Berechnung von Bodenwerten',
 	en:'MS Access and Excel VBA App for calculation and visualization.'
@@ -100,7 +108,7 @@ werte = {
 	},
 	
 	ich_adresse:{
-	en: 'Bergstr. 15, 85120 Hepberg, Tel.: 01573 9598 220'},
+	en: 'Bergstr. 15, 85120 Hepberg, Tel.: +49(0)1573 9598 220'},
 	
 	ich_alter: {
 	en: alter,
@@ -111,12 +119,12 @@ werte = {
 	},
 
 	job_frei:{
-	en: 'Freelancer'
+	en: 'Freelancer und Entwickler'
 	
 	},
 	
 	job_sys: {
-	en: 'Administrator Windows'
+	en: 'IT System-Administrator'
 	},
 
 	job_titel:{
