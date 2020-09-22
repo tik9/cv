@@ -5,7 +5,7 @@ title: Timo Körner Lebenslauf
 ---
 
 
-IT Fachmann
+Vertriebsprofi
 :   <span class=tem>{{ job_sys }}</span>
 
 ---------------------------------
@@ -22,14 +22,7 @@ Berufserfahrung
 2005 - heute
 :   *<span class=tem>{{ job_frei }}</span>*
     (Hepberg)  
-     <span class=tem>{{ erfahrung_git }}</span>. <span class=tem>{{ erfahrung_lin }}</span>
-
-Open Source
---------------------
-Verschiedenes
-:     
-    [github](https://github.com/tik9)  
-    [Stackoverflow](https://stackoverflow.com/users/1705829/timo)
+     <span class=tem>{{ erfahrung_bw }}</span>.
 
 Ausbildung
 ----------
@@ -43,7 +36,16 @@ Ausbildung
 1999 - 2005
 :   *<span class=tem>{{ b_studium }}</span>* (Bamberg)
 
-    Eine bayrische Universität ([Website](https://www.uni-bamberg.de)) mit einem umfangreichen Studien- und Sprachangebot, das ich nutzte.
+    Eine bayrische Universität ([Website](https://www.uni-bamberg.de)) mit einem umfangreichen Studien- und Sprachangebot, das ich insbesondere für Englisch und Spanisch nutzte.
+
+
+Open Source Programmier- Erfahrung
+--------------------
+Verschiedenes
+:     
+    [github](https://github.com/tik9)  
+    [Stackoverflow](https://stackoverflow.com/users/1705829/timo)
+
 
 ----
 

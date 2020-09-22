@@ -2,17 +2,18 @@ window.onload = function(){
 
 datei = location.href.split("/").slice(-1)[0]
 sprache =datei.slice(3,-5)
-if (datei=='anschreiben.html'){
+//~ if (datei=='anschreiben_*.html'){
+if (datei.includes('anschreiben')){
 	sprache='de'
 }
-console.log(sprache)
+//~ console.log(sprache)
 
 templates = document.getElementsByClassName("tem")
-templates_dh = document.getElementsByClassName("tem_dh")
+templates_ag = document.getElementsByClassName("tem_ag")
 
  // templates.forEach(function (template, ind,obj) {
 
-Array.prototype.forEach.call(templates_dh, function (template) {
+Array.prototype.forEach.call(templates_ag, function (template) {
   	innen=template.innerHTML
 	template_ohne=innen.slice(3,-3)
 	wert=ags[0][template_ohne]
@@ -55,18 +56,13 @@ werte = {
 	en: 'Railroad public services'
 	},
 
-	b_studium: {
-	
+	b_studium: {	
 	de: 'BWL - Studium',
 	en: 'Management - Studies'
 	},
 	
-	erfahrung_lin: {
-	de: 'Individualisierung der Zsh Shell mit Aliasen und Funktionen auf Basis von "Oh-my-Zsh"'
-	},
-	
-	erfahrung_git: {
-	de:'Einsatz von Git auf verschiedenen Systemen, u. a. Linux und Android'
+	erfahrung_bw:{
+	de:'Regelmäßige Kundenacquise und -bindung in Form von Newslettern und telefonischem Kontakt'	
 	},
 	
 	erfahrung_acc:{
@@ -74,9 +70,16 @@ werte = {
 	en:'MS Access and Excel VBA App for calculation and visualization.'
 	},
 	
-	erfahrung_prog: {
+	erfahrung_git: {
+	de:'Einsatz von Git auf verschiedenen Systemen, u. a. Linux und Android'
+	},
+	
+	erfahrung_js: {
 	en: 'Javascript Template system for cover letters and CV'	,
 	de:'Javascript und Html Templating für Bewerbungsanschreiben und Lebenslauf'
+	},
+	erfahrung_lin: {
+	de: 'Individualisierung der Zsh Shell mit Aliasen und Funktionen auf Basis von "Oh-my-Zsh"'
 	},
 	
 	erfahrung_ps:{
@@ -97,6 +100,7 @@ werte = {
 	de: 'Studium Diplom - Verwaltungsinformatik',
 	en: 'Bachelor IT'
 	},
+	
 	h_studium_ausf: {
 	de: 'Vergleichbar mit einem Informatik Bachelor an einer Hochschule',
 	en: 'Bachelor in IT with focus on the public sector including public law.'
@@ -139,14 +143,8 @@ werte = {
 
 }
 
-for (t in templates){
-	 // debugger	
- // console.log('ende ' + t)
-	
-}
 
  Array.prototype.forEach.call(templates, function (template) {
- // console.log('ende2 ' + t)
 
 //~ for (template in templates){		
 	
@@ -154,6 +152,7 @@ for (t in templates){
 	
 	template_ohne=innen.slice(3,-3)
 	wert=werte[template_ohne]
+	//~ console.log(wert['de'])
 	
 	// de= wert['de']
 	if (wert['de']){

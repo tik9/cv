@@ -1,6 +1,21 @@
 
 ags=[
 {
+	a: 'msg',
+	j: 'Einstiegsprogramm in die IT-Beratung'
+},
+
+{
+	a:'Sparks GmbH',
+	j:'Projektmanagement SVM'
+},
+
+{
+jo:'Vertriebs-Sachbearbeiter für Auslandskunden',
+dh:'Dr. Wack Chemie'
+},
+
+{
 jo:'IT-Systemadministrator (Linux)',
 'dh':'Kessel'
 
@@ -11,16 +26,6 @@ ma:'bewerbung@ingolstadt.de'
 	,{
 	jo:'Software-Tester / Testautomatisierer',
 	dh:'Akka Deutschland'
-},
-{
-	jo:'Stellvertretender Fachbereichsleiter IT-ID DE50332536-03',
-	dh:'Dektra Incos'
-},
-{
-	jo:'IT-Prozessmanager Verwaltungsdigitalisierung',
-	dh:'Stadt Ingolstadt',
-	mail:'bewerbung@ingolstadt.de'
-		
 },
 {
 	dh:'Volkswagen Group Services GmbH',
@@ -47,18 +52,6 @@ ma:'bewerbung@ingolstadt.de'
 		job:'IT-Benutzerbetreuer',
 	mail:'bewerbung@ingolstadt.de'
 },
-
-{	
-	dh:'Neue Presse Multimedia',
-	job:'Senior Web-Entwickler',
-	mail:'bewerbung-nps@pnp.de'
-},
-
-	{
-		dh:'Stadt Ingolstadt',
-		email:'bewerbung@ingolstadt.de',
-		job: 'Sachbearbeiter Digitalisierung IT-Beschaffungen in Teilzeit',
-	},
 
 {
 dh:'Präsidium der Bayerischen Bereitschaftspolizei',

@@ -8,9 +8,9 @@ header-includes: <script src="../js.js" id=spr data-name=de></script><script src
 &nbsp;  
 &nbsp;
 
-<span class=tem_dh>{{ dh }}</span>  
+<span class=tem_ag>{{ a }}</span>  
 Personalabteilung  
-<span class=tem_dh>{{ ma }}</span>  
+<span class=tem_ag>{{ ma }}</span>  
 &nbsp;  
 &nbsp;
 
@@ -18,7 +18,7 @@ Personalabteilung
 &nbsp;  
 &nbsp;
 
-**<span class=tem_dh>{{ jo }}</span>**    
+**<span class=tem_ag>{{ j }}</span>**    
 &nbsp;  
 
 Sehr geehrte Damen und Herren,
@@ -28,7 +28,6 @@ mit folgender Qualifikation möchte ich mich auf die interessante obige Stelle b
 &nbsp;
 
 - Abgeschlossenes <span class=tem>{{ h_studium }}</span>
-- Mehrjährige IT-Berufserfahrung in der Softwareentwicklung
 
 - Bereitschaft, mich in (..) einzuarbeiten
 
@@ -42,9 +41,9 @@ Ich möchte mich beruflich verändern, und nicht Teil der neu gegründeten Autob
 Ich bin bis Ende des Monats in der <span class=tem>{{ an }}</span> als <span class=tem>{{ job_titel }}</span> eingesetzt.
 &nbsp;
 
-Ich suche eine Tätigkeit in Teilzeit zwischen 30 und 35 Wochenstunden.  
+Ich suche eine Tätigkeit nach Möglichkeit in Teilzeit zwischen 30 und 35 Wochenstunden.  
 
-Ich bin verfügbar ab dem 1.10., meine Gehaltsvorstellung beträgt .000 brutto jährlich.  
+Ich bin verfügbar ab dem 15.10., meine Gehaltsvorstellung beträgt 30.000 brutto jährlich für 30 Wochenstunden.  
 
 &nbsp;
 
