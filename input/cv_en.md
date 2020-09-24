@@ -25,12 +25,13 @@ Working Experience
     (Germany)  
     <span class=tem>{{ erfahrung_win }}</span>
 
-Open Source Commitment
+Open Source
 --------------------
-Experiences
+Commitment
 :     
     [github](https://github.com/tik9)  
-    [Stackoverflow](https://stackoverflow.com/users/1705829/timo)
+    [Stackoverflow](https://stackoverflow.com/users/1705829/timo)  
+    [LinkedIn Test](https://ebazhanov.github.io/in-quiz-questions/)
 
 Education
 ----------
@@ -42,7 +43,7 @@ Education
     <span class=tem>{{ h_studium_ausf }}</span>. The studies include working in different IT departments in an organisation (comparable to a dual degree).
 
 1999 - 2005
-:   *<span class=tem>{{ b_studium }}</span> [Website](https://www.uni-bamberg.de)* (Bamberg, Germany)
+:   *<span class=tem>{{ b_studium }}</span>, [Website](https://www.uni-bamberg.de)* (Bamberg, Germany)
 
     
 

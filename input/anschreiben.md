@@ -27,15 +27,12 @@ Sehr geehrte Damen und Herren,
 mit folgender Qualifikation möchte ich mich auf die interessante obige Stelle bewerben:  
 &nbsp;
 
-- Abgeschlossenes <span class=tem>{{ h_studium }}</span>
+- abgeschlossenes <span class=tem>{{ h_studium }}</span>
 
 - Bereitschaft, mich in (..) einzuarbeiten
 
-- Strukturierte und selbstständige Arbeitsweise, aktiver [Entwickler](https://stackoverflow.com/users/1705829/timo?tab=activity)
-- Gute Englischkenntnisse
-&nbsp;
-
-Ich möchte mich beruflich verändern, und nicht Teil der neu gegründeten Autobahn GmbH mit der starren Zentralisierung werden.
+- strukturierte und selbstständige Arbeitsweise, aktiver [Entwickler](https://stackoverflow.com/users/1705829/timo?tab=activity)
+- sehr gute Englischkenntnisse
 &nbsp;
 
 Ich bin bis Ende des Monats in der <span class=tem>{{ an }}</span> als <span class=tem>{{ job_titel }}</span> eingesetzt.

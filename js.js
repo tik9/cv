@@ -88,7 +88,7 @@ werte = {
 	
 	erfahrung_win: {
 	de: 'Unterstützung der Anwender bei Standard- und Fachanwendungen',
-	en:'Client support with MS Windows and MS Office Problems.'
+	en:'Client support solving difficult MS Windows and MS Office problems.'
 	},
 	
 	erfahrung_win2: {
@@ -103,7 +103,7 @@ werte = {
 	
 	h_studium_ausf: {
 	de: 'Vergleichbar mit einem Informatik Bachelor an einer Hochschule',
-	en: 'Bachelor in IT with focus on the public sector including public law.'
+	en: 'Bachelor in IT with focus on the public sector including public law and public controlling (administration for cities and villages)'
 	},
 	
 	heute: {
@@ -123,7 +123,8 @@ werte = {
 	},
 
 	job_frei:{
-	en: 'Freelancer und Entwickler'
+	en: 'Freelancer and software expert',
+	de: 'Freelancer und Software Entwickler'
 	
 	},
 	

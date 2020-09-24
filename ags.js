@@ -1,6 +1,11 @@
 
 ags=[
 {
+a: 'p3 Group',
+j:'CONSULTANT IT- UND BUSINESSTRANSFORMATION'
+},
+
+{
 	a: 'msg',
 	j: 'Einstiegsprogramm in die IT-Beratung'
 },
