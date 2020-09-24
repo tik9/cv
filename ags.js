@@ -1,6 +1,10 @@
 
 ags=[
 {
+a: 'Technische Hochschule Ingolstadt',
+j: 'Referent Doktorandenausbildung BayWISS für 20 Wochenstunden'
+},
+
 a: 'p3 Group',
 j:'CONSULTANT IT- UND BUSINESSTRANSFORMATION'
 },

@@ -18,12 +18,12 @@ Working Experience
 :   *<span class=tem>{{ job_titel }}</span> - <span class=tem>{{ an }}</span>*
     (Nuernberg, Germany)
 
-     <span class=tem>{{ erfahrung_win2 }}</span> <span class=tem>{{ erfahrung_acc }}</span> 
+     <span class=tem>{{ erfahrung_win }}</span>
 
 2005 - 2015
 :   *Freelancer*
     (Germany)  
-    <span class=tem>{{ erfahrung_win }}</span>
+    <span class=tem>{{ erfahrung_bw }}</span>
 
 Open Source
 --------------------

@@ -62,13 +62,10 @@ werte = {
 	},
 	
 	erfahrung_bw:{
-	de:'Regelmäßige Kundenacquise und -bindung in Form von Newslettern und telefonischem Kontakt'	
+	de:'Regelmäßige Kundenacquise und -bindung in Form von Newslettern und telefonischem Kontakt',
+	en: 'Personal Marketing to find new contacts and jobs via LinkedIn and Telephone'
 	},
 	
-	erfahrung_acc:{
-	de: 'Erweiterung einer MS Access und Excel VBA Anwendung zur Prüfung und Berechnung von Bodenwerten',
-	en:'MS Access and Excel VBA App for calculation and visualization.'
-	},
 	
 	erfahrung_git: {
 	de:'Einsatz von Git auf verschiedenen Systemen, u. a. Linux und Android'
@@ -82,19 +79,11 @@ werte = {
 	de: 'Individualisierung der Zsh Shell mit Aliasen und Funktionen auf Basis von "Oh-my-Zsh"'
 	},
 	
-	erfahrung_ps:{
-	de:'Erstellen von Powershell-Skripte für Routine-Aufgaben'
-	},
-	
 	erfahrung_win: {
-	de: 'Unterstützung der Anwender bei Standard- und Fachanwendungen',
-	en:'Client support solving difficult MS Windows and MS Office problems.'
+	de: 'Benutzerbetreuung im Team für 100 Benutzer. Softwareverteilung, Umstellung von Windows 7 auf Windows 10. Unterstützung der Anwender bei Standard- und Fachanwendungen. Erstellen von Powershell-Skripte für Routine-Aufgaben. Erweiterung einer MS Access und Excel VBA Anwendung zur Prüfung und Berechnung von Bodenwerten. Erweiterung einer Bestelldatenbank mit php, javascript und Mysql',
+	en:'Client support solving difficult MS Windows and MS Office problems. MS Access and Excel VBA App for calculation and visualization. Powershell fileserver automation. User Support for 100 Users and Clients including VMs. Active Directory and group policy support, software deployment. Maintenance of a php, javascript and mysql app for ordering of material'
 	},
 	
-	erfahrung_win2: {
-	de: 'Benutzerbetreuung im Team für 100 Benutzer. Tätigkeiten: Softwareverteilung, Umstellung von Windows 7 auf Windows 10.',
-	en: 'User Support for 100 Users and Clients including VMs. Active Directory and group policy support, software deployment.'	
-	},
 	
 	h_studium: {
 	de: 'Studium Diplom - Verwaltungsinformatik',
