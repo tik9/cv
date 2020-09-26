@@ -28,12 +28,10 @@ mit folgender Qualifikation möchte ich mich auf die interessante obige Stelle b
 &nbsp;
 
 - abgeschlossenes <span class=tem>{{ b_studium }}</span>
-
-- Bereitschaft, mich in (..) einzuarbeiten
+- Bereitschaft, mich in unterschiedlichste Themenbereiche einzuarbeiten
 - ausgeprägte analytische und konzeptionelle Denk- und Arbeitsweise sowie ein gutes Verständnis für komplexe wirtschaftliche und finanzielle Zusammenhänge
-- sehr gute Kommunikationsfähigkeit, sind flexibel, zuverlässig und diskret
+- sehr gute Kommunikationsfähigkeit, flexibel, zuverlässig und diskret
 - echter Teamplayer gepaart mit Freude am Umgang mit Menschen
-- schnelle Einarbeitung in unterschiedlichste Themenbereiche
 - Bereitschaft zur gelegentlichen Reisetätigkeit
 - Erfahrung im öffentlichen Dienst
 - strukturierte und selbstständige Arbeitsweise

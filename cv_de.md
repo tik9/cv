@@ -5,7 +5,7 @@ title: Timo Körner Lebenslauf
 ---
 
 
-Vertriebsprofi
+Vertriebsexperte
 :   <span class=tem>{{ job_sys }}</span>
 
 ---------------------------------

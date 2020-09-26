@@ -6,7 +6,7 @@ sprache =datei.slice(3,-5)
 if (datei.includes('anschreiben')){
 	sprache='de'
 }
-//~ console.log(sprache)
+console.log(sprache)
 
 templates = document.getElementsByClassName("tem")
 templates_ag = document.getElementsByClassName("tem_ag")
@@ -142,7 +142,7 @@ werte = {
 	
 	template_ohne=innen.slice(3,-3)
 	wert=werte[template_ohne]
-	//~ console.log(wert['de'])
+	console.log(wert['de'])
 	
 	// de= wert['de']
 	if (wert['de']){
