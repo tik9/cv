@@ -23,8 +23,34 @@ window.onload = function(){
 	for (key in arr) {
 	  document.getElementById("links").innerHTML +='<li><a href='+ arr[key] +'>'+ key+ '</a></li>'
 	}
-}	
 
+
+String.prototype.escape = function() {
+    var tagsToReplace = {
+        '<': '&lt;',
+        '>': '&gt;'
+    }
+    return this.replace(/[&<>]/g, function(tag) {
+        return tagsToReplace[tag] || tag;
+    })
+}
+
+a = "<abc>"
+escapes = document.getElementsByClassName("escape")
+//console.log(escapes.item(0))
+
+Array.prototype.forEach.call(escapes, function (escap) {
+	
+	zu_escap=escap.innerHTML
+
+console.log( zu_escap) 
+neu=zu_escap.escape()
+console.log(neu)
+
+escap.innerHTML=zu_escap.replace(zu_escap,neu)
+
+})
+}
 </script>
 <style>
 .space {
@@ -62,13 +88,15 @@ window.onload = function(){
 </div>
 
 <h4>Blog</h4>  
-  <h5>September 2020 </h6>
+  <h5>October 2020 </h6>
 
-<h6>Contact form on a static site without <code>php</code></h6>
+<h6>Creating documents such as motivation letters and Cv using <code>Javascript, Markdown and Html</code></h6>
 <ul>
-<li><code>formspree.io</code> will be used</li>
-<li>Example form tag: <code>&lt;form action='https://formspree.io/your-email-address' method='post'&gt;</code></li>
-<li>An account at formspree.io is obligatory</li>
+<li>Create two <code>Javascript arrays</code> with your personal data (bilingual, in my case english and german) and employer addresses and jobs</li>
+<li>Put the array elements in a js loop and replace them in the <code>innerhtml</code></li>
+<li>Prepare <code>cv.md and motivation.md</code> including the js files in the <code>header</code></li>
+<li>Example <code>span</code> tag with template <code>h_studium</code> in the md file: <code><span class=escape><span class=tem>{{ h_studium }}</span></span></code></li>
+<li>Convert the md files to <code>html</code> and upload the files to github, in my case <a href=https://github.com/tik9/cv>located here</a></li>
 </ul>
 
 <h4 class='space'>Contact</h4>

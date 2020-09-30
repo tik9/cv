@@ -71,10 +71,16 @@ werte = {
 	de:'Einsatz von Git auf verschiedenen Systemen, u. a. Linux und Android'
 	},
 	
+	erfahrung_it:{
+		de:'Lösen von Software Problemen aller Art in Windows und Linux',
+		en:'Customer Support in Windows und Linux'
+	},
+	
 	erfahrung_js: {
 	en: 'Javascript Template system for cover letters and CV'	,
 	de:'Javascript und Html Templating für Bewerbungsanschreiben und Lebenslauf'
 	},
+	
 	erfahrung_lin: {
 	de: 'Individualisierung der Zsh Shell mit Aliasen und Funktionen auf Basis von "Oh-my-Zsh"'
 	},
@@ -112,18 +118,13 @@ werte = {
 	},
 
 	job_frei:{
-	en: 'Freelancer and software expert',
+	en: 'Freelancer and software developer',
 	de: 'Freelancer und Software Entwickler'
 	
 	},
 	
 	job_sys: {
-	en: 'IT System-Administrator'
-	},
-
-	job_titel:{
-		de: 'IT Mitarbeiter',
-		en: 'IT expert'
+	en: 'System-Administrator'
 	},
 	
 	ppm: {
@@ -134,15 +135,13 @@ werte = {
 }
 
 
- Array.prototype.forEach.call(templates, function (template) {
-
-//~ for (template in templates){		
+Array.prototype.forEach.call(templates, function (template) {
 	
 	innen=template.innerHTML
 	
 	template_ohne=innen.slice(3,-3)
 	wert=werte[template_ohne]
-	console.log(wert['de'])
+	//console.log(wert['de'])
 	
 	// de= wert['de']
 	if (wert['de']){

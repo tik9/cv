@@ -5,7 +5,7 @@ title: Timo Körner Lebenslauf
 ---
 
 
-Vertriebsexperte
+IT Berater
 :   <span class=tem>{{ job_sys }}</span>
 
 ---------------------------------
@@ -14,7 +14,7 @@ Berufserfahrung
 --------------------
 
 2015 - 2020
-:   *<span class=tem>{{ job_titel }}</span> - <span class=tem>{{ an }}</span>*
+:   *<span class=tem>{{ job_sys }}</span> - <span class=tem>{{ an }}</span>*
     (Nürnberg)
 
     <span class=tem>{{ erfahrung_win }}</span> 
@@ -22,7 +22,7 @@ Berufserfahrung
 2005 - heute
 :   *<span class=tem>{{ job_frei }}</span>*
     (Hepberg)  
-     <span class=tem>{{ erfahrung_bw }}</span>.
+     <span class=tem>{{ erfahrung_it }}</span>.
 
 Ausbildung
 ----------
@@ -44,7 +44,9 @@ Open Source Programmier- Erfahrung
 Verschiedenes
 :     
     [github](https://github.com/tik9)  
-    [Stackoverflow](https://stackoverflow.com/users/1705829/timo)
+    [Stackoverflow](https://stackoverflow.com/users/1705829/timo)  
+    [CodeReview](https://codereview.stackexchange.com/users/169469/timo?tab=activity)  
+    [Website](https://tik9.github.io/cv/)
 
 
 ----

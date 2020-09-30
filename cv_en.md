@@ -7,7 +7,7 @@ title: Timo Körner CV
 
 
  IT Consultant
-:   <span class=tem>{{ job_frei }}</span>
+:   <span class=tem>{{ job_sys }}</span>
 
 ---------------------------------
 
@@ -15,15 +15,15 @@ Working Experience
 --------------------
 
 2015 - 2020
-:   *<span class=tem>{{ job_titel }}</span> - <span class=tem>{{ an }}</span>*
+:   *<span class=tem>{{ job_sys }}</span> - <span class=tem>{{ an }}</span>*
     (Nuernberg, Germany)
 
      <span class=tem>{{ erfahrung_win }}</span>
 
-2005 - 2015
-:   *Freelancer*
+2005 - today
+:   *<span class=tem>{{ job_frei }}</span>*
     (Germany)  
-    <span class=tem>{{ erfahrung_bw }}</span>
+    <span class=tem>{{ erfahrung_it }}</span>
 
 Open Source
 --------------------
@@ -31,7 +31,7 @@ Commitment
 :     
     [github](https://github.com/tik9)  
     [Stackoverflow](https://stackoverflow.com/users/1705829/timo)  
-    [LinkedIn Test](https://ebazhanov.github.io/in-quiz-questions/)
+    [Website](https://tik9.github.io/cv/)
 
 Education
 ----------

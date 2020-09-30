@@ -35,12 +35,10 @@ mit folgender Qualifikation möchte ich mich auf die interessante obige Stelle b
 - sehr gute Englischkenntnisse
 &nbsp;
 
-Ich bin bis Ende des Monats in der <span class=tem>{{ an }}</span> als <span class=tem>{{ job_titel }}</span> eingesetzt.
+Ich war bis Ende September als <span class=tem>{{ job_sys }}</span> eingesetzt.
 &nbsp;
 
-Ich suche eine Tätigkeit nach Möglichkeit in Teilzeit zwischen 30 und 35 Wochenstunden.  
-
-Ich bin verfügbar ab dem 15.10., meine Gehaltsvorstellung beträgt 30.000 brutto jährlich für 30 Wochenstunden.  
+Ich bin ab sofort verfügbar, meine Gehaltsvorstellung beträgt 45.000 brutto jährlich.  
 
 &nbsp;
 
