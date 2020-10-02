@@ -57,8 +57,8 @@ werte = {
 	},
 
 	b_studium: {	
-	de: 'BWL - Studium',
-	en: 'Management - Studies'
+	de: 'Diplom-Kaufmann',
+	en: 'Master in Management - Studies'
 	},
 	
 	erfahrung_bw:{
@@ -92,7 +92,7 @@ werte = {
 	
 	
 	h_studium: {
-	de: 'Studium Diplom - Verwaltungsinformatik',
+	de: 'Diplom-Verwaltungsinformatiker',
 	en: 'Bachelor IT'
 	},
 	

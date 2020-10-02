@@ -1,5 +1,12 @@
 
 ags=[
+
+{	
+a: 'ep group',
+j: 'Personalreferent Recruiting (IN39939654)',
+ma:'ingolstadt@ep-group.de'
+},
+
 {
 	j:'Softwareentwickler und Tester, HH 123748',
 	a:'Bertrandt AG',
@@ -13,10 +20,6 @@ ags=[
 	
 },
 
-{	
-a: 'Technische Hochschule Ingolstadt',
-j: 'Referent Doktorandenausbildung BayWISS für 20 Wochenstunden'
-},
 {
 a: 'p3 Group',
 j:'CONSULTANT IT- UND BUSINESSTRANSFORMATION'

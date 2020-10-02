@@ -6,7 +6,7 @@ title: Timo Körner Lebenslauf
 
 
 IT Berater
-:   <span class=tem>{{ job_sys }}</span>
+:   <span class=tem>{{ b_studium }}</span> und <span class=tem>{{ h_studium }}</span>
 
 ---------------------------------
 
