@@ -58,12 +58,12 @@ werte = {
 
 	b_studium: {	
 	de: 'Diplom-Kaufmann',
-	en: 'Master in Management - Studies'
+	en: 'Master Management'
 	},
 	
 	erfahrung_bw:{
-	de:'Regelmäßige Kundenacquise und -bindung in Form von Newslettern und telefonischem Kontakt',
-	en: 'Personal Marketing to find new contacts and jobs via LinkedIn and Telephone'
+	de:'Controlling, regelmäßige Kundenacquise und -bindung in Form von Newslettern',
+	en: 'Controlling, Personal Marketing via LinkedIn and Telephone'
 	},
 	
 	

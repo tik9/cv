@@ -38,7 +38,7 @@ mit folgender Qualifikation möchte ich mich auf die interessante obige Stelle b
 Ich war bis Ende September als <span class=tem>{{ job_sys }}</span> eingesetzt.
 &nbsp;
 
-Wussten Sie schon: ich stehe auch für andere IT nahe Stellen zur Verfügung.  
+Ich stehe auch für andere IT nahe Stellen zur Verfügung.  
 
 Ich bin ab sofort verfügbar, meine Gehaltsvorstellung beträgt 45.000 brutto jährlich.  
 

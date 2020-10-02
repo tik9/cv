@@ -7,7 +7,7 @@ title: Timo Körner CV
 
 
  IT Consultant
-:   <span class=tem>{{ job_sys }}</span>
+:   <span class=tem>{{ b_studium }}</span> || <span class=tem>{{ h_studium }}</span>
 
 ---------------------------------
 
