@@ -4,25 +4,25 @@ header-includes: <script> obj1 = "value"</script><script id= spr data-name=de sr
 title: Timo Körner Lebenslauf
 ---
 
-
-IT Berater
-:   <span class=tem>{{ b_studium }}</span> und <span class=tem>{{ h_studium }}</span>
+> <span class=tem>{{ ich_adresse }}</span>  
+> <span class=tem>{{ ich_alter }}</span> Jahre alt
 
 ---------------------------------
 
 Berufserfahrung
 --------------------
 
-2015 - 2020
+Mai 2015 - September 2020
 :   *<span class=tem>{{ job_sys }}</span> - <span class=tem>{{ an }}</span>*
     (Nürnberg)
 
-    <span class=tem>{{ erfahrung_win }}</span> 
+    <span class=tem>{{ erfahrung_win }}</span>  
+    Tools: <span class=tem>{{ tools_job_sys }}</span>
 
 2005 - heute
 :   *<span class=tem>{{ job_frei }}</span>*
     (Hepberg)  
-     <span class=tem>{{ erfahrung_it }}</span>.
+    Tools: <span class=tem>{{ tools_job_frei }}</span>
 
 Ausbildung
 ----------
@@ -45,12 +45,20 @@ Verschiedenes
 :     
     [github](https://github.com/tik9)  
     [Stackoverflow](https://stackoverflow.com/users/1705829/timo)  
-    [CodeReview](https://codereview.stackexchange.com/users/169469/timo?tab=activity)  
     [Website](https://tik9.github.io/cv/)
 
 
-----
+Tools
+--------------------
+1 = sehr gut, 2 = gut, 3 = durchschnittlich, 4 = Grundkenntnisse
 
-> <span class=tem>{{ heute }}</span>  
-  
-> <span class=tem>{{ ich_name }}</span>, <span class=tem>{{ ich_adresse }}</span>, <span class=tem>{{ ich_alter }}</span> Jahre alt
+Tool            Kenntnis    Anwendungsdauer (Jahre)
+-----          ---------- --------------------------
+Windows Server  2           2
+VBA             2           5
+Powershell      3           2
+Php             2           10
+Python          2           5
+Mysql           2           5
+MS Access       2           10
+MS Excel        1           20

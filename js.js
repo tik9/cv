@@ -86,8 +86,8 @@ werte = {
 	},
 	
 	erfahrung_win: {
-	de: 'Benutzerbetreuung im Team für 100 Benutzer. Softwareverteilung, Umstellung von Windows 7 auf Windows 10. Unterstützung der Anwender bei Standard- und Fachanwendungen. Erstellen von Powershell-Skripte für Routine-Aufgaben. Erweiterung einer MS Access und Excel VBA Anwendung zur Prüfung und Berechnung von Bodenwerten. Erweiterung einer Bestelldatenbank mit php, javascript und Mysql',
-	en:'Client support solving difficult MS Windows and MS Office problems. MS Access and Excel VBA App for calculation and visualization. Powershell fileserver automation. User Support for 100 Users and Clients including VMs. Active Directory and group policy support, software deployment. Maintenance of a php, javascript and mysql app for ordering of material'
+	de: 'Benutzerbetreuung im Team für 100 Benutzer. Softwareverteilung, Umstellung von Windows 7 auf Windows 10. Erstellen von Powershell-Skripte für Routine-Aufgaben. Erweiterung einer MS Access und Excel VBA Anwendung zur Prüfung und Berechnung von Bodenwerten.',
+	en:'Client support solving difficult MS Windows and MS Office problems. MS Access and Excel VBA App for calculation and visualization. Powershell fileserver automation. User Support for 100 Users and Clients including VMs. Active Directory and group policy support, software deployment.'
 	},
 	
 	
@@ -130,6 +130,13 @@ werte = {
 	ppm: {
 		de: 'Polizeipräsidium Mittelfranken',
 		en: ' Police Department Nürnberg'
+	},
+	tools_job_sys:{
+		en: 'Javascript, MS Access, MS Excel, Mysql, Php, Powershell, VBA, Windows Server'
+	},
+	
+	tools_job_frei:{
+		en: 'Bash, Python, Git'
 	},
 
 }

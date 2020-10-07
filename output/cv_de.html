@@ -5,12 +5,18 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <title>Timo Körner Lebenslauf</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
   <script> obj1 = "value"</script>
   <script id= spr data-name=de src="../js.js"></script>
   <link rel="stylesheet" href="../style.css">
@@ -19,21 +25,21 @@
 <header id="title-block-header">
 <h1 class="title">Timo Körner Lebenslauf</h1>
 </header>
-<dl>
-<dt>IT Berater</dt>
-<dd><span class="tem">{{ b_studium }}</span> und <span class="tem">{{ h_studium }}</span>
-</dd>
-</dl>
+<blockquote>
+<p><span class="tem">{{ ich_adresse }}</span><br />
+<span class="tem">{{ ich_alter }}</span> Jahre alt</p>
+</blockquote>
 <hr />
 <h2 id="berufserfahrung">Berufserfahrung</h2>
 <dl>
-<dt>2015 - 2020</dt>
+<dt>Mai 2015 - September 2020</dt>
 <dd><p><em><span class="tem">{{ job_sys }}</span> - <span class="tem">{{ an }}</span></em> (Nürnberg)</p>
-<p><span class="tem">{{ erfahrung_win }}</span></p>
+<p><span class="tem">{{ erfahrung_win }}</span><br />
+Tools: <span class="tem">{{ tools_job_sys }}</span></p>
 </dd>
 <dt>2005 - heute</dt>
 <dd><em><span class="tem">{{ job_frei }}</span></em> (Hepberg)<br />
-<span class="tem">{{ erfahrung_it }}</span>.
+Tools: <span class="tem">{{ tools_job_frei }}</span>
 </dd>
 </dl>
 <h2 id="ausbildung">Ausbildung</h2>
@@ -52,16 +58,61 @@
 <dt>Verschiedenes</dt>
 <dd><a href="https://github.com/tik9">github</a><br />
 <a href="https://stackoverflow.com/users/1705829/timo">Stackoverflow</a><br />
-<a href="https://codereview.stackexchange.com/users/169469/timo?tab=activity">CodeReview</a><br />
 <a href="https://tik9.github.io/cv/">Website</a>
 </dd>
 </dl>
-<hr />
-<blockquote>
-<p><span class="tem">{{ heute }}</span></p>
-</blockquote>
-<blockquote>
-<p><span class="tem">{{ ich_name }}</span>, <span class="tem">{{ ich_adresse }}</span>, <span class="tem">{{ ich_alter }}</span> Jahre alt</p>
-</blockquote>
+<h2 id="tools">Tools</h2>
+<p>1 = sehr gut, 2 = gut, 3 = durchschnittlich, 4 = Grundkenntnisse</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Tool</th>
+<th style="text-align: center;">Kenntnis</th>
+<th style="text-align: center;">Anwendungsdauer (Jahre)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Windows Server</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">VBA</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Powershell</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Php</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Python</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">5</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Mysql</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">MS Access</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">MS Excel</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">20</td>
+</tr>
+</tbody>
+</table>
 </body>
 </html>
