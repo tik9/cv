@@ -3,25 +3,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Timo Körner</title>
 	
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style_tk.css">
+  <link rel="stylesheet" href="cookie.css">
+
 <link rel="icon" type="image/png" href="favicon.png"/>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="links.js"></script>
+<script src="cookie.js"></script>
 
-<script>
-// window.onload = function(){
-
-// }
-</script>
-<style>
-.space {
-  padding-top: 40px;
-  padding-bottom: 30px
-}
-</style>
 </head>
 <body>
 
@@ -43,22 +36,19 @@
     </div>
     <div class="col-sm-4">
       <h3>Links</h3> 
-<ul>
 <div id=links></div>
-</ul>
 </div>
 </div>
 
 <h4>Blog</h4>  
-  <h5>October 2020 </h6>
+  <h5>October 2020 </h5>
 
 <h6>Creating documents such as motivation letters and Cv using <code>Javascript, Markdown and Html</code></h6>
 <ul>
 <li>Create two <code>Javascript arrays</code> with your personal data (bilingual, in my case english and german) and employer addresses and jobs</li>
-<li>Put the array elements in a js loop and replace them in the <code>innerhtml</code></li>
 <li>Prepare <code>cv.md and motivation.md</code> including the js files in the <code>header</code></li>
 <li>Example <code>span</code> tag with template <code>h_studium</code> in the md file: <code><span class=escape><span class=tem>{{ h_studium }}</span></span></code></li>
-<li>Convert the md files to <code>html</code> and upload the files to github, in my case <a href=https://github.com/tik9/cv>located here</a></li>
+<li>Convert the md files to <code>html</code> with <code>Pandoc</code> and upload the files to <a href=https://github.com/tik9/cv>github</a></li>
 </ul>
 
 <h4 class='space'>Contact</h4>
@@ -85,15 +75,16 @@
 </form>
 
 <div class=space>
-<h4>Datenschutzerklärung</h4>
-<h5>1. Datenschutz auf einen Blick</h5>
-<h6>Allgemeine Hinweise</h6> <p>Die folgenden Hinweise geben einen einfachen &Uuml;berblick dar&uuml;ber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie pers&ouml;nlich identifiziert werden k&ouml;nnen. Ausf&uuml;hrliche Informationen zum Thema Datenschutz entnehmen Sie unserer unter diesem Text aufgef&uuml;hrten Datenschutzerkl&auml;rung.</p>
-<h6>Datenerfassung auf dieser Website</h6> Wer ist verantwortlich f&uuml;r die Datenerfassung auf dieser Website? <p>Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten k&ouml;nnen Sie dem Impressum dieser Website entnehmen.</p> Wie erfassen wir Ihre Daten? <p>Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z.&nbsp;B. um Daten handeln, die Sie in ein Kontaktformular eingeben.</p> <p>Andere Daten werden automatisch oder nach Ihrer Einwilligung beim Besuch der Website durch unsere IT-Systeme erfasst. Das sind vor allem technische Daten (z.&nbsp;B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs). Die Erfassung dieser Daten erfolgt automatisch, sobald Sie diese Website betreten.</p> Wof&uuml;r nutzen wir Ihre Daten? <p>Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu gew&auml;hrleisten. Andere Daten k&ouml;nnen zur Analyse Ihres Nutzerverhaltens verwendet werden.</p> Welche Rechte haben Sie bez&uuml;glich Ihrer Daten? <p>Sie haben jederzeit das Recht, unentgeltlich Auskunft &uuml;ber Herkunft, Empf&auml;nger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Sie haben au&szlig;erdem ein Recht, die Berichtigung oder L&ouml;schung dieser Daten zu verlangen. Wenn Sie eine Einwilligung zur Datenverarbeitung erteilt haben, k&ouml;nnen Sie diese Einwilligung jederzeit f&uuml;r die Zukunft widerrufen. Au&szlig;erdem haben Sie das Recht, unter bestimmten Umst&auml;nden die Einschr&auml;nkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. Des Weiteren steht Ihnen ein Beschwerderecht bei der zust&auml;ndigen Aufsichtsbeh&ouml;rde zu.</p> <p>Hierzu sowie zu weiteren Fragen zum Thema Datenschutz k&ouml;nnen Sie sich jederzeit unter der im Impressum angegebenen Adresse an uns wenden.</p>
-<h5>2. Allgemeine Hinweise und Pflichtinformationen</h5>
-<h6>Datenschutz</h6> <p>Die Betreiber dieser Seiten nehmen den Schutz Ihrer pers&ouml;nlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerkl&auml;rung.</p> <p>Wenn Sie diese Website benutzen, werden verschiedene personenbezogene Daten erhoben. Personenbezogene Daten sind Daten, mit denen Sie pers&ouml;nlich identifiziert werden k&ouml;nnen. Die vorliegende Datenschutzerkl&auml;rung erl&auml;utert, welche Daten wir erheben und wof&uuml;r wir sie nutzen. Sie erl&auml;utert auch, wie und zu welchem Zweck das geschieht.</p> <p>Wir weisen darauf hin, dass die Daten&uuml;bertragung im Internet (z.&nbsp;B. bei der Kommunikation per E-Mail) Sicherheitsl&uuml;cken aufweisen kann. Ein l&uuml;ckenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht m&ouml;glich.</p>
-<h6>Hinweis zur verantwortlichen Stelle</h6> <p>Die verantwortliche Stelle f&uuml;r die Datenverarbeitung auf dieser Website ist:</p> <p>Timo K&ouml;rner<br />
-Bergstr. 15<br />
-85120 Hepberg</p>
+  <iframe src="footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()" height="200" width="500" title="footer"></iframe>
+<!-- <div id=footer></div> -->
+
+</div>
+
+<div id="cookieConsent">
+  <div id="closeCookieConsent">x</div>
+  The website is using cookies. <a class="cookieConsentOK">That's Fine</a>
+</div>
+
 </div>
 </body>
 </html>

@@ -1,18 +1,24 @@
-window.onload = function(){
-    console.log('test links')
-    
-    document.getElementById("tk").innerHTML='<h1>Timo Körner</h1>'
+$(document).ready(function(){
+
+    // console.log('test links')
+    ich='Timo Körner'
+    document.getElementById("tk").innerHTML='<h1>' + ich + '</h1>'
+    // $('title').text()= ich
+    document.title=ich
     
     arr = {
-		Home: '', 
 		Github: 'https://github.com/tik9',
 		LinkedIn: 'https://linkedin.com/in/timo-körner-65ab601b1',
 		Stackoverflow: 'https://stackoverflow.com/users/1705829/timo',
 		CodeReview: 'https://codereview.stackexchange.com/users/169469/timo?tab=activity',
 		Cv: 'output/cv_en.html'
-		}
+    }
+
+    i=0
 	for (key in arr) {
-	  document.getElementById("links").innerHTML +='<li><a href='+ arr[key] +'>'+ key+ '</a></li>'
+        // console.log(i, i %3, key)
+        document.getElementById("links").innerHTML +='<a href='+ arr[key] +'>'+ key+ '</a> || '
+        i++
 	}
 
     String.prototype.escape = function() {
@@ -40,4 +46,4 @@ window.onload = function(){
     escap.innerHTML=zu_escap.replace(zu_escap,neu)
     
     })
-}
+})
