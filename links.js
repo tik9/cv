@@ -5,7 +5,7 @@ $(document).ready(function(){
     document.getElementById("tk").innerHTML='<h1>' + ich + '</h1>'
     // $('title').text()= ich
     document.title=ich
-    
+
     arr = {
 		Github: 'https://github.com/tik9',
 		LinkedIn: 'https://linkedin.com/in/timo-körner-65ab601b1',
@@ -20,30 +20,4 @@ $(document).ready(function(){
         document.getElementById("links").innerHTML +='<a href='+ arr[key] +'>'+ key+ '</a> || '
         i++
 	}
-
-    String.prototype.escape = function() {
-        var tagsToReplace = {
-            '<': '&lt;',
-            '>': '&gt;'
-        }
-        return this.replace(/[&<>]/g, function(tag) {
-            return tagsToReplace[tag] || tag;
-        })
-    }
-    
-    a = "<abc>"
-    escapes = document.getElementsByClassName("escape")
-    //console.log(escapes.item(0))
-    
-    Array.prototype.forEach.call(escapes, function (escap) {
-        
-        zu_escap=escap.innerHTML
-    
-    console.log( zu_escap) 
-    neu=zu_escap.escape()
-    console.log(neu)
-    
-    escap.innerHTML=zu_escap.replace(zu_escap,neu)
-    
-    })
 })

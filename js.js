@@ -3,9 +3,13 @@ window.onload = function(){
 datei = location.href.split("/").slice(-1)[0]
 sprache =datei.slice(3,-5)
 //~ if (datei=='anschreiben_*.html'){
-if (datei.includes('anschreiben')){
+if (datei.includes('anschreiben_md')){
 	sprache='de'
 }
+else {
+	sprache='en'
+}
+
 console.log(sprache)
 
 templates = document.getElementsByClassName("tem")

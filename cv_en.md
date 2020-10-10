@@ -5,16 +5,15 @@ header-includes: <script src="../js.js" id= spr data-name="en"></script> <link r
 title: Timo Körner CV
 ---
 
-
- IT Consultant
-:   <span class=tem>{{ b_studium }}</span> || <span class=tem>{{ h_studium }}</span>
+> <span class=tem>{{ ich_adresse }}</span>  
+> <span class=tem>{{ ich_alter }}</span> Jahre alt
 
 ---------------------------------
 
 Working Experience
 --------------------
 
-2015 - 2020
+2015 - September 2020
 :   *<span class=tem>{{ job_sys }}</span> - <span class=tem>{{ an }}</span>*
     (Nuernberg, Germany)
 
@@ -45,9 +44,19 @@ Education
 1999 - 2005
 :   *<span class=tem>{{ b_studium }}</span>, [Website](https://www.uni-bamberg.de)* (Bamberg, Germany)
 
-    
-
 ----
-> <span class=tem>{{ ich_alter }}</span> years old\
-> [pdf](cv_en.pdf)    
-> [html german](cv_de.html)
+
+Tools
+--------------------
+
+
+Tool           Usage (years)
+-----          -------------- 
+Windows Server  2           
+VBA             2           
+Powershell      2           
+Php             3           
+Python          2           
+Mysql           2          
+MS Access       10           
+

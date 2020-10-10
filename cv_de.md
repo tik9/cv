@@ -1,6 +1,6 @@
 
 ---
-header-includes: <script> obj1 = "value"</script><script id= spr data-name=de src="../js.js"></script> <link rel="stylesheet" href="../style.css">
+header-includes: <script> obj1 = "value"</script><script id= spr data-name=de src="js.js"></script> <link rel="stylesheet" href="style.css">
 title: Timo Körner Lebenslauf
 ---
 
@@ -47,7 +47,6 @@ Verschiedenes
     [Stackoverflow](https://stackoverflow.com/users/1705829/timo)  
     [Website](https://tik9.github.io/cv/)
 
-
 Tools
 --------------------
 1 = sehr gut, 2 = gut, 3 = durchschnittlich, 4 = Grundkenntnisse
@@ -55,10 +54,10 @@ Tools
 Tool            Kenntnis    Anwendungsdauer (Jahre)
 -----          ---------- --------------------------
 Windows Server  2           2
-VBA             2           5
+VBA             2           3
 Powershell      3           2
-Php             2           10
-Python          2           5
-Mysql           2           5
+Php             2           3
+Python          2           2
+Mysql           2           3
 MS Access       2           10
 MS Excel        1           20

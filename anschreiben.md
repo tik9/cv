@@ -9,7 +9,7 @@ header-includes: <script src="../js.js" id=spr data-name=de></script><script src
 &nbsp;
 
 <span class=tem_ag>{{ a }}</span>  
-Personalabteilung  
+Personalbüro  
 <span class=tem_ag>{{ ma }}</span>  
 &nbsp;  
 &nbsp;

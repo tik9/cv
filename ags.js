@@ -1,5 +1,14 @@
 
 ags=[
+	{
+		a:'Lingoda GmbH',
+		j:'Full Stack Developer -remote'
+	},
+	{
+		a:'hemmersbach',
+	j:'Mitarbeiter IT-Support Onsite 1st/2nd Level',
+	ma:'career.germany@hemmersbach.com'
+	},
 
 {
 a:'Ferchau GmbH',	
@@ -31,7 +40,6 @@ a: 'p3 Group',
 j:'CONSULTANT IT- UND BUSINESSTRANSFORMATION'
 },
 
-
 {
 	a:'Sparks GmbH',
 	j:'Projektmanagement SVM'
@@ -43,17 +51,10 @@ jo:'IT-Systemadministrator (Linux)',
 
 },
 
-
 {
 	dh:'Volkswagen Group Services GmbH',
 	jo:'Device Management in Teilzeit, Ingolstadt, A-2020-7932',
 	mail:''
-	
-},
-{
-	dh:' Compugroup Medical',
-	job:'IT Servicetechniker Außendienst - req4720, Ingolstadt',
-	mail:'career@cgm.com'
 	
 },
 
