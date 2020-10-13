@@ -3,14 +3,11 @@ window.onload = function(){
 datei = location.href.split("/").slice(-1)[0]
 sprache =datei.slice(3,-5)
 //~ if (datei=='anschreiben_*.html'){
-if (datei.includes('anschreiben_md')){
+if (datei.includes('anschreiben')){
 	sprache='de'
 }
-else {
-	sprache='en'
-}
 
-console.log(sprache)
+console.log(datei, sprache)
 
 templates = document.getElementsByClassName("tem")
 templates_ag = document.getElementsByClassName("tem_ag")
@@ -96,8 +93,8 @@ werte = {
 	
 	
 	h_studium: {
-	de: 'Diplom-Verwaltungsinformatiker',
-	en: 'Bachelor IT'
+	de: 'Diplom-Verwaltungsinformatiker (dual)',
+	en: 'Bachelor IT dual degree'
 	},
 	
 	h_studium_ausf: {
@@ -129,6 +126,11 @@ werte = {
 	
 	job_sys: {
 	en: 'System-Administrator'
+	},
+	
+	oed:{
+		de:'Öffentlicher Dienst',
+		en:'Bavarian State'
 	},
 	
 	ppm: {

@@ -1,6 +1,6 @@
 
 ---
-header-includes: <script> obj1 = "value"</script><script id= spr data-name=de src="js.js"></script> <link rel="stylesheet" href="style.css">
+header-includes: <script> obj1 = "value"</script><script id= spr data-name=de src="../js.js"></script> <link rel="stylesheet" href="../style_cv.css">
 title: Timo Körner Lebenslauf
 ---
 
@@ -13,7 +13,7 @@ Berufserfahrung
 --------------------
 
 Mai 2015 - September 2020
-:   *<span class=tem>{{ job_sys }}</span> - <span class=tem>{{ an }}</span>*
+:   *<span class=tem>{{ job_sys }}</span> - <span class=tem>{{ oed }}</span>*
     (Nürnberg)
 
     <span class=tem>{{ erfahrung_win }}</span>  
@@ -53,11 +53,11 @@ Tools
 
 Tool            Kenntnis    Anwendungsdauer (Jahre)
 -----          ---------- --------------------------
-Windows Server  2           2
+Windows Server  3           1
 VBA             2           3
 Powershell      3           2
 Php             2           3
 Python          2           2
 Mysql           2           3
-MS Access       2           10
-MS Excel        1           20
+MS Access       2           3
+MS Excel        1           4

@@ -1,6 +1,6 @@
 
 ---
-header-includes: <script src="../js.js" id= spr data-name="en"></script> <link rel="stylesheet" href="../style.css">
+header-includes: <script src="../js.js" id= spr data-name="en"></script> <link rel="stylesheet" href="../style_cv.css">
 
 title: Timo Körner CV
 ---
@@ -14,7 +14,7 @@ Working Experience
 --------------------
 
 2015 - September 2020
-:   *<span class=tem>{{ job_sys }}</span> - <span class=tem>{{ an }}</span>*
+:   *<span class=tem>{{ job_sys }}</span> - <span class=tem>{{ oed }}</span>*
     (Nuernberg, Germany)
 
      <span class=tem>{{ erfahrung_win }}</span>
@@ -58,5 +58,5 @@ Powershell      2
 Php             3           
 Python          2           
 Mysql           2          
-MS Access       10           
+MS Access       3           
 

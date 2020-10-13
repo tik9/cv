@@ -1,6 +1,6 @@
 
 ---
-header-includes: <script src="../js.js" id=spr data-name=de></script><script src="../ags.js"></script>
+header-includes: <script src="js.js" id=spr data-name=de></script><script src="ags.js"></script>
 ---
 
 **<span class=tem>{{ ich_name }}</apan>**  
@@ -27,7 +27,7 @@ Sehr geehrte Damen und Herren,
 mit folgender Qualifikation möchte ich mich auf die interessante obige Stelle bewerben:  
 &nbsp;
 
-- abgeschlossenes <span class=tem>{{ h_studium }}</span>
+- abgeschlossenes Studium als <span class=tem>{{ h_studium }}</span>
 
 - Bereitschaft, mich in (..) einzuarbeiten
 

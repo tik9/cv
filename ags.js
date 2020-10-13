@@ -1,14 +1,15 @@
 
 ags=[
-	{
-		a:'Lingoda GmbH',
-		j:'Full Stack Developer -remote'
-	},
-	{
-		a:'hemmersbach',
-	j:'Mitarbeiter IT-Support Onsite 1st/2nd Level',
+{
+	a:'hemmersbach',
+	j:'Mitarbeiter IT-Support Onsite 1st/2nd Level-Job-ID: 6677',
 	ma:'career.germany@hemmersbach.com'
-	},
+},
+
+{
+	a:'Lingoda GmbH',
+	j:'Full Stack Developer -remote'
+},
 
 {
 a:'Ferchau GmbH',	
@@ -36,11 +37,6 @@ ma:'ingolstadt@ep-group.de'
 },
 
 {
-a: 'p3 Group',
-j:'CONSULTANT IT- UND BUSINESSTRANSFORMATION'
-},
-
-{
 	a:'Sparks GmbH',
 	j:'Projektmanagement SVM'
 },
@@ -48,24 +44,11 @@ j:'CONSULTANT IT- UND BUSINESSTRANSFORMATION'
 {
 jo:'IT-Systemadministrator (Linux)',
 'dh':'Kessel'
-
 },
 
 {
 	dh:'Volkswagen Group Services GmbH',
 	jo:'Device Management in Teilzeit, Ingolstadt, A-2020-7932',
 	mail:''
-	
 },
-
-{
-		dh:'Stadt Ingolstadt',
-		job:'IT-Benutzerbetreuer',
-	mail:'bewerbung@ingolstadt.de'
-},
-
-{
-dh:'Präsidium der Bayerischen Bereitschaftspolizei',
-job:'IT - Professional - Mobile Devices für Eichstätt'
-}
 ]
