@@ -1,6 +1,6 @@
 
 ---
-header-includes: <script> obj1 = "value"</script><script id= spr data-name=de src="../js.js"></script> <link rel="stylesheet" href="../style_cv.css">
+header-includes: <script> obj1 = "value"</script><script id= spr data-name=de src="../media/js.js"></script> <link rel="stylesheet" href="../media/style_cv.css">
 title: Timo Körner Lebenslauf
 ---
 

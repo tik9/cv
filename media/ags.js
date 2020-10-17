@@ -1,6 +1,11 @@
 
 ags=[
 {
+	a:'Gitlab',
+	j:'Website Full Stack Developer'
+},
+
+	{
 	a:'hemmersbach',
 	j:'Mitarbeiter IT-Support Onsite 1st/2nd Level-Job-ID: 6677',
 	ma:'career.germany@hemmersbach.com'
@@ -34,11 +39,6 @@ ma:'ingolstadt@ep-group.de'
 	j:'IT Support - A-13574-P-EV',
 	ma:'enrico.vetter@puro-personal.de'
 	
-},
-
-{
-	a:'Sparks GmbH',
-	j:'Projektmanagement SVM'
 },
 
 {

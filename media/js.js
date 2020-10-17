@@ -59,7 +59,7 @@ werte = {
 
 	b_studium: {	
 	de: 'Diplom-Kaufmann',
-	en: 'Master Management'
+	en: 'Master in Management Studies'
 	},
 	
 	erfahrung_bw:{
@@ -108,7 +108,7 @@ werte = {
 	},
 	
 	ich_adresse:{
-	en: 'Bergstr. 15, 85120 Hepberg, Tel.: +49(0)1573 9598 220'},
+	en: 'Bergstrasse 15, 85120 Hepberg, Deutschland, Tel.: +49(0)1573 9598 220'},
 	
 	ich_alter: {
 	en: alter,

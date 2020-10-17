@@ -1,6 +1,6 @@
 
 ---
-header-includes: <script src="../js.js" id= spr data-name="en"></script> <link rel="stylesheet" href="../style_cv.css">
+header-includes: <script src="../media/js.js" id= spr data-name="en"></script> <link rel="stylesheet" href="../media/style_cv.css">
 
 title: Timo Körner CV
 ---
