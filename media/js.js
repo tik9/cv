@@ -2,24 +2,20 @@ window.onload = function(){
 
 datei = location.href.split("/").slice(-1)[0]
 sprache =datei.slice(3,-5)
-//~ if (datei=='anschreiben_*.html'){
 if (datei.includes('anschreiben')){
 	sprache='de'
 }
 
-console.log(datei, sprache)
+// console.log(datei, sprache)
 
 templates = document.getElementsByClassName("tem")
 templates_ag = document.getElementsByClassName("tem_ag")
-
- // templates.forEach(function (template, ind,obj) {
 
 Array.prototype.forEach.call(templates_ag, function (template) {
   	innen=template.innerHTML
 	template_ohne=innen.slice(3,-3)
 	wert=ags[0][template_ohne]
 	if (wert){
-		//~ console.log(innen + wert)
 		template.innerHTML = innen.replace(innen, wert)
 	}
 	else {
@@ -154,7 +150,6 @@ Array.prototype.forEach.call(templates, function (template) {
 	
 	template_ohne=innen.slice(3,-3)
 	wert=werte[template_ohne]
-	//console.log(wert['de'])
 	
 	// de= wert['de']
 	if (wert['de']){

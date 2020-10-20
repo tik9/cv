@@ -1,4 +1,5 @@
 $(document).ready(function(){
+ 
     String.prototype.escape = function() {
     var tagsToReplace = {
         '<': '&lt;',
@@ -16,11 +17,10 @@ Array.prototype.forEach.call(escapes, function (escap) {
     
     zu_escap=escap.innerHTML
 
-console.log( zu_escap) 
-neu=zu_escap.escape()
-console.log(neu)
+// console.log( zu_escap) 
+    neu=zu_escap.escape()
 
-escap.innerHTML=zu_escap.replace(zu_escap,neu)
+    escap.innerHTML=zu_escap.replace(zu_escap,neu)
 
 })
 })
