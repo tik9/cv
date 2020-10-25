@@ -5,7 +5,7 @@ sprache =datei.slice(3,-5)
 if (datei.includes('anschreiben')){
 	sprache='de'
 }
-
+// sprache='en'
 // console.log(datei, sprache)
 
 templates = document.getElementsByClassName("tem")
@@ -112,6 +112,10 @@ werte = {
 	
 	ich_name: {
 	en: 'Timo Körner',
+	},
+
+	ich_website:{
+	en:	'tik9.github.io/cv'
 	},
 
 	job_frei:{

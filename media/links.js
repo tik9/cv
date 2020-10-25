@@ -9,8 +9,7 @@ $(document).ready(function(){
     arr = {
 		Github: 'https://github.com/tik9',
 		LinkedIn: 'https://linkedin.com/in/timo-körner-65ab601b1',
-		Stackoverflow: 'https://stackoverflow.com/users/1705829/timo',
-		CodeReview: 'https://codereview.stackexchange.com/users/169469/timo?tab=activity',
+		Stackexchange: 'https://stackexchange.com/users/1886776/timo?tab=activity',
 		Cv: 'output/cv_en.html'
     }
 

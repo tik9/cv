@@ -1,11 +1,13 @@
 
 ---
-header-includes: <script> obj1 = "value"</script><script id= spr data-name=de src="../media/js.js"></script> <link rel="stylesheet" href="../media/style_cv.css">
+header-includes: <script> obj1 = "value"</script><script id= spr data-name=de src="../media/js.js"></script> <link rel="stylesheet" href="../media/style_cv.css"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
 title: Timo Körner Lebenslauf
+
 ---
 
 > <span class=tem>{{ ich_adresse }}</span>  
-> <span class=tem>{{ ich_alter }}</span> Jahre alt
+> <span class=tem>{{ ich_alter }}</span> Jahre alt&emsp;&emsp;&emsp;&emsp;<i class="fas fa-play-circle"></i>&emsp;<span class=tem>{{ ich_website }}</span>
 
 ---------------------------------
 
@@ -43,8 +45,8 @@ Open Source Programmier- Erfahrung
 --------------------
 Verschiedenes
 :     
-    [github](https://github.com/tik9)  
-    [Stackoverflow](https://stackoverflow.com/users/1705829/timo)  
+    [Github](https://github.com/tik9)  
+    [Stackoverflow](https://stackexchange.com/users/1886776/timo?tab=activity)  
     [Website](https://tik9.github.io/cv/)
 
 Tools
@@ -54,10 +56,9 @@ Tools
 Tool            Kenntnis    Anwendungsdauer (Jahre)
 -----          ---------- --------------------------
 Windows Server  3           1
-VBA             2           3
 Powershell      3           2
-Php             2           3
-Python          2           2
-Mysql           2           3
+Php             2           1
+Python          3           1
+Mysql           3           1
 MS Access       2           3
-MS Excel        1           4
+Javascript      2           1

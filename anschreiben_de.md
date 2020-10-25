@@ -1,6 +1,6 @@
 
 ---
-header-includes: <script src="js.js" id=spr data-name=de></script><script src="ags.js"></script>
+header-includes: <script src="media/js.js" id=spr data-name=de></script><script src="media/ags.js"></script>
 ---
 
 **<span class=tem>{{ ich_name }}</apan>**  
@@ -31,11 +31,11 @@ mit folgender Qualifikation möchte ich mich auf die interessante obige Stelle b
 
 - Bereitschaft, mich in (..) einzuarbeiten
 
-- strukturierte und selbstständige Arbeitsweise, aktiver [Entwickler](https://stackoverflow.com/users/1705829/timo?tab=activity)
+- strukturierte und selbstständige Arbeitsweise, aktiver [Entwickler](https://stackexchange.com/users/1886776/timo?tab=activity)
 - sehr gute Englischkenntnisse
 &nbsp;
 
-Ich war bis Ende September als <span class=tem>{{ job_sys }}</span> eingesetzt.
+Ich bin <span class=tem>{{ job_frei }}</span> und suche eine feste Anstellung.  
 &nbsp;
 
 Ich stehe auch für andere IT nahe Stellen zur Verfügung.  

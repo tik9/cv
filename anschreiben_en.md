@@ -28,22 +28,18 @@ Dear sirs,
 I herewith apply with the following qualification for the job mentioned above:  
 &nbsp;
 
-- <span class=tem>{{ h_studium }}</span> and <span class=tem>{{ b_studium }}</span>
-- 3 years of solid experience creating web applications using backend and frontend like PHP, CSS, HTML, Python and JS
-- Knowledge of Zsh, Docker, and Git
-- Understanding of responsive design and best practices
-- The ability to iterate quickly and embrace feedback from many perspectives
-- Knowledge of interaction and user-centered design
-- Ability to use GitLab
-- Willingness to learn in fields of information architecture, Ruby, HAML, Vue.js and static site generators
-- active [developer](https://stackoverflow.com/users/1705829/timo?tab=activity)
+- <span class=tem>{{ h_studium }}</span>
+- 1 year experience creating web applications using backend and frontend like PHP, CSS, HTML, Python, JS
+- Knowledge of Bash, Docker, Git, Powershell, Zsh
+- Willingness to learn in fields of 
+- active [developer](https://stackexchange.com/users/1886776/timo?tab=activity)
 - very good command of the english language
 &nbsp;
 
-I worked as <span class=tem>{{ job_sys }}</span> until september 2020.  
+I work as <span class=tem>{{ job_frei }}</span>.  
 &nbsp;
 
-My salary expecation is 45 k € per year gross.  
+My salary expecation is 50 k € per year gross.  
 &nbsp;
 
 Kind regards  
