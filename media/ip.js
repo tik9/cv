@@ -51,6 +51,7 @@ function getUserIP(onNewIP) { //  onNewIp - your listener function for new IPs
 
 getUserIP(function(ip){
     " | siehe http://www.whatismypublicip.com/"
-		document.getElementById("ip").innerHTML = ' IP  : '  + ip 
+        // document.getElementById("ip").innerHTML = ' IP  : '  + ip 
+        console.log('test ip 2', ip)
 })
 }

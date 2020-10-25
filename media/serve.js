@@ -1,19 +1,15 @@
-window.onload = function(){
+window.onload = function () {
 
-ip = location.host
-hn=location.hostname
+    ip = location.host
 
-console.log(ip, hn)
+    console.log('location host: ', ip)
 
-$.getJSON( "//freegeoip.net/json/" + window.location.host + "?callback=?", function(data) {
-    console.info('JSON data...')
-    // Log output to console
-    console.info(JSON.stringify(data, null, 2))
-})
+    $.getJSON("https://freegeoip.app/json/" + location.host, function (data) {
+        // console.info(JSON.stringify(data, null, 2))
+        document.getElementById('ip').innerHTML = data.ip
+        document.getElementById('stadt').innerHTML = data.city
 
-console.info(navigator.appVersion)
+    })
 
-document.getElementById("client").innerHTML = navigator.appVersion
-// document.getElementById('ip')=ip
-
+    document.getElementById("client").innerHTML = navigator.appVersion
 }
