@@ -1,6 +1,6 @@
 
 ags=[
-	{
+		{
 		j:'Junior FullStack Developer Intern',
 		a:'ElevenYellow',
 		m:'enter@elevenyellow.com'
@@ -10,15 +10,6 @@ ags=[
 j:'Junior FullStack Developer Freelance Remote',
 a:'Harvey Nash GmbH'
 	},
-	
-	{
-		a:'projekt0708 GmbH',
-		j:'Duales Studium zum Master of Science Wirtschaftsinformatik'
-	},
-{
-	a:'Platform.sh',
-	j:'Customer Success Engineer (EMEA)'
-},
 
 {
 	a:'Gitlab',
@@ -28,25 +19,21 @@ a:'Harvey Nash GmbH'
 {
 a:'Ferchau GmbH',	
 j:'Webent­wickler',
-ma:'augsburg@ferchau.com'
 },
 
 {
 a: 'ep group',
 j: 'Personalreferent',
-ma:'ingolstadt@ep-group.de'
 },
 
 {
 	j:'Softwareentwickler und Tester, HH 123748',
 	a:'Bertrandt AG',
-	ma: 'career-hamburg@de.bertrandt.com'
 },
 
 {
 	a:'Puro Personaldienstleistung',
 	j:'IT Support - A-13574-P-EV',
-	ma:'enrico.vetter@puro-personal.de'
 	
 },
 {
@@ -55,3 +42,4 @@ ma:'ingolstadt@ep-group.de'
 	mail:''
 },
 ]
+

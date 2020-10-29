@@ -18,7 +18,7 @@ HR
 &nbsp;  
 &nbsp;
 
-**<span class=tem_ag>{{ j }}</span>** &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  <img align=center src="media/tkoerner.jpg" alt="alt text" width="70"/>
+**<span class=tem_ag>{{ j }}</span>** &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  <img align=center src="media/tk.jpg" alt="alt text" width="80"/>
 
 &nbsp;  
 
@@ -39,7 +39,7 @@ I herewith apply with the following qualification for the job mentioned above:
 I work as <span class=tem>{{ job_frei }}</span>.  
 &nbsp;
 
-My salary expecation is 50 k € per year gross.  
+My salary expectation is 45 k € per year gross.  
 &nbsp;
 
 Kind regards  

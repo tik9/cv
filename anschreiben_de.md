@@ -18,12 +18,12 @@ Personalbüro
 &nbsp;  
 &nbsp;
 
-**<span class=tem_ag>{{ j }}</span>**    
+**<span class=tem_ag>{{ j }}</span>** &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  <img align=center src="media/tk.jpg" alt="alt text" width="90"/>
 &nbsp;  
 
 Sehr geehrte Damen und Herren,
 
-&nbsp;   
+&nbsp;  
 mit folgender Qualifikation möchte ich mich auf die interessante obige Stelle bewerben:  
 &nbsp;
 
