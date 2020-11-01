@@ -1,10 +1,6 @@
 
 ags=[
-		{
-		j:'Junior FullStack Developer Intern',
-		a:'ElevenYellow',
-		m:'enter@elevenyellow.com'
-	},
+{a:"BWI", j:"Linux Administrator"},{a:"BWI", j:"System Engineer LAMP Softwarepaket"},
 
 	{
 j:'Junior FullStack Developer Freelance Remote',
