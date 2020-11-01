@@ -28,15 +28,10 @@ mit folgender Qualifikation möchte ich mich auf die interessante obige Stelle b
 &nbsp;
 
 - abgeschlossenes Studium als <span class=tem>{{ h_studium }}</span>
-Ein erfolgreich abgeschlossenes IT-Studium oder eine erfolgreich abgeschlossene Berufsausbildung mit IT-Bezug
-- Mind. 3 Jahre Berufserfahrung im Bereich der Linux-Administration (SuSE Linux Enterprise Server und RedHat Enterprise Linux
-Server) im Rechenzentrumsumfeld
-- Mind. 2 Jahre Berufserfahrung in der Konzeptionierung, dem Aufbau, sowie Betrieb von Linux-HighAvailability-Systemen
-(Corosync/Pacemaker) auf IBM-Power (vorzugsweise in Verbindung mit SAP-HANA)
-- Mind. 3 Jahre Berufserfahrung in Bash-Skripting sowie in den Programmiersprachen, z.B. sed, awk, Perl, python, C/C++ oder Java
-- Erste Erfarhung in der Mitarbeit an komplexen Projektaufgaben
-- Bereitschaft, mich in (..) einzuarbeiten
-
+- 1 Jahr Berufserfahrung im Bereich der Linux-Administration im Rechenzentrumsumfeld
+- 1 Jahr Berufserfahrung in Bash-Skripting sowie in sed, awk, Perl und Python
+- Erste Erfarhung in der Mitarbeit an komplexen Projektaufgaben (z. B. Umstellung von Windows 7 auf 10 für 100 Clients)
+- Bereitschaft, mich in SuSE Linux Enterprise Server, Linux-HighAvailability-Systeme, SAP-HANA und RedHat Enterprise Linux einzuarbeiten
 - strukturierte und selbstständige Arbeitsweise, aktiver [Entwickler](https://stackexchange.com/users/1886776/timo?tab=activity)
 - sehr gute Englischkenntnisse
 &nbsp;
@@ -46,7 +41,7 @@ Ich bin <span class=tem>{{ job_frei }}</span> und suche eine feste Anstellung.
 
 Ich stehe auch für andere IT nahe Stellen zur Verfügung.  
 
-Ich bin ab sofort verfügbar, meine Gehaltsvorstellung beträgt 45.000 brutto jährlich.  
+Ich bin ab sofort verfügbar.
 
 &nbsp;
 

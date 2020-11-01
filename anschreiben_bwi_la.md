@@ -28,16 +28,10 @@ mit folgender Qualifikation möchte ich mich auf die interessante obige Stelle b
 &nbsp;
 
 - abgeschlossenes Studium als <span class=tem>{{ h_studium }}</span>
-
-- Bereitschaft, mich in (..) einzuarbeiten
-Mindestens 3 Jahre entsprechende Berufserfahrung, davon 3 in den genannten Aufgaben
-- Erfahrung in der Arbeit mit CMDB/Asset-Managementsystemen
-- Erfahrung mit komplexen Projektaufgaben sowie mit Projektmanagement Methoden
-- Kenntnisse zu technologiespezifischen Tools (Configuration, Monitoring, Alarming, Provisioning, Performance)
-- Gute Kenntnisse im IT Service Management nach ITIL, Foundation Zertifizierung von Vorteil
-- Fließende Deutsch- und gute Englischkenntnisse
+- Bereitschaft, mich in IT Service Management nach ITIL, CMDB/Asset-Managementsystemen sowie Configuration, Monitoring, Alarming, Provisioning, Performance einzuarbeiten
+- Erfahrung mit komplexen Projektaufgaben sowie mit Projektmanagement Methoden (siehe andere Bewerbung)
+- fließende Deutsch- und gute Englischkenntnisse
 - strukturierte und selbstständige Arbeitsweise, aktiver [Entwickler](https://stackexchange.com/users/1886776/timo?tab=activity)
-- sehr gute Englischkenntnisse
 &nbsp;
 
 Ich bin <span class=tem>{{ job_frei }}</span> und suche eine feste Anstellung.  
