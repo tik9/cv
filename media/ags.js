@@ -1,6 +1,7 @@
 
 ags=[
-{a:"BWI", j:"Linux Administrator"},{a:"BWI", j:"System Engineer LAMP Softwarepaket"},
+	{a:"BWI", j:"System Engineer LAMP Softwarepaket"},
+	{a:"BWI", j:"Linux Administrator"},
 
 	{
 j:'Junior FullStack Developer Freelance Remote',

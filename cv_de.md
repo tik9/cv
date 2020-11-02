@@ -14,7 +14,7 @@ title: Timo Körner Lebenslauf
 Berufserfahrung
 --------------------
 
-Mai 2015 - September 2020
+2015 - September 2020
 :   *<span class=tem>{{ job_sys }}</span> - <span class=tem>{{ oed }}</span>*
     (Nürnberg)
 
