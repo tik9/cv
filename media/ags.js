@@ -2,6 +2,8 @@
 ags=[
 {a:'HeySummit',
 j:'Data Engineer'},
+	{a:"BWI", j:"System Engineer LAMP Softwarepaket"},
+	{a:"BWI", j:"Linux Administrator"},
 
 	{
 j:'Junior FullStack Developer Freelance Remote',
