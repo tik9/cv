@@ -1,10 +1,7 @@
 
 ags=[
-		{
-		j:'Junior FullStack Developer Intern',
-		a:'ElevenYellow',
-		m:'enter@elevenyellow.com'
-	},
+{a:'HeySummit',
+j:'Data Engineer'},
 
 	{
 j:'Junior FullStack Developer Freelance Remote',
@@ -16,10 +13,6 @@ a:'Harvey Nash GmbH'
 	j:'Website Full Stack Developer'
 },
 
-{
-a:'Ferchau GmbH',	
-j:'Webent­wickler',
-},
 
 {
 a: 'ep group',
@@ -36,10 +29,5 @@ j: 'Personalreferent',
 	j:'IT Support - A-13574-P-EV',
 	
 },
-{
-	dh:'Volkswagen Group Services GmbH',
-	jo:'Device Management in Teilzeit, Ingolstadt, A-2020-7932',
-	mail:''
-},
-]
 
+]

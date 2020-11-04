@@ -64,23 +64,19 @@ window.onload = function () {
 			en: 'Controlling, Personal Marketing via LinkedIn and Telephone'
 		},
 
-
-		erfahrung_git: {
-			de: 'Einsatz von Git auf verschiedenen Systemen, u. a. Linux und Android'
-		},
-
 		erfahrung_it: {
 			de: 'Lösen von Software Problemen aller Art in Windows und Linux',
 			en: 'Customer Support in Windows und Linux'
 		},
 
-		erfahrung_js: {
-			en: 'Javascript Template system for cover letters and CV',
-			de: 'Javascript und Html Templating für Bewerbungsanschreiben und Lebenslauf'
+		erfahrung_lin: {
+			de: 'Konfiguration von Apache, Nginx und Lighttpd. Benutzer- und Gruppenverwaltung. Konfiguration von IPhones',
+			en: 'Configuration of Apache, Nginx and Lighttpd, User and Groups. Configuration of Apple IPhones per remote'
 		},
 
-		erfahrung_lin: {
-			de: 'Individualisierung der Zsh Shell mit Aliasen und Funktionen auf Basis von "Oh-my-Zsh"'
+		erfahrung_web: {
+			en: 'Git Client and Server. Javascript and Markdown Template system for cover letters and CV',
+			de: 'Einsatz von Git auf verschiedenen Systemen, u. a. Linux und Android. Javascript und Html Templating für Bewerbungsanschreiben und Lebenslauf'
 		},
 
 		erfahrung_win: {

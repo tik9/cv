@@ -55,10 +55,10 @@ Tools
 
 Tool            Kenntnis    Anwendungsdauer (Jahre)
 -----          ---------- --------------------------
-Windows Server  3           1
-Powershell      3           2
+Django          2           1
+Powershell      2           2
 Php             2           1
-Python          3           1
-Mysql           3           1
-MS Access       2           3
+Python          2           1
+Mysql           2           1
+MS Access       1           3
 Javascript      2           1

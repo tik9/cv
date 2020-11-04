@@ -1,105 +1,126 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-	
+  <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="media/style_tk.css">
   <link rel="stylesheet" href="media/cookie.css">
 
-<link rel="icon" type="image/png" href="favicon.png"/>
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="media/cookie.js"></script>
-<script src="media/escape.js"></script>
-<script src="media/ip.js"></script>
-<script src="media/links.js"></script>
-<script src="media/serve.js"></script>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="media/cookie.js"></script>
+  <script src="media/escape.js"></script>
+  <script src="media/ip.js"></script>
+  <script src="media/links.js"></script>
+  <script src="media/serve.js"></script>
 
 </head>
+
 <body>
 
-<div class="jumbotron text-center">
-<span id =tk></span>
-  <p>IT Admin</p>
+  <div class="jumbotron text-center">
+    <span id=tk></span>
+    <p>IT Admin</p>
 
-</div>
-  
-<div class="container">
-  <div class="row">
-    <div class="col-sm-4">
-      <h3>About</h3>
-      <p>I am a Freelancer</p>
-    </div>
-    <div class="col-sm-4">
-      <h3>Interests</h3>
-      <p>Developing in Javascript</p>
-    </div>
-    <div class="col-sm-4">
-      <h3>Links</h3> 
-<div id=links></div>
-</div>
-</div>
-
-<div class="space">
-<h4>Blog</h4>  
-  <h6>October 2020 </h6>
-
-<h6>Creating documents such as motivation letters and Cv using <code>Javascript, Markdown and Html</code></h6>
-<ul>
-<li>Create two <code>Javascript arrays</code> with your personal data (bilingual, in my case english and german), employer addresses and jobs</li>
-<li>Prepare <code>cv.md and motivation.md</code></li>
-<li>Example <code>span</code> tag with template <code>h_studium</code> in the md file: <code><span class=escape><span class=tem>{{ h_studium }}</span></span></code></li>
-<li>Convert the md files to <code>html</code> with <code>Pandoc</code> and upload the files to <a href=https://github.com/tik9/cv>github</a></li>
-</ul>
-</div>
-<!-- <div class="space"> -->
-<b>November 2020</b> is about customizing the <code>Powershell</code> CLI with <code>$profile</code>, the code is <a href="https://github.com/tik9/prs">here.</a>
-<!-- </div> -->
-
-<div class="space">
-  <h4>Your environment</h4>
-  <ul id=client_css>
-    <li>Ip address: <span id=ip></span></li>
-    <li>Browser: <span id=client></span></li>
-    <!-- <li>City: <span id=stadt></span></li> -->
-  </ul>
-</div>
-<h4 class='space'>Contact</h4>
-<form action='https://formspree.io/user153015@gmail.com' method='post'>
-    
-	 <div class="form-group">
-    <label for="nam">Name</label>
-    <input type="text" name=name class="form-control" id="name" placeholder="Enter your Name">
   </div>
-  
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <h3>About</h3>
+        <p>I am a Freelancer</p>
+      </div>
+      <div class="col-sm-4">
+        <h3>Interests</h3>
+        <p>Developing in Javascript</p>
+      </div>
+      <div class="col-sm-4">
+        <h3>Links</h3>
+        <div id=links></div>
+      </div>
+    </div>
+
+    <div class="space">
+      <h4>Blog 2020</h4>
+    </div>
+    <div class="space">
+      <h6>customizing the <code>Powershell</code> CLI with <code>$profile</code></h6>
+      Code is <a href="https://github.com/tik9/prs">here.</a>
+    </div>
+
+    <div class="space">
+      <h6>Math Formulas in Markdown</h6>
+      <ul>
+        <li>
+          <img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1"></li>
+        <li>
+          <img src="https://render.githubusercontent.com/render/math?math=\frac{n}{k}"></li>
+        <li>
+          Markdown link style does not work:
+          ![formula](https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1)
+        </li>
+      </ul>
+
+    </div>
+
+    <h6>Creating documents using <code>Javascript, Markdown and Html</code></h6>
+    <ul>
+      <li>Create two <code>Javascript arrays</code> with your personal data (bilingual, in my case english and german),
+        employer addresses and jobs</li>
+      <li>Example <code>span</code> tag with template <code>h_studium</code> in the md file:
+        <code><span class=escape><span class=tem>{{ h_studium }}</span></span></code></li>
+      <li>Convert the md files to <code>html</code> with <code>Pandoc</code> and upload the files to <a
+          href=https://github.com/tik9/cv>github</a></li>
+    </ul>
+
+    <div class="space">
+      <h4>Your environment</h4>
+      <ul id=client_css>
+        <li>Ip address: <span id=ip></span></li>
+        <li>Browser: <span id=client></span></li>
+        <!-- <li>City: <span id=stadt></span></li> -->
+      </ul>
+    </div>
+    <h4 class='space'>Contact</h4>
+    <form action='https://formspree.io/user153015@gmail.com' method='post'>
+
       <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" name=email class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        <label for="nam">Name</label>
+        <input type="text" name=name class="form-control" id="name" placeholder="Enter your Name">
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" name=email class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+          placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+
+      <div class="form-group">
+        <label for="Textarea1">Message</label>
+        <textarea name=message class="form-control" id="extarea1" rows="3" name=textarea
+          placeholder="Enter message"></textarea>
+      </div>
+      <input type="hidden" name="_subject" value='email von Kontaktformular'>
+      <button type="submit" class="btn btn-primary">Submit</button>
+
+    </form>
+
+    <div style="padding-top: 100px;"></div>
+
+    <iframe src="footer.html" height="200" width="500" title="footer"></iframe>
+    <!-- <div id=footer></div> -->
+
+    <div id="cookieConsent">
+      <div id="closeCookieConsent">x</div>
+      The website is using cookies. <a class="cookieConsentOK">That's Fine</a>
+    </div>
+
   </div>
-
-	  <div class="form-group">
-    <label for="Textarea1">Message</label>
-    <textarea name=message class="form-control" id="extarea1" rows="3" name=textarea placeholder="Enter message"></textarea>
-  </div>
-	<input type="hidden" name="_subject" value= 'email von Kontaktformular'>
-  <button type="submit" class="btn btn-primary">Submit</button>
-
-</form>
-
-<div style="padding-top: 100px;"></div>
-
-<iframe src="footer.html" height="200" width="500" title="footer"></iframe>
-<!-- <div id=footer></div> -->
-
-<div id="cookieConsent">
-  <div id="closeCookieConsent">x</div>
-  The website is using cookies. <a class="cookieConsentOK">That's Fine</a>
-</div>
-
-</div>
 </body>
+
 </html>
