@@ -13,16 +13,17 @@ title: Timo Körner CV
 Working Experience
 --------------------
 
-2015 - September 2020
-:   *<span class=tem>{{ job_sys }}</span> - <span class=tem>{{ oed }}</span>*
-    (Nuernberg, Germany)
+Windows
+:   Windows Client and Server  
+    <span class=tem>{{ erfahrung_win }}</span>
 
-     <span class=tem>{{ erfahrung_win }}</span>
+Unix
+:   Apple and Linux  
+    <span class=tem>{{ erfahrung_lin }}</span>
 
-2005 - today
-:   *<span class=tem>{{ job_frei }}</span>*
-    (Germany)  
-    <span class=tem>{{ erfahrung_it }}</span>
+OS independent
+:   Web development and Git  
+    <span class=tem>{{ erfahrung_web }}</span>
 
 Open Source
 --------------------
@@ -35,13 +36,13 @@ Commitment
 Education
 ----------
 
-2015 - 2018
+Information Technology
 :   *<span class=tem>{{ h_studium }}</span>, [Website](https://www.verwaltungsinformatiker.de)*
     (Hof, Germany)
 
     <span class=tem>{{ h_studium_ausf }}</span>. The studies include working in different IT departments in an organisation (comparable to a dual degree).
 
-1999 - 2005
+Business
 :   *<span class=tem>{{ b_studium }}</span>, [Website](https://www.uni-bamberg.de)* (Bamberg, Germany)
 
 ----
@@ -49,10 +50,9 @@ Education
 Tools
 --------------------
 
-
 Tool           Usage (years)
 -----          -------------- 
-Windows Server  1           
+Django          1         
 Powershell      1           
 Php             2           
 Python          1           
