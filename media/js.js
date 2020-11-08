@@ -49,10 +49,6 @@ window.onload = function () {
 	alter = Math.floor(alter / msProJahr)
 
 	werte = {
-		an: {
-			de: 'Autobahndirektion Nordbayern',
-			en: 'Railroad public services'
-		},
 
 		b_studium: {
 			de: 'Diplom-Kaufmann',
@@ -65,7 +61,7 @@ window.onload = function () {
 		},
 
 		erfahrung_it: {
-			de: 'Lösen von Software Problemen aller Art in Windows und Linux',
+			de: 'Lösen von Software Problemen in Windows und Linux',
 			en: 'Customer Support in Windows und Linux'
 		},
 
@@ -75,13 +71,13 @@ window.onload = function () {
 		},
 
 		erfahrung_web: {
-			en: 'Git Client and Server. Javascript and Markdown Template system for cover letters and CV',
+			en: 'Template system for cover letters and CV. Including Bash Script for copying and renaming files and converting them with Pandoc to html. Giving support as a full stack developer with focus on Frontend.',
 			de: 'Einsatz von Git auf verschiedenen Systemen, u. a. Linux und Android. Javascript und Html Templating für Bewerbungsanschreiben und Lebenslauf'
 		},
 
 		erfahrung_win: {
-			de: 'Benutzerbetreuung im Team für 100 Benutzer. Softwareverteilung, Umstellung von Windows 7 auf Windows 10. Erstellen von Powershell-Skripte für Routine-Aufgaben. Erweiterung einer MS Access und Excel VBA Anwendung zur Prüfung und Berechnung von Bodenwerten.',
-			en: 'Client support solving difficult MS Windows and MS Office problems. MS Access and Excel VBA App for calculation and visualization. Powershell fileserver automation. User Support for 100 Users and Clients including VMs. Active Directory and group policy support, software deployment.'
+			de: 'Benutzerbetreuung im Team für 100 Benutzer. Softwareverteilung, Umstellung von Windows 7 auf Windows 10. Erstellen von Skripten. Erweiterung einer MS Access und Excel VBA Anwendung zur Prüfung und Berechnung von Bodenwerten.',
+			en: 'Fileserver automation. Software deployment.Working with a client focused team, contributing to new features in the distributed system of a german public service (Virtualization, Digitalization).Extension of existing client and server machines. Also involved in designing and implementing new features for a order web-based platform. Moving server data from outside to the HQ including folder permissions in NTFS. My task was automating the whole process and copying everything over the wire with multithreading.'
 		},
 
 
@@ -126,19 +122,13 @@ window.onload = function () {
 			en: 'System-Administrator'
 		},
 
-		oed: {
-			de: 'Öffentlicher Dienst',
-			en: 'Bavarian State'
+		tools_job_web: {
+			en: 'CSS, Javascript, Mysql, Php, Python'
 		},
 
 		tools_job_sys: {
-			en: 'Javascript, MS Access, MS Excel, Mysql, Php, Powershell, VBA, Windows Server'
+			en: 'Bash, Docker, Git, Markdown, Python, Powershell'
 		},
-
-		tools_job_frei: {
-			en: 'Bash, Python, Git'
-		},
-
 	}
 
 

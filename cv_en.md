@@ -7,22 +7,21 @@ title: Timo Körner CV
 
 > <span class=tem>{{ ich_adresse }}</span>  
 > <span class=tem>{{ ich_alter }}</span> years old  &emsp;&emsp;&emsp;&emsp;<i class="fas fa-play-circle"></i> &emsp;<span class=tem>{{ ich_website }}</span>
-
 ---------------------------------
 
 Working Experience
 --------------------
 
 Windows
-:   Windows Client and Server  
+:   Automation  
     <span class=tem>{{ erfahrung_win }}</span>
 
 Unix
-:   Apple and Linux  
+:   Apple, Linux  
     <span class=tem>{{ erfahrung_lin }}</span>
 
-OS independent
-:   Web development and Git  
+Rest
+:   Web, Git  
     <span class=tem>{{ erfahrung_web }}</span>
 
 Open Source

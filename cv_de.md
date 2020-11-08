@@ -14,17 +14,18 @@ title: Timo Körner Lebenslauf
 Berufserfahrung
 --------------------
 
-2015 - September 2020
-:   *<span class=tem>{{ job_sys }}</span> - <span class=tem>{{ oed }}</span>*
-    (Nürnberg)
+Windows
+:   Windows Client, Windows Server  
+    <span class=tem>{{ erfahrung_win }}</span>
 
-    <span class=tem>{{ erfahrung_win }}</span>  
-    Tools: <span class=tem>{{ tools_job_sys }}</span>
+Unix
+:   Apple, Linux  
+    <span class=tem>{{ erfahrung_lin }}</span>
 
-2005 - heute
-:   *<span class=tem>{{ job_frei }}</span>*
-    (Hepberg)  
-    Tools: <span class=tem>{{ tools_job_frei }}</span>
+Rest
+:   Web, Git  
+    <span class=tem>{{ erfahrung_web }}</span>
+
 
 Ausbildung
 ----------
@@ -35,7 +36,7 @@ Ausbildung
 
     <span class=tem>{{ h_studium_ausf }}</span>. Kurse fanden zum Teil mit Informatik Studenten der Hochschule Hof statt.
 
-1999 - 2005
+1999 - 2004
 :   *<span class=tem>{{ b_studium }}</span>* (Bamberg)
 
     Eine bayrische Universität ([Website](https://www.uni-bamberg.de)) mit einem umfangreichen Studien- und Sprachangebot, das ich insbesondere für Englisch und Spanisch nutzte.
@@ -51,14 +52,13 @@ Verschiedenes
 
 Tools
 --------------------
-1 = sehr gut, 2 = gut, 3 = durchschnittlich, 4 = Grundkenntnisse
+1 = sehr gut, 2 = gut, 3 = leicht überdurchschnittlich, 4 = Grundkenntnisse
 
 Tool            Kenntnis    Anwendungsdauer (Jahre)
 -----          ---------- --------------------------
 Django          2           1
 Powershell      2           2
 Php             2           1
-Python          2           1
+Python          3           1
 Mysql           2           1
-MS Access       1           3
-Javascript      2           1
+Javascript      3           1
