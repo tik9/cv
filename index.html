@@ -17,8 +17,6 @@
   <script src="media/ip.js"></script>
   <script src="media/links.js"></script>
   <script src="media/serve.js"></script>
-  <script src='https://api.stackexchange.com/js/2.0/all.js'></script>
-  <!-- client side OAuth flow enabled, and must not have the desktop application redirect uri disabled -->
 
 </head>
 
@@ -54,25 +52,10 @@
       Code and how to get started is <a href="https://github.com/tik9/custom">here.</a>
       <ul>
         <li>Two repos wit different OS (Linux and Windows) working together</li>
-        <li>Fork them and try it out</li>
+        <li>Getting started: Fork them and try it out</li>
         <li>**WSL** is your friend</li>
       </ul>
           </div>
-
-    <div class="space">
-      <h6>Math Formulas in Markdown</h6>
-      <ul>
-        <li>
-          <img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1"></li>
-        <li>
-          <img src="https://render.githubusercontent.com/render/math?math=\frac{n}{k}"></li>
-        <li>
-          Markdown link style does not work:
-          ![formula](https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1)
-        </li>
-      </ul>
-
-    </div>
 
     <h6>Creating documents using <code>Javascript, Markdown and Html</code></h6>
     <ul>
@@ -85,11 +68,16 @@
     </ul>
 
     <div class="space">
+      <h4>Recent posts on Stackoverflow</h4>
+      <div id= so_api></div>
+    </div>
+
+    <div class="space">
       <h4>Your environment</h4>
       <ul id=client_css>
         <li>Ip address: <span id=ip></span></li>
         <li>Browser: <span id=client></span></li>
-        <!-- <li>City: <span id=stadt></span></li> -->
+        <li>City: <span id=stadt></span></li>
       </ul>
     </div>
     <h4 class='space'>Contact</h4>
@@ -129,6 +117,50 @@
     </div>
 
   </div>
+  <script>
+let unix_timestamp = 1549312452
+var d = new Date(unix_timestamp * 1000)
+dateString = d.toLocaleString()
+dateString=d.getDate() + '/' + (d.getMonth()+1) + '/' + d.getFullYear()
+
+console.log('zeit ',dateString);
+
+  se='http://api.stackexchange.com/2.2'
+  user=se+'/users/1705829'
+  so='order=desc&sort=activity&site=stackoverflow&filter=withbody'
+  so='site=stackoverflow&filter=withbody'
+  url =se+'/questions?'+so
+  
+  url=user+'/comments?'+so
+  // url=user+'/posts?'+so
+  
+  const list = document.createElement('ul')
+  document.getElementById("so_api").appendChild(list)
+  
+  const responseData = fetch(url).then(response => response.json())
+  
+  responseData.then(({items, has_more, quota_max, quota_remaining}) => {
+    counter=1
+    // for (const {title, score, owner, link, answer_count} of items) {
+    for (const {creation_date, score, link, body} of items) {
+      if (counter == 10 ){ break}
+      let unix_timestamp = 1549312452
+      d = new Date(creation_date * 1000)
+      dateString = d.toLocaleString()
+      dateString=d.getDate() + '/' + (d.getMonth()+1) + '/' + d.getFullYear()
+
+      const listItem = document.createElement('li')
+      list.appendChild(listItem)
+      const a = document.createElement('a')
+      listItem.appendChild(a)
+      a.href = link
+      // a.textContent = `[${score}] ${title} (by ${owner.display_name || 'somebody'})
+      // a.textContent = `[${score}] ${creation_date}`
+      a.textContent = `[${score}] | ${dateString} | ${body}`
+      counter++
+    }
+  })
+  </script>
 </body>
 
 </html>
