@@ -2,165 +2,185 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="media/style_tk.css">
-  <link rel="stylesheet" href="media/cookie.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="media/style_tk.css">
+    <link rel="stylesheet" href="media/cookie.css">
 
-  <link rel="icon" type="image/png" href="favicon.png" />
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <script src="media/cookie.js"></script>
-  <script src="media/escape.js"></script>
-  <script src="media/ip.js"></script>
-  <script src="media/links.js"></script>
-  <script src="media/serve.js"></script>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="media/cookie.js"></script>
+    <script src="media/date.js"></script>
+    <script src="media/escape.js"></script>
+    <script src="media/ip.js"></script>
+    <script src="media/links.js"></script>
+    <!--    <script src="media/serve.js"></script>-->
 
 </head>
 
 <body>
 
-  <div class="jumbotron text-center">
-    <span id=tk></span>
-    <p>An Administrator</p>
+    <div class="jumbotron text-center">
+        <span id=tk></span>
+        <p>An IT Administrator</p>
 
-  </div>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-4">
-        <h3>About </h3>
-        <p>a german freelancer</p>
-      </div>
-      <div class="col-sm-4">
-        <h3>Things to know</h3>
-        <p>CEO of a life, CTO of localhost, co-founder of a son, developer in Javascript</p>
-      </div>
-      <div class="col-sm-4">
-        <h3>Hyper links</h3>
-        <div id=links></div>
-      </div>
     </div>
 
-    <div class="space">
-      <h4>Blog</h4>
-    </div>
-    <div class="space">
-      <h6>**NEW!!** customizing <code>**Powershell**</code> and **ZSH** with <code>shared aliases</code></h6>
-      Code and how to get started is <a href="https://github.com/tik9/custom">here.</a>
-      <ul>
-        <li>Two repos wit different OS (Linux and Windows) working together</li>
-        <li>Getting started: Fork them and try it out</li>
-        <li>**WSL** is your friend</li>
-      </ul>
-          </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>About </h3>
+                <p>A german freelancer</p>
+            </div>
+            <div class="col-sm-4">
+                <h3>Things to know</h3>
+                <p>CEO of a life, CTO of localhost, co-founder of a son, a developer in Javascript</p>
+            </div>
+            <div class="col-sm-4">
+                <h3>Hyper links</h3>
+                <div id=links></div>
+            </div>
+        </div>
 
-    <h6>Creating documents using <code>Javascript, Markdown and Html</code></h6>
-    <ul>
-      <li>Create two <code>Javascript arrays</code> with your personal data (bilingual, in my case english and german),
-        employer addresses and jobs</li>
-      <li>Example <code>span</code> tag with template <code>h_studium</code> in the md file:
-        <code><span class=escape><span class=tem>{{ h_studium }}</span></span></code></li>
-      <li>Convert the md files to <code>html</code> with <code>Pandoc</code> and upload the files to <a
-          href=https://github.com/tik9/cv>github</a></li>
-    </ul>
+        <div class="space">
+            <h4>Blog</h4>
+        </div>
+        <div class="space">
+            <ul>
+                <li><a href="https://github.com/tik9/custom">customizing
+                        <code>**Powershell**</code> and **ZSH** with <code>shared aliases</code>.</a></li>
+                <li><a href=https://github.com/tik9/cv>Creating documents using <code>Javascript, Markdown, Html and Pandoc</a></li>
+            </ul>
 
-    <div class="space">
-      <h4>Recent posts on Stackoverflow</h4>
-      <div id= so_api></div>
-    </div>
+            <div class="space">
+                <h4>Recent posts</h4>
+                <div id=so_api></div>
+            </div>
 
-    <div class="space">
-      <h4>Your environment</h4>
-      <ul id=client_css>
-        <li>Ip address: <span id=ip></span></li>
-        <li>Browser: <span id=client></span></li>
-        <li>City: <span id=stadt></span></li>
-      </ul>
-    </div>
-    <h4 class='space'>Contact</h4>
-    <form action='https://formspree.io/user153015@gmail.com' method='post'>
+            <h5> <a href='https://stackexchange.com/users/1886776/timo?tab=activity'>More posts</a></h5>
+
+            <div class="space">
+                <h4>Your environment</h4>
+                <ul id=client_css>
+                    <li>Ip address: <span id=ip></span></li>
+                    <li>Browser: <span id=client></span></li>
+                    <li>City: <span id=stadt></span></li>
+                </ul>
+            </div>
+            <h4 class='space'>Contact</h4>
+            <form action='https://formspree.io/user153015@gmail.com' method='post'>
 
 
-<div class="form-group">
-        <label for="nam">Name</label>
-        <input type="text" name=name class="form-control" id="name" placeholder="Enter your Name">
-      </div>
+                <div class="form-group">
+                    <label for="nam">Name</label>
+                    <input type="text" name=name class="form-control" id="name" placeholder="Enter your Name">
+                </div>
 
-      <div class="form-group">
-        <label for="exampleInputEmail1">Email address</label>
-        <input type="email" name=email class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-          placeholder="Enter email">
-        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-      </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" name=email class="form-control" id="exampleInputEmail1"
+                        aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                        else.</small>
+                </div>
 
-      <div class="form-group">
-        <label for="Textarea1">Message</label>
-        <textarea name=message class="form-control" id="extarea1" rows="3" name=textarea
-          placeholder="Enter message"></textarea>
-      </div>
-      <input type="hidden" name="_subject" value='email von Kontaktformular'>
-      <button type="submit" class="btn btn-primary">Submit</button>
+                <div class="form-group">
+                    <label for="Textarea1">Message</label>
+                    <textarea name=message class="form-control" id="extarea1" rows="3" name=textarea
+                        placeholder="Enter message"></textarea>
+                </div>
+                <input type="hidden" name="_subject" value='email von Kontaktformular'>
+                <button type="submit" class="btn btn-primary">Submit</button>
 
-    </form>
+            </form>
 
-    <div style="padding-top: 100px;"></div>
+            <div style="padding-top: 100px;"></div>
 
-    <iframe src="footer.html" height="200" width="500" title="footer"></iframe>
-    <!-- <div id=footer></div> -->
+            <iframe src="footer.html" height="200" width="500" title="footer"></iframe>
+            <!-- <div id=footer></div> -->
 
-    <div id="cookieConsent">
-      <div id="closeCookieConsent">x</div>
-      The website is using cookies. <a class="cookieConsentOK">That's Fine</a>
-    </div>
+            <div id="cookieConsent">
+                <div id="closeCookieConsent">x</div>
+                The website is using cookies. <a class="cookieConsentOK">That's Fine</a>
+            </div>
 
-  </div>
-  <script>
-let unix_timestamp = 1549312452
-var d = new Date(unix_timestamp * 1000)
-dateString = d.toLocaleString()
-dateString=d.getDate() + '/' + (d.getMonth()+1) + '/' + d.getFullYear()
+        </div>
+        <script>
+            function truncate(str, n, useWordBoundary) {
+                if (str.length <= n) { return str; }
+                const subString = str.substr(0, n - 1); // the original check
+                return (useWordBoundary
+                    ? subString.substr(0, subString.lastIndexOf(" "))
+                    // : subString) + "&hellip;";
+                    : subString) + "..";
 
-console.log('zeit ',dateString);
+            }
 
-  se='http://api.stackexchange.com/2.2'
-  user=se+'/users/1705829'
-  so='order=desc&sort=activity&site=stackoverflow&filter=withbody'
-  so='site=stackoverflow&filter=withbody'
-  url =se+'/questions?'+so
-  
-  url=user+'/comments?'+so
-  // url=user+'/posts?'+so
-  
-  const list = document.createElement('ul')
-  document.getElementById("so_api").appendChild(list)
-  
-  const responseData = fetch(url).then(response => response.json())
-  
-  responseData.then(({items, has_more, quota_max, quota_remaining}) => {
-    counter=1
-    // for (const {title, score, owner, link, answer_count} of items) {
-    for (const {creation_date, score, link, body} of items) {
-      if (counter == 10 ){ break}
-      let unix_timestamp = 1549312452
-      d = new Date(creation_date * 1000)
-      dateString = d.toLocaleString()
-      dateString=d.getDate() + '/' + (d.getMonth()+1) + '/' + d.getFullYear()
+            // arr = ['comments', 'posts', 'questions', 'answers']
+            arr = ['comments', 'posts']
 
-      const listItem = document.createElement('li')
-      list.appendChild(listItem)
-      const a = document.createElement('a')
-      listItem.appendChild(a)
-      a.href = link
-      // a.textContent = `[${score}] ${title} (by ${owner.display_name || 'somebody'})
-      // a.textContent = `[${score}] ${creation_date}`
-      a.textContent = `[${score}] | ${dateString} | ${body}`
-      counter++
-    }
-  })
-  </script>
+            arr.forEach(function (elem) {
+                console.log('elem', elem);
+
+                se = 'http://api.stackexchange.com/2.2'
+                user = se + '/users/1705829'
+                so = 'site=stackoverflow'
+                so = 'site=stackoverflow&filter=withbody'
+                // so = 'order=desc&sort=activity&site=stackoverflow&filter=withbody'
+
+                url = user + '/' + elem + '?' + so
+                console.log('url', url)
+
+                list = document.createElement('ul')
+
+                document.getElementById("so_api").appendChild(list)
+
+                responseData = fetch(url).then(response => response.json())
+
+                responseData.then(({ items, has_more, quota_max, quota_remaining }) => {
+                    counter = 1
+                    for (const {
+                        creation_date, score, answer_count, link, body, title
+                    } of items) {
+                        if (counter == 5) {
+                            break
+                        }
+                        counter++
+
+                        dateString = datef(creation_date)
+
+                        // console.log('elem, link, title', elem, link, title);
+
+                        const listItem = document.createElement('li')
+                        list.appendChild(listItem)
+                        // bodystr = body.substring(0, 200)
+                        bodystr = truncate(body, 200, 1)
+                        // bodystr = jQuery(bodystr).text()
+
+                        // console.log(bodystr)
+
+                        bodystr = bodystr.replace(/<\/?[^>]+(>|$)/g, '')
+
+                        if (link == undefined) {
+                            span = document.createElement('span')
+                            listItem.append(span)
+                            span.textContent = `${dateString} | ${bodystr}`
+                        }
+                        else {
+                            const a = document.createElement('a')
+                            listItem.appendChild(a)
+                            a.href = link
+                            // a.textContent = `[${score}] ${title} (by ${owner.display_name || 'somebody'})
+                            a.textContent = `${dateString} | ${bodystr}`
+                        }
+                    }
+                })
+            })
+
+        </script>
 </body>
 
 </html>

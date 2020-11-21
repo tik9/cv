@@ -3,7 +3,7 @@ cv=$home/cv
 cvo=$cv/output
 
 output=anschreiben_pl
-js=$cv/media/js.js
+js=$cv/media/me.js
 
 function se_ag {
 	sed -i "/ags=\[/a {j:'$1',\na:'$2'}," $cv/media/ags.js

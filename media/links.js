@@ -6,7 +6,7 @@ $(document).ready(function(){
     // $('title').text()= ich
     document.title=ich
 
-    arr = {
+    links = {
 		Github: 'https://github.com/tik9',
 		LinkedIn: 'https://linkedin.com/in/timo-körner-65ab601b1',
 		Stackexchange: 'https://stackexchange.com/users/1886776/timo?tab=activity',
@@ -14,9 +14,9 @@ $(document).ready(function(){
     }
 
     i=0
-	for (key in arr) {
+	for (key in links) {
         // console.log(i, i %3, key)
-        document.getElementById("links").innerHTML +='<a href='+ arr[key] +'>'+ key+ '</a> || '
+        document.getElementById("links").innerHTML +='<a href='+ links[key] +'>'+ key+ '</a> || '
         i++
 	}
 })
