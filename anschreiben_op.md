@@ -34,7 +34,7 @@ I herewith apply with the following qualification for the job mentioned above:
 - Web development experience (e.g. Django, Javascript)
 - Willingness to learn in fields of Performance, Integration, Functional testing concepts, Ansible, Chef
 - active [developer](https://stackexchange.com/users/1886776/timo?tab=activity)
-- very good command of the english language
+- Good command of the english language
 &nbsp;
 
 I work as <span class=tem>{{ job_frei }}</span>.  

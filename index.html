@@ -41,146 +41,176 @@
             </div>
             <div class="col-sm-4">
                 <h3>Hyper links</h3>
-                <div id=links></div>
+                <div id=linkstop></div>
             </div>
         </div>
 
-        <div class="space">
-            <h4>Blog</h4>
+        <div class="space"></div>
+
+        <div>
+            <h4>Blog - Thoughts on IT and Automation</h4>
         </div>
+        <div id=linksblog></div>
+
         <div class="space">
-            <ul>
-                <li><a href="https://github.com/tik9/custom">customizing
-                        <code>**Powershell**</code> and **ZSH** with <code>shared aliases</code>.</a></li>
-                <li><a href=https://github.com/tik9/cv>Creating documents using <code>Javascript, Markdown, Html and Pandoc</a></li>
-            </ul>
+            <h4>Recent posts</h4>
+            <div id=so_api></div>
+        </div>
 
-            <div class="space">
-                <h4>Recent posts</h4>
-                <div id=so_api></div>
-            </div>
+        <h5> <a href='https://stackexchange.com/users/1886776/timo?tab=activity'>More posts</a></h5>
 
-            <h5> <a href='https://stackexchange.com/users/1886776/timo?tab=activity'>More posts</a></h5>
-
-            <div class="space">
+        <!-- <div class="space">
                 <h4>Your environment</h4>
-                <ul id=client_css>
-                    <li>Ip address: <span id=ip></span></li>
-                    <li>Browser: <span id=client></span></li>
-                    <li>City: <span id=stadt></span></li>
-                </ul>
+                <ul id=client_css> -->
+        <!-- <li>Ip address: <span id=ip></span></li> -->
+        <!-- <li>Browser: <span id=client></span></li> -->
+        <!-- <li>City: <span id=stadt></span></li> -->
+        <!-- </ul>
+        </div> -->
+
+        <div class="space"></div>
+
+        <h4 class='space'>Contact</h4>
+        <form action='https://formspree.io/user153015@gmail.com' method='post'>
+
+
+            <div class="form-group">
+                <label for="nam">Name</label>
+                <input type="text" name=name class="form-control" id="name" placeholder="Enter your Name">
             </div>
-            <h4 class='space'>Contact</h4>
-            <form action='https://formspree.io/user153015@gmail.com' method='post'>
 
-
-                <div class="form-group">
-                    <label for="nam">Name</label>
-                    <input type="text" name=name class="form-control" id="name" placeholder="Enter your Name">
-                </div>
-
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" name=email class="form-control" id="exampleInputEmail1"
-                        aria-describedby="emailHelp" placeholder="Enter email">
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" name=email class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
                         else.</small>
-                </div>
-
-                <div class="form-group">
-                    <label for="Textarea1">Message</label>
-                    <textarea name=message class="form-control" id="extarea1" rows="3" name=textarea
-                        placeholder="Enter message"></textarea>
-                </div>
-                <input type="hidden" name="_subject" value='email von Kontaktformular'>
-                <button type="submit" class="btn btn-primary">Submit</button>
-
-            </form>
-
-            <div style="padding-top: 100px;"></div>
-
-            <iframe src="footer.html" height="200" width="500" title="footer"></iframe>
-            <!-- <div id=footer></div> -->
-
-            <div id="cookieConsent">
-                <div id="closeCookieConsent">x</div>
-                The website is using cookies. <a class="cookieConsentOK">That's Fine</a>
             </div>
 
+            <div class="form-group">
+                <label for="Textarea1">Message</label>
+                <textarea name=message class="form-control" id="extarea1" rows="3" name=textarea placeholder="Enter message"></textarea>
+            </div>
+            <input type="hidden" name="_subject" value='email von Kontaktformular'>
+            <button type="submit" class="btn btn-primary">Submit</button>
+
+        </form>
+
+        <div style="padding-top: 100px;"></div>
+
+        <iframe src="footer_en.html" height="200" width="500" title="footer"></iframe>
+        <!-- <div id=footer></div> -->
+
+        <div id="cookieConsent">
+            <div id="closeCookieConsent">x</div>
+            The website is using cookies. <a class="cookieConsentOK">That's Fine</a>
         </div>
-        <script>
-            function truncate(str, n, useWordBoundary) {
-                if (str.length <= n) { return str; }
-                const subString = str.substr(0, n - 1); // the original check
-                return (useWordBoundary
-                    ? subString.substr(0, subString.lastIndexOf(" "))
-                    // : subString) + "&hellip;";
-                    : subString) + "..";
 
+    </div>
+    <script>
+        linksblog = {
+            'Share Aliases across environments': 'https: //github.com/tik9/custom',
+            'Creating Documents using Markdown, Javascript and Html (for the automation of job applications)': 'https://github.com/tik9/cv'
+        }
+
+        list = document.createElement('ul')
+        document.getElementById('linksblog').appendChild(list)
+        for (key in linksblog) {
+            listItem = document.createElement('li')
+            list.appendChild(listItem)
+            a = document.createElement('a')
+            listItem.appendChild(a)
+            a.href = linksblog[key]
+            a.textContent = key
+        }
+        // console.log(i, i %3, key)
+        // document.getElementById("links_top").innerHTML += '<a href=' + links[key] + '>' + key + '</a> || '
+        // i++
+
+        function truncate(str, n, useWordBoundary) {
+            if (str.length <= n) {
+                return str;
             }
+            const subString = str.substr(0, n - 1); // the original check
+            return (useWordBoundary ?
+                subString.substr(0, subString.lastIndexOf(" "))
+                // : subString) + "&hellip;";
+                :
+                subString) + "..";
+        }
 
-            // arr = ['comments', 'posts', 'questions', 'answers']
-            arr = ['comments', 'posts']
+        // arr = ['comments', 'posts', 'questions', 'answers']
+        copo = ['comments', 'posts']
 
-            arr.forEach(function (elem) {
-                console.log('elem', elem);
+        copo.forEach(function(elem) {
+            // console.log('elem', elem);
 
-                se = 'http://api.stackexchange.com/2.2'
-                user = se + '/users/1705829'
-                so = 'site=stackoverflow'
-                so = 'site=stackoverflow&filter=withbody'
+            se = 'https://api.stackexchange.com/2.2'
+            user = se + '/users/1705829'
+            so = 'site=stackoverflow'
+            so = 'site=stackoverflow&filter=withbody'
                 // so = 'order=desc&sort=activity&site=stackoverflow&filter=withbody'
 
-                url = user + '/' + elem + '?' + so
-                console.log('url', url)
+            url = user + '/' + elem + '?' + so
+                // console.log('url', url)
 
-                list = document.createElement('ul')
+            list = document.createElement('ul')
 
-                document.getElementById("so_api").appendChild(list)
+            document.getElementById("so_api").appendChild(list)
 
-                responseData = fetch(url).then(response => response.json())
+            responseData = fetch(url).then(response => response.json())
 
-                responseData.then(({ items, has_more, quota_max, quota_remaining }) => {
-                    counter = 1
-                    for (const {
-                        creation_date, score, answer_count, link, body, title
-                    } of items) {
-                        if (counter == 5) {
-                            break
-                        }
-                        counter++
+            responseData.then(({
+                items,
+                has_more,
+                quota_max,
+                quota_remaining
+            }) => {
+                counter = 1
+                for (const {
+                        creation_date,
+                        score,
+                        answer_count,
+                        link,
+                        body,
+                        title
+                    }
+                    of items) {
+                    if (counter == 8) {
+                        break
+                    }
+                    counter++
 
-                        dateString = datef(creation_date)
+                    dateString = datef(creation_date)
 
-                        // console.log('elem, link, title', elem, link, title);
+                    // console.log('elem, link, title', elem, link, title);
 
-                        const listItem = document.createElement('li')
-                        list.appendChild(listItem)
+                    const listItem = document.createElement('li')
+                    list.appendChild(listItem)
                         // bodystr = body.substring(0, 200)
-                        bodystr = truncate(body, 200, 1)
+                    bodystr = truncate(body, 200, 1)
                         // bodystr = jQuery(bodystr).text()
 
-                        // console.log(bodystr)
+                    // console.log(bodystr)
 
-                        bodystr = bodystr.replace(/<\/?[^>]+(>|$)/g, '')
+                    bodystr = bodystr.replace(/<\/?[^>]+(>|$)/g, '')
+                    bodystr = bodystr.replace(/&quot;/g, '')
 
-                        if (link == undefined) {
-                            span = document.createElement('span')
-                            listItem.append(span)
-                            span.textContent = `${dateString} | ${bodystr}`
-                        }
-                        else {
-                            const a = document.createElement('a')
-                            listItem.appendChild(a)
-                            a.href = link
+                    const a = document.createElement('a')
+                    listItem.appendChild(a)
+                    if (link == undefined) {
+                        a.href = 'https://stackexchange.com/users/1886776/timo?tab=activity'
+
+                        a.textContent = `${dateString} | ${bodystr}`
+
+                    } else {
+                        a.href = link
                             // a.textContent = `[${score}] ${title} (by ${owner.display_name || 'somebody'})
-                            a.textContent = `${dateString} | ${bodystr}`
-                        }
+                        a.textContent = `${dateString} | ${bodystr}`
                     }
-                })
+                }
             })
-
-        </script>
+        })
+    </script>
 </body>
 
 </html>

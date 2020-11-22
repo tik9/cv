@@ -4,7 +4,7 @@ I work as a ~~web developer~~ front and back-end developer and as a system admin
 
 Since 2018 I've been living and breathing web development and creating modern and user friendly interfaces. I've had the chance to immerse myself in different projects, helping to make this world better through code. ✨
 
-[Download my CV in english and/or german](https://www.tik9.github.io/cv/blob/master/file.html)
+[Download my CV in english and/or german](https://github.com/tik9/cv/blob/master/file.html)
 
 &nbsp;
 
@@ -15,7 +15,7 @@ Currently improving my React Javascript skills.<br />
 &nbsp;
 ### My most recent [actions](https://www.tik9.github.io/cv) 😃🧾
 <!-- BLOG-POST-LIST:START -->
-1. [Powershell Profile](https://github.com/tik9/custom/prs/)
+1. [Powershell Profile](https://github.com/tik9/prs/)
 
 &nbsp;
 
@@ -45,4 +45,4 @@ header-includes:<script src="media/date.js"></script>
 
 [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/timo-k%C3%B6rner-65ab601b1)]
 
-**[My Website](tik9.github.io/cv)**
+**[My Website](https://tik9.github.io/cv)**
