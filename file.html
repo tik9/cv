@@ -1,4 +1,5 @@
 <html>
+
 <head>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
@@ -17,18 +18,18 @@
         ['Kessel', 'Systemadministrator Linux'],
         ['Hemmers', 'OnSite IT Support'],
         ['Custom.Io', 'Customer Success Engineer (EMEA)'],
-        ['Ferchau','Webent­wickler'],
+        ['Ferchau', 'Webent­wickler'],
       ]
 
       heute = datef()
 
-      templateString = '<table class=table><tr><th>Firma</th><th>Job</th><th>Status</th><th>Datum</th></tr>'
+      ags = '<table class=table><tr><th>Firma</th><th>Job</th><th>Status</th><th>Datum</th></tr>'
       $.each(ags, function (i) {
-        templateString += '<tr><td>' + ags[i][0] + '</td><td>' + ags[i][1] + '</td><td>Status</td><td>' + heute + '</td></tr>'
+        ags += '<tr><td>' + ags[i][0] + '</td><td>' + ags[i][1] + '</td><td>Status</td><td>' + heute + '</td></tr>'
       })
-      templateString += '</table>'
-      // $('#fa').append(templateString)
-      console.log(templateString)
+      ags += '</table>'
+      // $('#fa').append(ags)
+      console.log('ags', ags)
     })
 
   </script>
@@ -37,24 +38,24 @@
 <body>
   <div class="jumbotron text-center">
     <span id=tk></span>
-    <p>IT Administrator</p>
+    <p>An IT Administrator</p>
 
   </div>
 
   <div class="container">
     <div class="row">
       <div class="col-sm-4">
-        <h3>Über</h3>
-        <p>Freelancer</p>
+        <h3>About</h3>
+        <p>A Freelancer</p>
       </div>
       <div class="col-sm-4">
-        <h3>Hobbies</h3>
+        <h3>More about</h3>
         <p>CEO of my life, CTO of localhosts</p>
       </div>
       <div class="col-sm-4">
         <h3>Links</h3>
         <!-- <ul> -->
-        <div id=links></div>
+        <div id=linkstop></div>
         <!-- </ul> -->
       </div>
     </div>
@@ -71,7 +72,7 @@
     <div style="padding-top: 70px;">
     </div>
 
-    <iframe src="footer.html" height="200" width="500" title="footer"></iframe>
+    <iframe src="footer_en.html" height="200" width="500" title="footer"></iframe>
 
     <div id="cookieConsent">
       <div id="closeCookieConsent">x</div>

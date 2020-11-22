@@ -22,24 +22,23 @@ HR
 
 &nbsp;  
 
-Dear sirs,
+To whom it may concern:
 
 &nbsp;   
 I herewith apply with the following qualification for the job mentioned above:  
 &nbsp;
 
 - <span class=tem>{{ h_studium }}</span>
-- 1 year experience creating web applications using backend and frontend like PHP, CSS, HTML, Python, JS
-- Knowledge of Bash, Docker, Git, Powershell
+- 1 year experience creating web applications using backend and frontend like PHP, HTML, Python, JS
+- Knowledge of Bash, Git, Powershell
 - Willingness to learn in fields of 
 - active [developer](https://stackexchange.com/users/1886776/timo?tab=activity)
 - very good command of the english language
+
+&nbsp;
 &nbsp;
 
-I work as <span class=tem>{{ job_frei }}</span>.  
-&nbsp;
-
-My salary expectation is 40 k € per year gross.  
+I work at present as <span class=tem>{{ job_frei }}</span>.  
 &nbsp;
 
 Kind regards  

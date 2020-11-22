@@ -35,12 +35,12 @@ mit folgender Qualifikation möchte ich mich auf die interessante obige Stelle b
 - sehr gute Englischkenntnisse
 &nbsp;
 
-Ich bin <span class=tem>{{ job_frei }}</span> und suche eine feste Anstellung.  
+Ich bin derzeit <span class=tem>{{ job_frei }}</span>.  
 &nbsp;
 
 Ich stehe auch für andere IT nahe Stellen zur Verfügung.  
 
-Ich bin ab sofort verfügbar, meine Gehaltsvorstellung beträgt 45.000 brutto jährlich.  
+Ich bin ab sofort verfügbar.  
 
 &nbsp;
 

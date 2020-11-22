@@ -5,19 +5,6 @@ cvo=$cv/output
 output=anschreiben_pl
 js=$cv/media/me.js
 
-function se_ag {
-	sed -i "/ags=\[/a {j:'$1',\na:'$2'}," $cv/media/ags.js
-}
-
-function se_bew { # firma sprache
-	# rm $output
-	sed -i 's/^output=anschreiben_.*$/output=anschreiben_'$1'/' $0 
-	sed -i "s/^sprache=.*$/sprache=$2/" $0
-	# sed -i "s/^sprache=.*$/sprache=$2/" $js
-
-	cp $cv/anschreiben_$2.md $cv/anschreiben_$1.md
-	code $cv/anschreiben_$1.md
-}
 
 function pandoc {
 
