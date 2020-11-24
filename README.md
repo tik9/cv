@@ -13,7 +13,7 @@ Since 2018 I've been living and breathing web development and creating modern an
 Currently improving my React Javascript skills.<br />
 
 &nbsp;
-### My most recent [actions](https://www.tik9.github.io/cv) 😃🧾
+### My most recent actions 😃🧾
 <!-- BLOG-POST-LIST:START -->
 1. [Powershell Profile](https://github.com/tik9/prs/)
 

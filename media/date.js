@@ -12,13 +12,9 @@ function datef(timestamp) {
     mm = dat.getMonth() + 1
     yyyy = dat.getFullYear()
 
-    if (dd < 10) {
-        dd = '0' + dd
-    }
+    if (dd < 10) { dd = '0' + dd }
 
-    if (mm < 10) {
-        mm = '0' + mm
-    }
+    if (mm < 10) { mm = '0' + mm }
 
     dat = dd + '/' + mm + '/' + yyyy
 

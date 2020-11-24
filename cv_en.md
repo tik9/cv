@@ -1,6 +1,6 @@
 
 ---
-header-includes: <script src="../media/date.js"></script><script src="../media/me.js" id= spr data-name="en"></script> <link rel="stylesheet" href="../media/style_cv.css"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+header-includes: <script src="../media/me.js" id= spr data-name="en"></script> <link rel="stylesheet" href="../media/style_cv.css"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
 title: Timo Körner CV
 ---

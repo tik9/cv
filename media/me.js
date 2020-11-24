@@ -22,7 +22,17 @@ window.onload = function () {
             template.innerHTML = ''
         }
     })
-    heute=datef()
+    fileName = location.href.split("/").slice(-1)
+    first2char = fileName[0].substr(0, 2)
+
+    heute = new Date()
+
+    if (first2char != 'cv') {
+        console.log('no matches with cv');
+        heute = datef()
+    }
+
+    // console.log('datei, first 2 char, heute', fileName, first2char, heute)
 
     heute_ms = Date.now()
     geburtstag = Date.parse("1978-10-02")

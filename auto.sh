@@ -26,20 +26,20 @@ function pand {
 	# cven=$cvo/cv_en.pdf
 
 	mot=motivation.pdf
-    app_ready=app.pdf
+    app=app.pdf
     #    output=${output%.md}
        output=`ls -t $cv | head -1`
 	   neu=${output:0:-3}
 	   md=$cv/$output
 	   html=$cv/$neu.html
-	   pandoc $md -o $html -s
+	#    pandoc $md -o $html -s
 	#    /snap/bin/chromium $html
 	#output=$cv/cv_de
 
 	# wkhtmltopdf $html ~/$mot 
 	# pdfunite $dir/* ~/$app_ready
 	# qp ~/$app_ready
-	#    echo $mot,$cven,$app_ready
+	   echo $dir/*,$app
 }
 
 "$@"
