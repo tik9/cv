@@ -1,36 +1,18 @@
 <html>
 
 <head>
+  <meta charset="UTF-8">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <link rel="icon" type="image/png" href="favicon.png" />
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
   <script src="media/date.js"></script>
   <script src="media/links.js"></script>
-  <script src="media/cookie.js"></script>
-  <!-- <script   src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+  <!-- <script src="media/cookie.js"></script> -->
+  <!-- <script src="media/file.js"></script> -->
 
   <script>
-    $(document).ready(function () {
-
-      ags = [
-        ['proj07', 'Duales Studium zum Master of Science Wirtschaftsinformatik'],
-        ['Kessel', 'Systemadministrator Linux'],
-        ['Hemmers', 'OnSite IT Support'],
-        ['Custom.Io', 'Customer Success Engineer (EMEA)'],
-        ['Ferchau', 'Webent­wickler'],
-      ]
-
-      heute = datef()
-
-      ags = '<table class=table><tr><th>Firma</th><th>Job</th><th>Status</th><th>Datum</th></tr>'
-      $.each(ags, function (i) {
-        ags += '<tr><td>' + ags[i][0] + '</td><td>' + ags[i][1] + '</td><td>Status</td><td>' + heute + '</td></tr>'
-      })
-      ags += '</table>'
-      // $('#fa').append(ags)
-      console.log('ags', ags)
-    })
+// console.log('cl',datef())
 
   </script>
 </head>
@@ -63,10 +45,8 @@
     <div style="padding-top: 70px;"></div>
 
     <h4>Downloads</h4>
-    <!-- <div id=body> -->
-    <!-- </div> -->
 
-    <!-- <div id="fa"></div> -->
+    <div id="ags"></div>
     <div id="body"></div>
 
     <div style="padding-top: 70px;">

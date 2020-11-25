@@ -11,18 +11,17 @@
     <link rel="stylesheet" href="media/cookie.css">
 
     <link rel="icon" type="image/png" href="favicon.png" />
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
     <script src="media/cookie.js"></script>
     <script src="media/date.js"></script>
-    <script src="media/escape.js"></script>
     <script src="media/ip.js"></script>
     <script src="media/links.js"></script>
     <!--    <script src="media/serve.js"></script>-->
-
+<script>
+</script>
 </head>
 
 <body>
-
     <div class="jumbotron text-center">
         <span id=tk></span>
         <p>An IT Administrator</p>
@@ -73,7 +72,6 @@
         <h4 class='space'>Contact</h4>
         <form action='https://formspree.io/user153015@gmail.com' method='post'>
 
-
             <div class="form-group">
                 <label for="nam">Name</label>
                 <input type="text" name=name class="form-control" id="name" placeholder="Enter your Name">
@@ -81,14 +79,16 @@
 
             <div class="form-group">
                 <label for="exampleInputEmail1">Email address</label>
-                <input type="email" name=email class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <input type="email" name=email class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Enter email">
                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                        else.</small>
+                    else.</small>
             </div>
 
             <div class="form-group">
                 <label for="Textarea1">Message</label>
-                <textarea name=message class="form-control" id="extarea1" rows="3" name=textarea placeholder="Enter message"></textarea>
+                <textarea name=message class="form-control" id="extarea1" rows="3" name=textarea
+                    placeholder="Enter message"></textarea>
             </div>
             <input type="hidden" name="_subject" value='email von Kontaktformular'>
             <button type="submit" class="btn btn-primary">Submit</button>
@@ -107,21 +107,7 @@
 
     </div>
     <script>
-        linksblog = {
-            'Share Aliases across the terminal environments of Linux and Windows': 'https: //github.com/tik9/custom',
-            'Creating Documents using Markdown, Javascript and Html (for the automation of job applications)': 'https://github.com/tik9/cv'
-        }
 
-        list = document.createElement('ul')
-        document.getElementById('linksblog').appendChild(list)
-        for (key in linksblog) {
-            listItem = document.createElement('li')
-            list.appendChild(listItem)
-            a = document.createElement('a')
-            listItem.appendChild(a)
-            a.href = linksblog[key]
-            a.textContent = key
-        }
         // console.log(i, i %3, key)
         // document.getElementById("links_top").innerHTML += '<a href=' + links[key] + '>' + key + '</a> || '
         // i++
@@ -141,17 +127,17 @@
         // arr = ['comments', 'posts', 'questions', 'answers']
         copo = ['comments', 'posts']
 
-        copo.forEach(function(elem) {
+        copo.forEach(function (elem) {
             // console.log('elem', elem);
 
             se = 'https://api.stackexchange.com/2.2'
             user = se + '/users/1705829'
             so = 'site=stackoverflow'
             so = 'site=stackoverflow&filter=withbody'
-                // so = 'order=desc&sort=activity&site=stackoverflow&filter=withbody'
+            // so = 'order=desc&sort=activity&site=stackoverflow&filter=withbody'
 
             url = user + '/' + elem + '?' + so
-                // console.log('url', url)
+            // console.log('url', url)
 
             list = document.createElement('ul')
 
@@ -167,13 +153,13 @@
             }) => {
                 counter = 1
                 for (const {
-                        creation_date,
-                        score,
-                        answer_count,
-                        link,
-                        body,
-                        title
-                    }
+                    creation_date,
+                    score,
+                    answer_count,
+                    link,
+                    body,
+                    title
+                }
                     of items) {
                     if (counter == 8) {
                         break
@@ -186,9 +172,8 @@
 
                     const listItem = document.createElement('li')
                     list.appendChild(listItem)
-                        // bodystr = body.substring(0, 200)
+                    // bodystr = body.substring(0, 200)
                     bodystr = truncate(body, 200, 1)
-                        // bodystr = jQuery(bodystr).text()
 
                     // console.log(bodystr)
 
@@ -204,7 +189,7 @@
 
                     } else {
                         a.href = link
-                            // a.textContent = `[${score}] ${title} (by ${owner.display_name || 'somebody'})
+                        // a.textContent = `[${score}] ${title} (by ${owner.display_name || 'somebody'})
                         a.textContent = `${dateString} | ${bodystr}`
                     }
                 }

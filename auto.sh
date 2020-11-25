@@ -32,14 +32,14 @@ function pand {
 	   neu=${output:0:-3}
 	   md=$cv/$output
 	   html=$cv/$neu.html
-	#    pandoc $md -o $html -s
+	#    pandoc.exe $md -o $html -s
 	#    /snap/bin/chromium $html
 	#output=$cv/cv_de
 
 	# wkhtmltopdf $html ~/$mot 
-	# pdfunite $dir/* ~/$app_ready
-	# qp ~/$app_ready
-	   echo $dir/*,$app
+	pdfunite $(ls $dir/*) ~/$app
+	# qp ~/$app
+	   echo output,dirs,odir $output, $(ls $dir/*),$app
 }
 
 "$@"

@@ -1,9 +1,9 @@
-$(document).ready(function() {
+window.onload = function () {
 
     // console.log('test links')
     ich = 'Timo Körner'
     document.getElementById("tk").innerHTML = '<h1>' + ich + '</h1>'
-        // $('title').text()= ich
+    // $('title').text()= ich
     document.title = ich
 
     linkstop = {
@@ -18,4 +18,4 @@ $(document).ready(function() {
         document.getElementById("linkstop").innerHTML += '<a href=' + linkstop[key] + '>' + key + '</a> || '
         i++
     }
-})
+}
