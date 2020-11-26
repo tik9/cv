@@ -17,8 +17,8 @@
     <script src="media/ip.js"></script>
     <script src="media/links.js"></script>
     <!--    <script src="media/serve.js"></script>-->
-<script>
-</script>
+    <script>
+    </script>
 </head>
 
 <body>
@@ -108,10 +108,6 @@
     </div>
     <script>
 
-        // console.log(i, i %3, key)
-        // document.getElementById("links_top").innerHTML += '<a href=' + links[key] + '>' + key + '</a> || '
-        // i++
-
         function truncate(str, n, useWordBoundary) {
             if (str.length <= n) {
                 return str;
@@ -139,9 +135,9 @@
             url = user + '/' + elem + '?' + so
             // console.log('url', url)
 
-            list = document.createElement('ul')
+            listpost = document.createElement('ul')
 
-            document.getElementById("so_api").appendChild(list)
+            document.getElementById("so_api").appendChild(listpost)
 
             responseData = fetch(url).then(response => response.json())
 
@@ -152,7 +148,7 @@
                 quota_remaining
             }) => {
                 counter = 1
-                for (const {
+                for ({
                     creation_date,
                     score,
                     answer_count,
@@ -170,8 +166,8 @@
 
                     // console.log('elem, link, title', elem, link, title);
 
-                    const listItem = document.createElement('li')
-                    list.appendChild(listItem)
+                    listItem = document.createElement('li')
+                    listpost.appendChild(listItem)
                     // bodystr = body.substring(0, 200)
                     bodystr = truncate(body, 200, 1)
 
@@ -180,7 +176,7 @@
                     bodystr = bodystr.replace(/<\/?[^>]+(>|$)/g, '')
                     bodystr = bodystr.replace(/&quot;/g, '')
 
-                    const a = document.createElement('a')
+                    a = document.createElement('a')
                     listItem.appendChild(a)
                     if (link == undefined) {
                         a.href = 'https://stackexchange.com/users/1886776/timo?tab=activity'
@@ -195,6 +191,24 @@
                 }
             })
         })
+
+        linksblog = {
+            'Answers on Pluralsight Skill Test': 'pluralsight-skill-test/#table-of-contents',
+            'Share Aliases across the terminal environments of Linux and Windows': 'custom',
+            'Creating Documents using Markdown, Javascript and Html (for the automation of job applications)': 'cv',
+            'A Python app to get text from images and prepare them': 'ml'
+        }
+
+        listblog = document.createElement('ol')
+        document.getElementById('linksblog').appendChild(listblog)
+        for (key in linksblog) {
+            listItem = document.createElement('li')
+            listblog.appendChild(listItem)
+            a = document.createElement('a')
+            listItem.appendChild(a)
+            a.href = 'https://github.com/tik9/' + linksblog[key]
+            a.textContent = key
+        }
     </script>
 </body>
 
