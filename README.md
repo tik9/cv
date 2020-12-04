@@ -15,14 +15,13 @@ Currently improving my React Javascript skills.<br />
 &nbsp;
 ### My most recent actions 😃🧾
 <!-- BLOG-POST-LIST:START -->
-1. [Powershell Profile](https://github.com/tik9/prs/)
+1. [Powershell Profile](https://github.com/tik9/psprofile/)
 
 &nbsp;
 
-
 2. Automation of company applications (motivation letter, CV) with Markdown and JS
-- Create two <code>Javascript arrays</code>, [one](https://www.github.com/tik9/cv/blob/master/media/me.js) with your personal cv data (bilingual, in my case english and german), and [one](https://www.github.com/tik9/cv/blob/master/media/ags.js) with employer name and jobs
-- Create a [motivation letter](https://www.github.com/tik9/cv/blob/master/motivation_en.md) and a [cv](https://www.github.com/tik9/cv/blob/master/cv_en.md) with the template variabies from the above arrays
+- Create two <code>Javascript arrays</code>, [one](media/me.js) with your personal cv data (bilingual, in my case english and german), and [one](media/ags.js) with employer name and jobs
+- Create a [motivation letter](motivation_en.md) and a [cv](cv_en.md) with the template variabies from the above arrays
 - Do not forget to include the js in md: 
 ```
 ---
@@ -31,7 +30,7 @@ header-includes:<script src="media/date.js"></script>
 <script src="media/ags.js"></script>
 ---
 ```
-- Convert the md files to <code>html</code> with <code>Pandoc</code> and see the [result](https://www.github.com/tik9/cv/blob/master/output/cv_en.html) </li>
+- Convert the md files to <code>html</code> with <code>Pandoc</code> and see the [result](cv_en.html) </li>
 
 &nbsp;
 
