@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="media/cookie.css">
 
     <link rel="icon" type="image/png" href="favicon.png" />
-    <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="media/cookie.js"></script>
     <script src="media/date.js"></script>
     <script src="media/ip.js"></script>
@@ -46,28 +46,19 @@
 
         <div class="space"></div>
 
-        <div>
-            <h4>Blog - Thoughts on IT and Automation</h4>
-        </div>
-        <div id=linksblog></div>
+        <h4>Github Repos</h4>
+        <div id=projects></div>
 
-        <div class="space">
+        <!-- <div id=linksblog></div> -->
+
+        <div class=space>
             <h4>Recent posts</h4>
             <div id=so_api></div>
         </div>
 
         <h5> <a href='https://stackexchange.com/users/1886776/timo?tab=activity'>More posts</a></h5>
 
-        <!-- <div class="space">
-                <h4>Your environment</h4>
-                <ul id=client_css> -->
-        <!-- <li>Ip address: <span id=ip></span></li> -->
-        <!-- <li>Browser: <span id=client></span></li> -->
-        <!-- <li>City: <span id=stadt></span></li> -->
-        <!-- </ul>
-        </div> -->
-
-        <div class="space"></div>
+        <div class=space></div>
 
         <h4 class='space'>Contact</h4>
         <form action='https://formspree.io/user153015@gmail.com' method='post'>
@@ -108,20 +99,50 @@
     </div>
     <script>
 
-        function truncate(str, n, useWordBoundary) {
-            if (str.length <= n) {
-                return str;
+        listrepos = document.createElement('ul')
+        document.getElementById('projects').appendChild(listrepos)
+
+        user = 'tik9'
+        apirepo = `https://api.github.com/users/${user}`
+        ghtk = `https://github.com/${user}`
+
+
+        function printRepoCount() {
+            responseObj = JSON.parse(this.responseText)
+            console.log(responseObj.public_repos + " public repositories")
+        }
+        request = new XMLHttpRequest()
+        request.onload = printRepoCount
+        request.open('get', apirepo, true)
+        request.send()
+
+        $.getJSON(apirepo + '/repos', {}, function (data) {
+            console.log('data', data)
+            data.forEach(v => {
+                console.log(v.url)
+                listItemRepo = document.createElement('li')
+                listrepos.appendChild(listItemRepo)
+                hlink=document.createElement('a')
+                listItemRepo.appendChild(hlink)
+                hlink.textContent=v.name
+                hlink.href=v.html_url
+
+            })
+        })
+
+
+        function truncate(str) {
+            if (str.length <= truncateCut) {
+                return str
             }
-            const subString = str.substr(0, n - 1); // the original check
-            return (useWordBoundary ?
-                subString.substr(0, subString.lastIndexOf(" "))
-                // : subString) + "&hellip;";
-                :
-                subString) + "..";
+            subString = str.substr(0, truncateCut)
+            return subString.substr(0, subString.lastIndexOf(' ')) + '..'
         }
 
         // arr = ['comments', 'posts', 'questions', 'answers']
         copo = ['comments', 'posts']
+        maxcount = 6
+        truncateCut = 200
 
         copo.forEach(function (elem) {
             // console.log('elem', elem);
@@ -137,7 +158,7 @@
 
             listpost = document.createElement('ul')
 
-            document.getElementById("so_api").appendChild(listpost)
+            document.getElementById('so_api').appendChild(listpost)
 
             responseData = fetch(url).then(response => response.json())
 
@@ -157,7 +178,7 @@
                     title
                 }
                     of items) {
-                    if (counter == 8) {
+                    if (counter == maxcount) {
                         break
                     }
                     counter++
@@ -166,27 +187,25 @@
 
                     // console.log('elem, link, title', elem, link, title);
 
-                    listItem = document.createElement('li')
-                    listpost.appendChild(listItem)
-                    // bodystr = body.substring(0, 200)
-                    bodystr = truncate(body, 200, 1)
+                    listItemPost = document.createElement('li')
+                    listpost.appendChild(listItemPost)
+                    // bodyPost = body.substring(0, 200)
+                    bodyPost = truncate(body)
 
-                    // console.log(bodystr)
-
-                    bodystr = bodystr.replace(/<\/?[^>]+(>|$)/g, '')
-                    bodystr = bodystr.replace(/&quot;/g, '')
+                    bodyPost = bodyPost.replace(/<\/?[^>]+(>|$)/g, '')
+                    // bodyPost = bodyPost.replace(/&quot;/g, '')
+                    bodyPost = bodyPost.replace(/&#39;/g, '')
 
                     a = document.createElement('a')
-                    listItem.appendChild(a)
+                    listItemPost.appendChild(a)
                     if (link == undefined) {
                         a.href = 'https://stackexchange.com/users/1886776/timo?tab=activity'
 
-                        a.textContent = `${dateString} | ${bodystr}`
+                        a.textContent = `${dateString} | ${bodyPost}`
 
                     } else {
                         a.href = link
-                        // a.textContent = `[${score}] ${title} (by ${owner.display_name || 'somebody'})
-                        a.textContent = `${dateString} | ${bodystr}`
+                        a.textContent = `${dateString} | ${bodyPost}`
                     }
                 }
             })
@@ -194,30 +213,20 @@
 
         linksblog = {
             'Answers on Pluralsight Skill Test': 'pluralsight-skill-test/#table-of-contents',
-            'Share Aliases across the terminal environments of Linux and Windows': 'custom',
-            'Creating Documents using Markdown, Javascript and Html (for the automation of job applications)': 'cv',
             'A Python app to get text from images and prepare them': 'tesseractToMarkdown'
         }
 
-        listblog = document.createElement('ol')
-        document.getElementById('linksblog').appendChild(listblog)
+        listPosts = document.createElement('ol')
+        document.getElementById('linksblog').appendChild(listPosts)
         for (key in linksblog) {
-            listItem = document.createElement('li')
-            listblog.appendChild(listItem)
+            listItemPost = document.createElement('li')
+            listPosts.appendChild(listItemPost)
             a = document.createElement('a')
-            listItem.appendChild(a)
-            a.href = 'https://github.com/tik9/' + linksblog[key]
+            listItemPost.appendChild(a)
+            a.href = ghtk + linksblog[key]
             a.textContent = key
         }
 
-        function printRepoCount() {
-            var responseObj = JSON.parse(this.responseText)
-            console.log(responseObj.name + " has " + responseObj.public_repos + " public repositories")
-        }
-        var request = new XMLHttpRequest()
-        request.onload = printRepoCount
-        request.open('get', 'https://api.github.com/users/tik9', true)
-        request.send()
     </script>
 </body>
 
