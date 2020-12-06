@@ -36,7 +36,9 @@
             </div>
             <div class="col-sm-4">
                 <h3>Things to know</h3>
-                <p>CEO of a life, CTO of localhost, co-founder of a son, a developer in Javascript</p>
+                <p>
+                    <span id=about></span>
+                </p>
             </div>
             <div class="col-sm-4">
                 <h3>Hyper links</h3>
@@ -46,13 +48,11 @@
 
         <div class="space"></div>
 
-        <h4>Github Repos</h4>
-        <div id=projects></div>
-
-        <!-- <div id=linksblog></div> -->
+        <h4><span id=repocount></span> Github Repositories</h4>
+        <div id=github></div>
 
         <div class=space>
-            <h4>Recent posts</h4>
+            <h4>Posts</h4>
             <div id=so_api></div>
         </div>
 
@@ -60,29 +60,29 @@
 
         <div class=space></div>
 
-        <h4 class='space'>Contact</h4>
-        <form action='https://formspree.io/user153015@gmail.com' method='post'>
+        <h4 class=space>Contact</h4>
+        <form action=https://formspree.io/user153015@gmail.com method=post>
 
-            <div class="form-group">
+            <div class=form-group>
                 <label for="nam">Name</label>
                 <input type="text" name=name class="form-control" id="name" placeholder="Enter your Name">
             </div>
 
-            <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" name=email class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            <div class=form-group>
+                <label for=exampleInputEmail1>Email address</label>
+                <input type=email name=email class=form-control id=exampleInputEmail1 aria-describedby=emailHelp
                     placeholder="Enter email">
                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
                     else.</small>
             </div>
 
-            <div class="form-group">
+            <div class=form-group>
                 <label for="Textarea1">Message</label>
                 <textarea name=message class="form-control" id="extarea1" rows="3" name=textarea
                     placeholder="Enter message"></textarea>
             </div>
-            <input type="hidden" name="_subject" value='email von Kontaktformular'>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <input type=hidden name=_subject value='email von Kontaktformular'>
+            <button type=submit class='btn btn-primary'>Submit</button>
 
         </form>
 
@@ -100,33 +100,42 @@
     <script>
 
         listrepos = document.createElement('ul')
-        document.getElementById('projects').appendChild(listrepos)
+        document.getElementById('github').appendChild(listrepos)
 
         user = 'tik9'
         apirepo = `https://api.github.com/users/${user}`
-        ghtk = `https://github.com/${user}`
-
 
         function printRepoCount() {
             responseObj = JSON.parse(this.responseText)
-            console.log(responseObj.public_repos + " public repositories")
+            document.getElementById('repocount').textContent= responseObj.public_repos
         }
         request = new XMLHttpRequest()
         request.onload = printRepoCount
         request.open('get', apirepo, true)
         request.send()
 
-        $.getJSON(apirepo + '/repos', {}, function (data) {
-            console.log('data', data)
+        $.getJSON(apirepo + '/repos', function (data) {
+            console.log('data now', data)
+
+            function compare(a, b) {
+                if (a.watchers > b.watchers) {
+                    return -1
+                }
+                if (a.watchers < b.watchers) {
+                    return 1
+                }
+                return 0
+            }
+
+            data.sort(compare)
             data.forEach(v => {
-                console.log(v.url)
+
                 listItemRepo = document.createElement('li')
                 listrepos.appendChild(listItemRepo)
-                hlink=document.createElement('a')
+                hlink = document.createElement('a')
                 listItemRepo.appendChild(hlink)
-                hlink.textContent=v.name
-                hlink.href=v.html_url
-
+                hlink.textContent = `${v.description} | Stars: ${v.watchers}`
+                hlink.href = v.html_url
             })
         })
 
@@ -210,22 +219,6 @@
                 }
             })
         })
-
-        linksblog = {
-            'Answers on Pluralsight Skill Test': 'pluralsight-skill-test/#table-of-contents',
-            'A Python app to get text from images and prepare them': 'tesseractToMarkdown'
-        }
-
-        listPosts = document.createElement('ol')
-        document.getElementById('linksblog').appendChild(listPosts)
-        for (key in linksblog) {
-            listItemPost = document.createElement('li')
-            listPosts.appendChild(listItemPost)
-            a = document.createElement('a')
-            listItemPost.appendChild(a)
-            a.href = ghtk + linksblog[key]
-            a.textContent = key
-        }
 
     </script>
 </body>

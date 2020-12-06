@@ -22,7 +22,7 @@ Unix
 :   Apple, Linux  
     <span class=tem>{{ erfahrung_lin }}</span>
 
-Rest
+Weitere
 :   Web, Git  
     <span class=tem>{{ erfahrung_web }}</span>
 
@@ -44,9 +44,9 @@ Ausbildung
 
 Open Source Programmier- Erfahrung
 --------------------
-Verschiedenes
+Verschiedene
 :     
-    [Github](https://github.com/tik9)  
+    [Github](https://github.com/tik9/pl)  
     [Stackoverflow](https://stackexchange.com/users/1886776/timo?tab=activity)  
     [Website](https://tik9.github.io/cv/)
 
@@ -57,8 +57,8 @@ Tools
 Tool            Kenntnis    Anwendungsdauer (Jahre)
 -----          ---------- --------------------------
 Django          2           1
-Powershell      2           2
-Php             2           1
-Python          3           1
-Mysql           2           1
 Javascript      3           1
+Mysql           2           1
+Php             2           1
+Powershell      2           2
+Python          3           1

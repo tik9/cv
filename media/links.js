@@ -7,15 +7,33 @@ window.onload = function () {
     document.title = ich
 
     linkstop = {
-        Github: 'https://github.com/tik9',
-        LinkedIn: 'https://linkedin.com/in/timo-körner-65ab601b1',
-        Stackexchange: 'https://stackexchange.com/users/1886776/timo?tab=activity',
+        // LinkedIn: 'https://linkedin.com/in/timo-körner-65ab601b1',
+        Home:'index.html',
+        Further: 'file.html',
     }
 
-    i = 0
-    for (key in linkstop) {
+    about = [
+        'CEO of my life', 'CTO of localhosts', 'COO of my Flat'
+    ]
+
+    toplinks = document.createElement('ul')
+    Object.keys(linkstop).forEach(function (key){
+        toplinksitem = document.createElement('li')
+        toplinks.appendChild(toplinksitem)
+        a = document.createElement('a')
+        toplinksitem.appendChild(a)
+        a.href = linkstop[key]
+        a.textContent = key
+    })
+
+    document.getElementById('linkstop').appendChild(toplinks)
+
+    aboutlinks = document.createElement('ul')
+    document.getElementById('about').appendChild(aboutlinks)
+    for (value of about) {
         // console.log(i, i %3, key)
-        document.getElementById("linkstop").innerHTML += '<a href=' + linkstop[key] + '>' + key + '</a> || '
-        i++
+        aboutlinksitem = document.createElement('li')
+        aboutlinksitem.textContent = value
+        aboutlinks.appendChild(aboutlinksitem)
     }
 }

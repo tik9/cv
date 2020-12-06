@@ -19,14 +19,14 @@ function cp_ag {
 }
  
 function pand {
-	dir=~/bewerbung
+	# dir=~/bewerbung
 	cvo=$cv/output
     #    output=cv_en
-	cven=~/cv_eng_resumeio.pdf
+	# cven=~/cv_eng_resumeio.pdf
 	# cven=$cvo/cv_en.pdf
 
-	mot=motivation.pdf
-    app=app.pdf
+	# mot=motivation.pdf
+    # app=app.pdf
     #    output=${output%.md}
        output=`ls -t $cv | head -1`
 	   neu=${output:0:-3}
@@ -37,9 +37,9 @@ function pand {
 	#output=$cv/cv_de
 
 	# wkhtmltopdf $html ~/$mot 
-	pdfunite $(ls $dir/*) ~/$app
+	# pdfunite $(ls $dir/*) ~/$app
 	# qp ~/$app
-	   echo output,dirs,odir $output, $(ls $dir/*),$app
+	   echo output,dirs,odir $output, $md,$output
 }
 
 "$@"

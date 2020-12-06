@@ -47,16 +47,6 @@ window.onload = function () {
             en: 'Master in Management Studies'
         },
 
-        erfahrung_bw: {
-            de: 'Controlling, regelmäßige Kundenacquise und -bindung in Form von Newslettern',
-            en: 'Controlling, Personal Marketing via LinkedIn and Telephone'
-        },
-
-        erfahrung_it: {
-            de: 'Lösen von Software Problemen in Windows und Linux',
-            en: 'Customer Support in Windows und Linux'
-        },
-
         erfahrung_lin: {
             de: 'Konfiguration von Apache, Nginx und Lighttpd. Benutzer- und Gruppenverwaltung. Konfiguration von IPhones',
             en: 'Configuration of Apache, Nginx and Lighttpd, User and Groups. Configuration of Apple IPhones per remote'
@@ -69,7 +59,7 @@ window.onload = function () {
 
         erfahrung_win: {
             de: 'Benutzerbetreuung im Team für 100 Benutzer. Softwareverteilung, Umstellung von Windows 7 auf Windows 10. Erstellen von Skripten. Erweiterung einer MS Access und Excel VBA Anwendung zur Prüfung und Berechnung von Bodenwerten.',
-            en: 'Fileserver automation. Software deployment.Working with a client focused team, contributing to new features in the distributed system of a german public service (Virtualization, Digitalization).Extension of existing client and server machines. Also involved in designing and implementing new features for a order web-based platform. Moving server data from outside to the HQ including folder permissions in NTFS. My task was automating the whole process and copying everything over the wire with multithreading.'
+            en: 'Fileserver automation. Software deployment. Working with a client focused team, contributing to new features in the distributed system of a german public service (Virtualization). Extension of existing client machines. Involved in designing and implementing new features for a web-based platform. Moving server data from outside to the HQ including folder permissions in NTFS. Automating the whole process and copying data over the wire with multithreading.'
         },
 
 
