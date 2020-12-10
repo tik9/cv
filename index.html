@@ -22,17 +22,15 @@
 </head>
 
 <body>
-    <div class="jumbotron text-center">
+    <div id=to class="jumbotron text-center">
         <span id=tk></span>
-        <p>An IT developer</p>
-
     </div>
 
     <div class="container">
         <div class="row">
             <div class="col-sm-4">
                 <h3>About </h3>
-                <p>A german IT freelancer</p>
+                <p>An IT freelancer</p>
             </div>
             <div class="col-sm-4">
                 <h3>Things to know</h3>
@@ -48,25 +46,25 @@
 
         <div class="space"></div>
 
-        <h4><span id=repocount></span> Github Repositories</h4>
+        <h4>Github Repositories</h4>
         <div id=github></div>
 
         <div class=space>
             <h4>Posts</h4>
             <div id=so_api></div>
         </div>
+        <h5> <a href=https://stackexchange.com/users/1886776/timo?tab=activity>More posts</a></h5>
+
+        <div class="space">
+            <h4>Future plans | Zukunftsplan</h4>
+            <p>Ein Python und Javascript Developer zu sein im Fullstack Bereich und dabei mit Tools wie Git oder Docker
+                zu arbeiten.</p>
+            <p>Be a Python und Javascript Developer working Fullstack using Tools like Git or Docker.</p>
+        </div>
 
         <!-- <div class="space"></div> -->
-        <h5> <a href='https://stackexchange.com/users/1886776/timo?tab=activity'>More posts</a></h5>
-        <!-- <div class="space"></div> -->
 
-        <!-- <h4>Downloads</h4> -->
-
-        <!-- <div id=filesGh></div> -->
-
-        <!-- <div class=space></div> -->
-
-        <h4 class=space id=toContact >Contact</h4>
+        <h4 class=space>Contact</h4>
         <form action=https://formspree.io/user153015@gmail.com method=post>
 
             <div class=form-group>
@@ -75,11 +73,10 @@
             </div>
 
             <div class=form-group>
-                <label for=exampleInputEmail1>Email address</label>
+                <label for=exampleInputEmail1>Email (optional)</label>
                 <input type=email name=email class=form-control id=exampleInputEmail1 aria-describedby=emailHelp
-                    placeholder="Enter email">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                    else.</small>
+                    placeholder="Enter optional email">
+                <small id="emailHelp" class="form-text text-muted">This is optional.</small>
             </div>
 
             <div class=form-group>
@@ -93,8 +90,14 @@
         </form>
 
         <div style="padding-top: 100px;"></div>
-
-        <a target=_blank href=footer_en.html>Imprint</a> | <a id='fromContact' href='#'>Contact</a>
+        <!-- <p class="text-xs-right"></p> -->
+        <div class="row">
+            <div class="col-md-6"></div>
+            <div class="col-md-6 text-right">
+            <a href=imprint.html class="btn btn-primary" name=anchor style="color:white;">Imprint</a> <button id='from'
+                class="btn btn-primary">Up</button>
+            </div>
+            </div>
 
         <div id="cookieConsent">
             <div id="closeCookieConsent">x</div>
@@ -103,10 +106,12 @@
 
     </div>
     <script>
-        $("#fromContact").click(function () {
-            $("html, body").animate({ scrollTop: $("#toContact").offset().top }, 500);
-            return true;
-        });
+        $("#from").click(function () {
+            $("html, body").animate({ scrollTop: $("#to").offset().top }, 500)
+            console.log('clicked')
+            return true
+        })
+
         listrepos = document.createElement('ul')
         document.getElementById('github').appendChild(listrepos)
 
@@ -117,16 +122,6 @@
 
         urlFilesGh = `${ghApiUser}/${repos}/${user}/cv/contents/output`
         // urlFilesGh = 'https://api.github.com/repos/tik9/cv/contents/output'
-
-
-        function printRepoCount() {
-            responseObj = JSON.parse(this.responseText)
-            document.getElementById('repocount').textContent = responseObj.public_repos
-        }
-        request = new XMLHttpRequest()
-        request.onload = printRepoCount
-        request.open('get', ghApiUser, true)
-        request.send()
 
         $.getJSON(`${ghApiUser}/${repos}`, function (data) {
             // console.log('data now', data)

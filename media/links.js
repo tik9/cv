@@ -14,8 +14,10 @@ window.onload = function () {
     }
 
     about = [
-        'CEO of my life', 'CTO of localhosts', 
-        // 'COO of my Flat'
+        // 'CEO of my life', 
+        // 'CTO of localhosts', 
+    'Web Developer',
+    'Full Stack Developer'
     ]
 
     toplinks = document.createElement('ul')
