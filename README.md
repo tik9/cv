@@ -10,7 +10,7 @@ Since 2018 I've been living and breathing web development and creating modern an
 
 ### What I'm focusing on 👨‍💻
 
-Currently improving my React Javascript skills.<br />
+Currently improving my Javascript skills.<br />
 
 &nbsp;
 ### My most recent actions 😃🧾
@@ -34,7 +34,6 @@ header-includes:<script src="media/date.js"></script>
 
 &nbsp;
 
-3. Using the **[same aliases](https://github.com/tik9/custom)** and functions in Windows and Linux
 <!-- BLOG-POST-LIST:END -->
 
 &nbsp;
@@ -42,6 +41,6 @@ header-includes:<script src="media/date.js"></script>
 ### Find me elsewhere 🌎
 &nbsp;
 
-[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/timo-k%C3%B6rner-65ab601b1)]
+- [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/timo-k%C3%B6rner-65ab601b1)]
 
-**[My Website](https://tik9.github.io/cv)**
+- **[My Website](https://tik9.github.io/cv)**
