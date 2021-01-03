@@ -1,7 +1,6 @@
 window.onload = function () {
     ags = [
-        ['proj07', 'Duales Studium zum Master of Science','date'],
-        ['Custom.Io', 'Customer Success Engineer','date'],
+        ['Firm', 'Job','date'],
     ]
 
     header = ['Firma', 'Job', 'Datum']
