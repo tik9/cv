@@ -3,6 +3,7 @@
 header-includes: <script src="../media/me.js" id= spr data-name="en"></script> <link rel="stylesheet" href="../media/style_cv.css"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
 title: Timo Körner CV
 ---
+
 > <span class=tem>{{ ich_adresse }}</span>  
 > <span class=tem>{{ ich_alter }}</span> years old  &emsp;&emsp;&emsp;&emsp;<i class="fas fa-play-circle"></i> &emsp;<span class=tem>{{ ich_website }}</span>
 ---------------------------------
@@ -47,12 +48,12 @@ Business
 Tools
 --------------------
 
-Tool           Usage (years)
------          -------------- 
-Django          1         
-Javascript      1           
-Mysql           1          
-Php             2           
-Powershell      1           
-Python          1           
+Tool           |Usage (years)
+-----          |-------------- 
+Django          |1         
+Javascript      |1           
+Mysql           |1          
+Php             |2           
+Powershell      |1           
+Python          |1           
 
